@@ -57,3 +57,97 @@
 .donate-text {
     width: 29%;
 }
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* CSS rules for large devices (desktops) */
+  .quotes {
+    display: contents;
+  }
+  .quotes-text {
+    background-color: transparent;
+}
+  .quotes-img img {
+    height: 25rem;
+  }
+  .quotes-text {
+    height: auto;
+  }
+
+  .numbers .big-number {
+    font-size: 70px;
+    line-height: 83px;
+  }
+  .donate-text {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* CSS rules for medium devices (laptops) */
+    .quotes {
+        display: grid;
+    }
+    .quotes-text {
+        background-color: transparent;
+    }
+    .quotes-img img {
+        /* height: 25rem;
+        width: 32rem; */
+
+        height: 20rem;
+        width: 28rem;
+    }
+    .donate-text {
+        width: 65%;
+    }
+    .numbers .big-number {
+        font-size: 55px;
+        line-height: 57px;
+      }
+      .quote {
+        font-size: 29px;
+        line-height: 33px;
+      }
+}
+
+@media (max-width: 576px) { 
+    /* CSS rules for extra small devices (phones) */
+    .quotes{
+        display: grid;
+        padding: 0 15px;
+    }
+    .quotes-text .quote {
+        font-size: 14px;
+        line-height: 21px;
+        /* padding: 0 15px; */
+    }
+    .quotes-text .author p {
+        font-size: 15px;
+    }
+    .quotes-img img {
+        height: 16rem;
+        width: 17rem;    
+    }
+    .quotes-text {
+        background-color: transparent;
+        padding: 0;
+        height: auto;
+    }
+    .numbers {
+        padding: 0 15px;
+    }
+    .numbers .big-number {
+        font-size: 18px;
+        width: 100%;
+        line-height: 25px;
+    }
+    .donate-line {
+        display: inline;
+    }
+    .donate-text {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+

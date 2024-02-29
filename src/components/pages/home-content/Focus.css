@@ -58,3 +58,39 @@
     color: rgb(145, 98, 98);
     cursor: pointer;
 }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* CSS rules for large devices (desktops) */
+ .focus {
+    gap: 1rem;
+ }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* CSS rules for medium devices (laptops) */
+    .focus {
+        display: grid;
+    }
+}
+
+@media (max-width: 576px) { 
+    /* CSS rules for extra small devices (phones) */
+    .focus {
+        display: grid;
+    }
+    .icon svg {
+        width: 50px;
+    }
+    .focus-container {
+        margin: 0 15px;
+    }
+    .focus-container p {
+        font-size: 18px;
+    }
+    .location h1 {
+        font-size: 14px;
+    }
+    .location h1 span.color {
+        font-size: 14px;
+    }
+}

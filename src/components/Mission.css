@@ -132,26 +132,122 @@
     right: 0;
 }
 
-@media screen and (max-width: 850px) {
-    .destination {
-        margin: 4rem 2rem;
-    }
-    .first-des {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 2.5rem;
+ .footer-links {
+        padding-top: 2rem;
     }
     
-    .des-text {
+    .footer-input {
         width: 100%;
     }
 
-    .image {
+    .btn {
         width: 100%;
-        margin: 1.8rem 0;
     }
 
-    .image img {
-        height: 250px;
+    .footer-link-wrapper {
+        flex-direction: column;
     }
-}
+
+    .social-media-wrap {
+        flex-direction: column;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+        /* CSS rules for large devices (desktops) */
+        .about {
+            display: flex;
+        }
+      .destination .first-des .image {
+        width: 70%;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        /* CSS rules for medium devices (laptops) */
+        .first-des {
+            flex-direction: column-reverse;
+        }
+        .first-des .des-text, .first-des .image {
+            width: 100%;
+        }
+
+        .destination .intro h2 {
+            font-size: 30px;
+            padding: 0 ;
+        }
+
+    }
+
+    @media (max-width: 576px) { 
+        /* CSS rules for extra small devices (phones) */
+        .destination {
+            padding: 1rem 1px;
+        }
+        .destination .intro h2 {
+            font-size: 20px;
+            padding: 0 ;
+        }
+        .destination .intro h5 {
+            font-size: 22px;
+        }
+        .destination .section-head {
+            margin: 0;
+        }
+        .destination .section-head h1 {
+            font-size: 21px;
+        }
+        .about {
+            padding: 3rem 20px;
+        }
+        .about-img img {
+            height: 17rem;
+            width: 16rem;
+        }
+        .about-text {
+            width: 100%;
+        }
+        .about-text h2 {
+            font-size: 1.2rem;
+        }
+        .about-text p {
+            font-size: 18px;
+        }
+        .first-des {
+            flex-direction: column-reverse;
+            padding: 0 10px;
+        }
+        .first-des .image {
+            width: 100%;
+            display: block;
+        }
+        .first-des .image img {
+            width: 49%;
+            height: 200px;
+        }
+        .des-text {
+            width: 100%;
+        }
+        .des-text p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        .des-text h2 {
+            font-size: 17px;
+        }
+        .background {
+            padding: 2rem 27px;
+        }
+      .background-text h2 {
+        font-weight: normal;
+        font-size: 19px;
+      }
+      .background-text p {
+        max-width: 100%;
+        font-size: 18px;
+        text-align: left;
+      }
+      .background-img img {
+        height: 10rem;
+        width: 17rem;
+      }
+    }

@@ -36,3 +36,14 @@ video {
     max-width: 18cm;
     text-align: center;
 }
+
+
+@media (max-width: 576px) { 
+    /* CSS rules for extra small devices (phones) */ 
+    .hero-container .content > h1 {
+        font-size: 20px;
+    }
+    .hero-container .content > p {
+        font-size: 16px;
+    }
+}
