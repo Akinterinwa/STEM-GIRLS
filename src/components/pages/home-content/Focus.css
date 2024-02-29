@@ -1,0 +1,60 @@
+.focus {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 6rem 0;
+}
+
+.focus-container {
+    padding: 0px 1rem 1rem 1rem;
+    background: beige;
+}
+
+.focus-container .h2 {
+    font-size: 20px;
+    font-family: system-ui;
+    font-weight: 700;
+}
+
+.focus-container p {
+    font-size: 22px;
+}
+.focus-container:hover {
+    background-color: rgba(76, 70, 70, 0.362); 
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-7px); }
+  }
+  
+  /* Apply the bouncing animation and color fade on hover */
+  .focus-container .icon:hover {
+    animation: bounce 0.5s ease infinite alternate;
+    transition: background-color 0.5s ease;/* Faded color */
+  }
+
+.icon svg {
+    width: 80px;
+}
+
+.location {
+    text-align: center;
+}
+.location h1 {
+    font-size: xx-large;
+    font-family: monospace;
+    margin: 10px 0;
+}
+.location span.color {
+    font-size: xx-large;
+    font-family: monospace;
+    color: brown;
+}
+.location span.color:hover {
+    color: rgb(145, 98, 98);
+    cursor: pointer;
+}

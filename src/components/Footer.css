@@ -24,11 +24,15 @@
 .footer-subscription-heading {
     margin-bottom: 24px;
     font-size: 24px;
+    color: white;
 }
 
 .footer-subscription-text {
     margin-bottom: 24px;
-    font-size: 20px;
+    color: white;
+    width: 60%;
+    font-size: larger;
+    font-family: system-ui;
 }
 
 .footer-input {
@@ -93,7 +97,7 @@
 /* social icons */
 .social-icon-link {
     color: #fff;
-    font-size: 100%;
+    font-size: 25px;
 }
 
 .social-media {
@@ -114,7 +118,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: 120px;
 }
 
 .social-logo {

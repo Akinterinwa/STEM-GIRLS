@@ -11,52 +11,15 @@ const Footer = () => {
                     Join our Newsletter to receive our updates
                 </p>
                 <p className="footer-subscription-text">
-                    You can unsubscribe from our newsletter at any time
+                Our Weekly Newsletter is a collection of the latest and greatest from Girls Who Code – top tech stories, real talk from our CEO, and news about young women changing the world.
                 </p>
                 <div className="input-areas">
                     <form>
                         <input type="email" name='email' placeholder='Your email' className="footer-input" />
-                        <Button buttonStyle='btn--outline'>Subscribe</Button>
+                        <button>Subscribe</button>
                     </form>
                 </div>
             </section>
-            {/* <div className="footer-links">
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>About Us</h2>
-                        <Link to='/sign-up'> How it woks</Link>
-                        <Link to='/'> Testimonials</Link>
-                        <Link to='/'>Careers</Link>
-                        <Link to='/'>Investors</Link>
-                        <Link to='/'>Terms of Services</Link>
-                    </div>
-                    <div className="footer-link-items">
-                        <h2>About Us</h2>
-                        <Link to='/sign-up'> How it woks</Link>
-                        <Link to='/'> Testimonials</Link>
-                        <Link to='/'>Careers</Link>
-                        <Link to='/'>Investors</Link>
-                        <Link to='/'>Terms of Services</Link>
-                    </div>
-                </div>
-                <div className="footer-link-wrapper">
-                    <div className="footer-link-items">
-                        <h2>About Us</h2>
-                        <Link to='/sign-up'> How it woks</Link>
-                        <Link to='/'> Testimonials</Link>
-                        <Link to='/'>Careers</Link>
-                        <Link to='/'>Investors</Link>
-                        <Link to='/'>Terms of Services</Link>
-                    </div>
-                    <div className="footer-link-items">
-                        <h2>Social Media</h2>
-                        <Link to='/'>Instagram</Link>
-                        <Link to='/'>Facebook</Link>
-                        <Link to='/'>Youtube</Link>
-                        <Link to='/'>Twitter</Link>
-                    </div>
-                </div>
-            </div> */}
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">

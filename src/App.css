@@ -5,17 +5,31 @@
   padding: 0;
 }
 
+svg {
+  width: -webkit-fill-available;
+  margin: 3rem 0;
+}
+
 p {
-  font-size: 17px;
+  font-size: 19px;
   font-family: system-ui;
   line-height: 25px;
-  font-weight: 300;
+  font-weight: 400;
   color: #363431;
 }
 
 .center {
-  /* display: flex; */
   height: 90vh;
   align-items: center;
   justify-content: start;
+}
+
+button {
+  padding: 5px 29px;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: burlywood;
 }

@@ -1,0 +1,59 @@
+.quotes{
+    display: flex;
+    margin: 3rem 0;
+}
+
+.quotes-text {
+    background-color: #bed3e0;
+    padding: 2rem;
+    height: 32rem;
+}
+
+.quotes-text .quote {
+    font-size: 34px;
+    font-family: monospace;
+    font-weight: 400;
+    color: #363431;
+    line-height: 35px;
+}
+.quotes-text .author {
+    display: flex;
+    margin: 2rem 0 0 0;
+}
+.author svg {
+    width: 2rem;
+    margin: 0;
+}
+
+.quotes-img img {
+    height: 32rem;
+    width: 38rem;
+}
+
+.numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.numbers .big-number {
+    font-size: 90px;
+    line-height: 100px;
+    font-family: monospace;
+    width: 70%;
+    margin: 1rem 0;
+}
+
+.donate-line {
+    display: flex;
+    margin: 3rem 0;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.donate-line button {
+    padding: 16px;
+}
+.donate-text {
+    width: 29%;
+}
