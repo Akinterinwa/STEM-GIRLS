@@ -77,18 +77,19 @@
     /* CSS rules for extra small devices (phones) */
     .focus {
         display: grid;
+        margin: 3rem 0;
     }
     .icon svg {
         width: 50px;
     }
     .focus-container {
-        margin: 0 15px;
+        margin: 0 25px;
     }
     .focus-container p {
         font-size: 18px;
     }
     .location h1 {
-        font-size: 14px;
+        font-size: 15px;
     }
     .location h1 span.color {
         font-size: 14px;

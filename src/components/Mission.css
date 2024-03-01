@@ -184,7 +184,7 @@
             padding: 1rem 1px;
         }
         .destination .intro h2 {
-            font-size: 20px;
+            font-size: 24px;
             padding: 0 ;
         }
         .destination .intro h5 {
@@ -197,11 +197,11 @@
             font-size: 21px;
         }
         .about {
-            padding: 3rem 20px;
+            padding: 2rem 7px;
         }
         .about-img img {
             height: 17rem;
-            width: 16rem;
+            width: 19rem;
         }
         .about-text {
             width: 100%;
@@ -228,7 +228,7 @@
             width: 100%;
         }
         .des-text p {
-            font-size: 14px;
+            font-size: 17px;
             line-height: 22px;
         }
         .des-text h2 {
@@ -243,11 +243,11 @@
       }
       .background-text p {
         max-width: 100%;
-        font-size: 18px;
+        font-size: 21px;
         text-align: left;
       }
       .background-img img {
-        height: 10rem;
-        width: 17rem;
+        height: 11rem;
+        width: 18rem;
       }
     }

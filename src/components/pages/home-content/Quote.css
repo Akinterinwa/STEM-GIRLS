@@ -115,32 +115,33 @@
     /* CSS rules for extra small devices (phones) */
     .quotes{
         display: grid;
-        padding: 0 15px;
+        padding: 10px 15px 0 15px;
+        background-color: beige;
     }
     .quotes-text .quote {
-        font-size: 14px;
-        line-height: 21px;
-        /* padding: 0 15px; */
+        font-size: 16px;
+        line-height: 25px;
     }
     .quotes-text .author p {
         font-size: 15px;
     }
     .quotes-img img {
-        height: 16rem;
-        width: 17rem;    
+        height: 17rem;
+        width: 18rem;    
     }
     .quotes-text {
         background-color: transparent;
         padding: 0;
-        height: auto;
+        height: auto; 
     }
     .numbers {
         padding: 0 15px;
     }
     .numbers .big-number {
-        font-size: 18px;
+        font-size: 34px;
         width: 100%;
-        line-height: 25px;
+        line-height: 34px;
+        margin: 0 0 1rem 0;
     }
     .donate-line {
         display: inline;

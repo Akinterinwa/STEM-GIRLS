@@ -1,5 +1,6 @@
 import React from 'react';
 import './Focus.css';
+import Svg from './Svg';
 
 
 const Focus = () => {
@@ -36,6 +37,8 @@ const Focus = () => {
             <h1>To see our list of current workshop locations, <span className='color'>click here.</span></h1>
             <h1>Interested in starting a STEM Like a Girl site in your community?  <span className='color'>click here </span> to learn how!</h1>
         </div>
+
+        <Svg />
     </>
   )
 }
