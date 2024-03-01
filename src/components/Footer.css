@@ -147,7 +147,7 @@
 @media (min-width: 768px) and (max-width: 992px) {
     /* CSS rules for medium devices (laptops) */
 }
-@media (max-width: 576px) { 
+@media (max-width: 767px) { 
     /* CSS rules for extra small devices (phones) */
     .footer-subscription-heading {
         font-size: 16px;

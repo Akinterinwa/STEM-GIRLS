@@ -82,19 +82,20 @@
     width: 50%;
   }
 }
-
-@media (min-width: 768px) and (max-width: 992px) {
-    /* CSS rules for medium devices (laptops) */
+@media (min-width: 768px) and (max-width: 1400px) {
     .quotes {
         display: grid;
     }
+     
     .quotes-text {
         background-color: transparent;
+        height: 18rem;
     }
-    .quotes-img img {
-        /* height: 25rem;
-        width: 32rem; */
+}
 
+@media (min-width: 768px) and (max-width: 992px) {
+    /* CSS rules for medium devices (laptops) */
+    .quotes-img img {
         height: 20rem;
         width: 28rem;
     }
@@ -111,7 +112,7 @@
       }
 }
 
-@media (max-width: 576px) { 
+@media (max-width: 767px) { 
     /* CSS rules for extra small devices (phones) */
     .quotes{
         display: grid;

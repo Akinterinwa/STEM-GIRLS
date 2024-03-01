@@ -178,7 +178,7 @@
 
     }
 
-    @media (max-width: 576px) { 
+    @media (max-width: 767px) { 
         /* CSS rules for extra small devices (phones) */
         .destination {
             padding: 1rem 1px;

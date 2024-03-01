@@ -7,7 +7,7 @@ video {
 }
 
 .hero-container {
-    /* background: url('../../images/image1.jpg') center center/cover no-repeat ; */
+    background: url('../../images/image1.jpg') center center/cover no-repeat ;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -38,7 +38,7 @@ video {
 }
 
 
-@media (max-width: 576px) { 
+@media (max-width: 767px) { 
     /* CSS rules for extra small devices (phones) */ 
     .hero-container .content > h1 {
         font-size: 22px;

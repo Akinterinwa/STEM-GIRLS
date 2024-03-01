@@ -4,6 +4,7 @@ import MissionImg from "../images/image1.jpg";
 import MissionData from "../data/MissionData";
 import Quote from "./pages/home-content/Quote";
 import Focus from "./pages/home-content/Focus";
+import Card from "./pages/home-content/Card";
 
 const Mission = () => {
     return (
@@ -58,8 +59,8 @@ const Mission = () => {
                     img2={MissionImg}
                 />
             </div>
+            <Card />
             <div className="background">      
-
                 <div className="background-text">
                     <h2>BECOME STEM LIKE A GIRL PARTNER</h2>
                     <p>
