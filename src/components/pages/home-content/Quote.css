@@ -120,8 +120,9 @@
         background-color: beige;
     }
     .quotes-text .quote {
-        font-size: 16px;
-        line-height: 25px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 33px;
     }
     .quotes-text .author p {
         font-size: 15px;

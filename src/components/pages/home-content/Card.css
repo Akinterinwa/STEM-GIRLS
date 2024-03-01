@@ -1,3 +1,21 @@
+.heading {
+    text-align: center;
+    margin: 4rem 2rem;
+}
+
+.heading h1 {
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 60px;
+}
+
+.heading p {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 32px;
+    margin: 0 8rem;
+}
+
 .card-component {
     /* background-color: white; */
     margin: 3rem 0;
@@ -65,7 +83,30 @@
 
 @media (max-width: 550px) { 
     /* CSS rules for extra small devices (phones) */
+    .heading h1 {
+    font-size: 29px;
+    line-height: 57px;
+    }
+    .heading p {
+        font-size: 19px;
+        line-height: 27px;
+        margin: 0px 1rem;    
+    }
     .card {
         display: contents;
+    }
+    .card-component {
+        gap: 0;
+    }
+    .card-description {
+        padding: 0 10px 24px 10px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .explore {
+        height: 50vh;
+    }
+    .explore-content {
+        padding: 0;
     }
 }

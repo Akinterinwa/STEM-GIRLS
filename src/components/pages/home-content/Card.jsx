@@ -5,6 +5,10 @@ import CardImg from '../../../images/image1.jpg';
 const Card = () => {
     return (
         <>
+        <div className="heading">
+            <h1>What The Research Says</h1>
+            <p>Although there has been significant advancement in educating and promoting STEM activities for girls, women still hold only 24% of STEM jobs in the U.S.</p>
+        </div>
         <div className="card-component">
             <div className="card">
                 <img className="card-image" src={CardImg} alt='image' />
