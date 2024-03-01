@@ -13,7 +13,7 @@ const Focus = () => {
                 </div>
                 <div className="h2">Our Mission</div>
                 <p>We believe in the combined power of girls, parents, and mentors to build confidence in young girls and shape their future in STEM fields</p>
-                <button>visit</button>
+                <p className="read">Read More <svg viewBox="0 0 74 17" width="74px" height="17px"><path d="M20.7.3l-1.3 1.3 6.7 6H0v1.8h26.1l-6.7 6 1.3 1.3 9.4-8.2z" fill="rgba(13, 156, 144, 1)"></path></svg></p>
             </div>
             <div className="focus-container">
                 <div className="icon">
@@ -21,7 +21,7 @@ const Focus = () => {
                 </div>
                 <div className="h2">Our Mission</div>
                 <p>We believe in the combined power of girls, parents, and mentors to build confidence in young girls and shape their future in STEM fields</p>
-                <button>visit</button>
+                <p className="read">Read More <svg viewBox="0 0 74 17" width="74px" height="17px"><path d="M20.7.3l-1.3 1.3 6.7 6H0v1.8h26.1l-6.7 6 1.3 1.3 9.4-8.2z" fill="rgba(13, 156, 144, 1)"></path></svg></p>
             </div>
             <div className="focus-container">
                 <div className="icon">
@@ -29,7 +29,7 @@ const Focus = () => {
                 </div>
                 <div className="h2">Our Mission</div>
                 <p>We believe in the combined power of girls, parents, and mentors to build confidence in young girls and shape their future in STEM fields</p>
-                <button>visit</button>
+                <p className="read">Read More <svg viewBox="0 0 74 17" width="74px" height="17px"><path d="M20.7.3l-1.3 1.3 6.7 6H0v1.8h26.1l-6.7 6 1.3 1.3 9.4-8.2z" fill="rgba(13, 156, 144, 1)"></path></svg></p>
             </div>
         </div>
 

@@ -30,7 +30,6 @@
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 70vw;
@@ -83,12 +82,13 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 90vh;
+        height: 88vh;
         position: absolute;
-        top: 80px;
+        top: 55px;
         left: -100%;
         opacity: 1;
         transition: all 0.5s ease;
+        padding-bottom: 2rem;
     }
 
     .nav-menu.active {

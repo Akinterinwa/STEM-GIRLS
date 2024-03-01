@@ -10,6 +10,7 @@ const Mission = () => {
     return (
         <>
             <div className="destination">
+                <div className="gradient">
                 <div className="intro">
                     <h2>
                         Our mission is to excite and empower girls with knowledge and
@@ -23,6 +24,7 @@ const Mission = () => {
                 </div>
 
                 <Focus />
+                </div>
 
                 <div className="about">
                     <div className="about-img">

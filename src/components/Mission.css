@@ -1,6 +1,14 @@
-.destination {
+/* .destination {
     padding: 4rem 8rem;
     background: url(../images/block-bg-1.jpg);
+    background-image: linear-gradient(90deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
+} */
+
+.gradient {
+    padding: 4rem 8rem;
+    background: url(../images/block-bg-1.jpg);
+    background-image: linear-gradient(90deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
+    background-image: conic-gradient(from 45deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
 }
 
 .section-head {
@@ -15,9 +23,8 @@
 .destination .intro h2 {
     font-size: 40px;
     text-align: center;
-    font-family: math;  
     padding: 0 8rem;
-    
+
 }
 
 .destination .intro h5 {
@@ -25,7 +32,6 @@
     margin: 10px 0;
     font-size: 30px;
     color: #999;
-    font-family: system-ui;
 }
 
 /* mission */
@@ -42,19 +48,22 @@
     height: 20rem;
     width: 30rem;
 }
+
 .about-text {
     width: 70%;
 }
+
 .about-text h2 {
     font-size: 1.8rem;
     text-transform: uppercase;
 }
+
 .about-text p {
     font-size: 25px;
     line-height: normal;
-    font-family: math;
     margin: 1.5rem 0;
 }
+
 /* end about */
 
 /* start background */
@@ -65,30 +74,33 @@
     gap: 1.5rem;
     padding: 4rem 10rem;
 }
+
 .background-img {
     flex: 1 1 17rem;
 }
+
 .background-img img {
     height: 22rem;
 }
+
 .background-text {
     flex: 1 1 17rem;
 }
+
 .background-text h2 {
     color: var(#242424);
     text-transform: uppercase;
     font-size: 47px;
     font-weight: 900;
-    font-family: monospace;
 }
+
 .background-text p {
-    margin: 0.5rem  0 1rem;
+    margin: 0.5rem 0 1rem;
     text-align: justify;
     margin-top: 30px;
     font-size: 24px;
     font-weight: 400;
     max-width: 74%;
-    font-family: math;
     line-height: 1.8rem;
 }
 
@@ -132,122 +144,147 @@
     right: 0;
 }
 
- .footer-links {
-        padding-top: 2rem;
-    }
-    
-    .footer-input {
-        width: 100%;
+.footer-links {
+    padding-top: 2rem;
+}
+
+.footer-input {
+    width: 100%;
+}
+
+.btn {
+    width: 100%;
+}
+
+.footer-link-wrapper {
+    flex-direction: column;
+}
+
+.social-media-wrap {
+    flex-direction: column;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    /* CSS rules for large devices (desktops) */
+    .about {
+        display: flex;
     }
 
-    .btn {
-        width: 100%;
-    }
-
-    .footer-link-wrapper {
-        flex-direction: column;
-    }
-
-    .social-media-wrap {
-        flex-direction: column;
-    }
-
-    @media (min-width: 992px) and (max-width: 1200px) {
-        /* CSS rules for large devices (desktops) */
-        .about {
-            display: flex;
-        }
-      .destination .first-des .image {
+    .destination .first-des .image {
         width: 70%;
-      }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    /* CSS rules for medium devices (laptops) */
+    .first-des {
+        flex-direction: column-reverse;
     }
 
-    @media (min-width: 768px) and (max-width: 992px) {
-        /* CSS rules for medium devices (laptops) */
-        .first-des {
-            flex-direction: column-reverse;
-        }
-        .first-des .des-text, .first-des .image {
-            width: 100%;
-        }
-
-        .destination .intro h2 {
-            font-size: 30px;
-            padding: 0 ;
-        }
-
+    .first-des .des-text,
+    .first-des .image {
+        width: 100%;
     }
 
-    @media (max-width: 767px) { 
-        /* CSS rules for extra small devices (phones) */
-        .destination {
-            padding: 1rem 1px;
-        }
-        .destination .intro h2 {
-            font-size: 24px;
-            padding: 0 ;
-        }
-        .destination .intro h5 {
-            font-size: 22px;
-        }
-        .destination .section-head {
-            margin: 0;
-        }
-        .destination .section-head h1 {
-            font-size: 21px;
-        }
-        .about {
-            padding: 2rem 7px;
-        }
-        .about-img img {
-            height: 17rem;
-            width: 19rem;
-        }
-        .about-text {
-            width: 100%;
-        }
-        .about-text h2 {
-            font-size: 1.2rem;
-        }
-        .about-text p {
-            font-size: 18px;
-        }
-        .first-des {
-            flex-direction: column-reverse;
-            padding: 0 10px;
-        }
-        .first-des .image {
-            width: 100%;
-            display: block;
-        }
-        .first-des .image img {
-            width: 49%;
-            height: 200px;
-        }
-        .des-text {
-            width: 100%;
-        }
-        .des-text p {
-            font-size: 17px;
-            line-height: 22px;
-        }
-        .des-text h2 {
-            font-size: 17px;
-        }
-        .background {
-            padding: 2rem 27px;
-        }
-      .background-text h2 {
+    .destination .intro h2 {
+        font-size: 30px;
+        padding: 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* CSS rules for extra small devices (phones) */
+
+    .destination .intro h2 {
+        font-size: 24px;
+        line-height: 39px;
+        font-weight: 700;
+        color: rgb(60, 72, 88);
+        padding: 0;
+    }
+
+    .destination .intro h5 {
+        font-size: 22px;
+    }
+
+    .destination .section-head {
+        margin: 0;
+    }
+
+    .destination .section-head h1 {
+        font-size: 21px;
+    }
+
+    .about {
+        padding: 2rem 7px;
+    }
+
+    .about-img img {
+        height: 17rem;
+        width: 19rem;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .about-text p {
+        font-size: 18px;
+    }
+
+    .first-des {
+        flex-direction: column-reverse;
+        padding: 0 10px;
+    }
+
+    .first-des .image {
+        width: 100%;
+        display: block;
+    }
+
+    .first-des .image img {
+        width: 49%;
+        height: 200px;
+    }
+
+    .des-text {
+        width: 100%;
+    }
+
+    .des-text p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .des-text h2 {
+        font-size: 17px;
+    }
+
+    .background {
+        padding: 2rem 27px;
+    }
+
+    .background-text h2 {
         font-weight: normal;
         font-size: 19px;
-      }
-      .background-text p {
+    }
+
+    .background-text p {
         max-width: 100%;
         font-size: 21px;
         text-align: left;
-      }
-      .background-img img {
+    }
+
+    .background-img img {
         height: 11rem;
         width: 18rem;
-      }
     }
+}

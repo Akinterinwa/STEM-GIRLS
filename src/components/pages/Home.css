@@ -24,15 +24,15 @@ video {
 }
 
 .hero-container .content > h1 {
-    font-size: 60px;
-    font-weight: revert;
-    color: white;
+    font-weight: 900;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
 }
 
 .hero-container .content > p {
-    font-size: xx-large;
-    font-weight: bold;
-    color: white;
+    font-weight: 900;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
     max-width: 18cm;
     text-align: center;
 }
@@ -41,9 +41,9 @@ video {
 @media (max-width: 767px) { 
     /* CSS rules for extra small devices (phones) */ 
     .hero-container .content > h1 {
-        font-size: 22px;
+        font-size: 36px;
     }
     .hero-container .content > p {
-        font-size: 18px;
+        font-size: 31px;
     } 
 }
