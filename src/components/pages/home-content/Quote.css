@@ -58,6 +58,14 @@
     width: 29%;
 }
 
+@media (min-width: 1210px) and (max-width: 1600px) {
+    .numbers .big-number {
+        font-size: 61px;
+        line-height: 68px;
+        width: 42%;
+    }
+}
+
 
 @media (min-width: 992px) and (max-width: 1200px) {
     /* CSS rules for large devices (desktops) */
@@ -116,8 +124,11 @@
     /* CSS rules for extra small devices (phones) */
     .quotes{
         display: grid;
-        padding: 10px 15px 0 15px;
-        background-color: beige;
+        padding: 3rem 1rem;
+        background-color: #dbf5f2;
+    }
+    .quote .quotes-img {
+        padding: 0 3rem;
     }
     .quotes-text .quote {
         font-size: 24px;

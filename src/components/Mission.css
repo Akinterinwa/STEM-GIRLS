@@ -5,10 +5,13 @@
 } */
 
 .gradient {
-    padding: 4rem 0;
+    padding: 4rem 1rem 0 1rem;
     background: url(../images/block-bg-1.jpg);
     background-image: linear-gradient(90deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
     background-image: conic-gradient(from 45deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
+}
+.home-content-section {
+    background-image: linear-gradient(90deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
 }
 
 .section-head {
@@ -70,7 +73,7 @@
 .background {
     display: flex;
     flex-wrap: wrap;
-    background: #ebdbc8;
+    background: #669a9ab3;
     gap: 1.5rem;
     padding: 4rem 10rem;
 }
@@ -109,7 +112,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 4.5rem;
-    margin-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .des-text {
@@ -219,7 +222,7 @@
     }
 
     .about {
-        padding: 2rem 7px;
+        padding: 3rem 7px 7px 7px;
     }
 
     .about-img img {
@@ -241,7 +244,7 @@
 
     .first-des {
         flex-direction: column-reverse;
-        padding: 0 10px;
+        padding: 0 10px 20px 10px;
     }
 
     .first-des .image {

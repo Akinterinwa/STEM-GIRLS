@@ -4,7 +4,7 @@ import CardImg from '../../../images/image1.jpg';
 
 const Card = () => {
     return (
-        <>
+        <div className="card-background">
         <div className="heading">
             <h1>What The Research Says</h1>
             <p>Although there has been significant advancement in educating and promoting STEM activities for girls, women still hold only 24% of STEM jobs in the U.S.</p>
@@ -30,11 +30,11 @@ const Card = () => {
         <div className="explore">
             <div className="explore-content">
             <h1>EXPLORE</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis earum beatae praesentium ipsum. Dolor, delectus quam corporis </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis earum </p>
             <button>Learn More</button>
             </div>
         </div>
-        </>
+        </div>
     );
 };
 

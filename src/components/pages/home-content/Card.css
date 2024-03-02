@@ -1,3 +1,6 @@
+/* .card-background {
+    background-image: linear-gradient(90deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
+} */
 .heading {
     text-align: center;
     margin: 4rem 2rem;
@@ -44,7 +47,7 @@
 }
 
 .card-description {
-    padding: 20px;
+    padding: 0;
     margin: 0;
 }
 
@@ -74,6 +77,13 @@
     text-align: center;
 }
 
+@media (min-width: 1110px) and (max-width: 1900px) {
+    /* CSS rules for medium devices (laptops) */
+    .card {
+        gap: 10px;
+    }
+}
+
 @media (min-width: 551px) and (max-width: 1100px) {
     /* CSS rules for medium devices (laptops) */
     .card {
@@ -99,14 +109,15 @@
         gap: 0;
     }
     .card-description {
-        padding: 0 10px 24px 10px;
+        padding: 0 20px 24px 20px;
         font-size: 20px;
         line-height: 25px;
+        text-align: center;
     }
     .explore {
         height: 50vh;
     }
     .explore-content {
-        padding: 0;
+        padding: 2rem 0 0 0;
     }
 }

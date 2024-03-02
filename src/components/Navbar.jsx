@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Dropdown from './Dropdown';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import LogoImg from '../images/png white.png';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -30,7 +31,7 @@ const Navbar = () => {
     }
 
     const changeBackground = () => {
-        if(window.scrollY >= 300) {
+        if(window.scrollY >= 470) {
             setNavbar(true)
         } else {
             setNavbar(false)
@@ -42,7 +43,7 @@ const Navbar = () => {
     <>
     <nav className={navbar ? 'navbar active' : 'navbar'}> 
         <Link to='/' className='navbar-logo'>
-            STEM
+            <img src={LogoImg} alt="logo" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
