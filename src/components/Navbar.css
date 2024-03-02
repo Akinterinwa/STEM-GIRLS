@@ -53,15 +53,16 @@ background: linear-gradient(90deg, rgba(144,125,25,0.9220938375350141) 4%, rgba(
 }
 
 .nav-links {
-    /* color: rgb(10,56,77); */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: normal;
     color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
 }
 
 .nav-links:hover {
-    background-color: rgba(192, 29, 192, 0.327);
-    border-radius: 4px;
+    background-color: #43d6b9;
     transition: all 0.2s ease-out;
 }
 
@@ -123,7 +124,7 @@ background: linear-gradient(90deg, rgba(144,125,25,0.9220938375350141) 4%, rgba(
     }
 
     .navbar-logo img {
-        width: 6rem;
+        width: 8rem;
     }
 
     .menu-icon {

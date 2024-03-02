@@ -90,7 +90,12 @@
     width: 50%;
   }
 }
-@media (min-width: 768px) and (max-width: 1400px) {
+@media (min-width: 676px) and (max-width: 1040px) {
+    .quotes {
+        gap: 50px;
+    }
+}
+@media (min-width: 767px) and (max-width: 1400px) {
     .quotes {
         display: grid;
     }
@@ -101,7 +106,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
     /* CSS rules for medium devices (laptops) */
     .quotes-img img {
         height: 20rem;

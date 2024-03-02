@@ -130,6 +130,9 @@
     align-self: center;
     margin-bottom: 16px;
 }
+.social-logo img {
+    width: 10rem;
+}
 
 .website-rights {
     color: #fff;
@@ -154,4 +157,8 @@
         width: 100%;
         font-size: 16px;
     }
+    .social-logo img {
+        width: 8rem;
+    }
+    
 }

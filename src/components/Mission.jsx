@@ -40,7 +40,7 @@ const Mission = () => {
                                 debitis quibusdam a vero quasi odio facilis, cum facere!
                                 Excepturi, dolorem!
                             </p>
-                            <button>Learn More</button>
+                            <button className="btn-1">Learn More</button>
                         </div>
                     </div>
 
@@ -68,7 +68,7 @@ const Mission = () => {
                         <p>
                             Every year, major companies and philanthropic foundations sponsor our Programs. Most partners host interactive events and mentorship, offering students a truly immersive experience.
                         </p>
-                        <button>Learn More</button>
+                        <button className="btn-1">Learn More</button>
                     </div>
 
                     <div className="background-img">

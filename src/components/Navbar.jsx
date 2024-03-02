@@ -80,7 +80,7 @@ const Navbar = () => {
                 </Link>
             </li>
         </ul>
-        <button className='nav-button'>DONATE</button>
+        <button className='btn-1'>DONATE</button>
     </nav>
     </>
   )

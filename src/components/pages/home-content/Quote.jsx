@@ -30,7 +30,7 @@ const Quote = () => {
 
             <div className="donate-line">
                 <p className='donate-text'>The gender gap in tech has been getting worse, but Girls Who Code is changing that. Our alumni go on to major in Computer Science at 7X the national average.</p>
-                <button>DONATE NOW</button>
+                <button className='btn-1'>DONATE NOW</button>
             </div>
             <Svg />
     </>

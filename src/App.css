@@ -24,12 +24,52 @@ p {
   justify-content: start;
 }
 
-button {
+/* button {
   padding: 5px 29px;
   margin: 10px;
+} */
+
+.btn-1 {
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: black;
+  border-radius: 4px;
+  transition: ease-out 0.3s;
+  font-size: 2rem;
+  outline: none;
+  border-color: 3px solid #43d6b9;
+  position: relative;
+  z-index: 1;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: normal;
 }
 
-button:hover {
+.btn-1:hover {
+  color: white;
+  cursor: pointer;
+}
+.btn-1::before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #008080;
+}
+.btn-1:hover:before{
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* button:hover {
   cursor: pointer;
   color: burlywood;
-}
+} */

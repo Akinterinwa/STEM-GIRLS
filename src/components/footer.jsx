@@ -2,6 +2,7 @@ import React from 'react'
 import Button from './Button';
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import LogoImg from '../images/png white.png';
 
 const Footer = () => {
     return (
@@ -16,7 +17,7 @@ const Footer = () => {
                 <div className="input-areas">
                     <form>
                         <input type="email" name='email' placeholder='Your email' className="footer-input" />
-                        <button>Subscribe</button>
+                        <button className='btn-1'>Subscribe</button>
                     </form>
                 </div>
             </section>
@@ -24,10 +25,10 @@ const Footer = () => {
                 <div className="social-media-wrap">
                     <div className="footer-logo">
                         <Link to='/' className='social-logo'>
-                            STEM <i className="fab fa-typo3"></i>
+                            <img src={LogoImg} alt="logo" />
                         </Link>
                     </div>
-                    <small className='website-rights'>STEM @ 2024</small>
+                    <small className='website-rights'>@2024 STEM LIKE A GIRL  | TERMS OF USE | PRIVACY POLICY</small>
                     <div className="social-icons">
                         <Link className='social-icon-link facebook'
                             to='/'

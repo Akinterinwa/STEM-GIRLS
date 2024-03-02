@@ -178,7 +178,7 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 767px) and (max-width: 992px) {
 
     /* CSS rules for medium devices (laptops) */
     .first-des {
@@ -193,6 +193,13 @@
     .destination .intro h2 {
         font-size: 30px;
         padding: 0;
+    }
+    .about-img img {
+        height: 18rem;
+        width: 24rem;
+    }
+    .about-text p {
+        font-size: 21px;
     }
 
 }
