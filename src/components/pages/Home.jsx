@@ -1,6 +1,5 @@
 import React from 'react';
 import HeroSection from '../HeroSection';
-import Footer from '../footer';
 import Mission from '../Mission';
 
 
@@ -9,7 +8,6 @@ const Home = () => {
     <>
      <HeroSection />
      <Mission />
-     <Footer />
     </>
   )
 }

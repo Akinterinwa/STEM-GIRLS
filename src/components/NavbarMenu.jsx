@@ -1,3 +1,4 @@
+// NavbarMenu.js
 import React, { useState } from 'react';
 import LogoImg from '../images/png white.png';
 import './NavbarMenu.css';
@@ -12,6 +13,12 @@ const NavbarMenu = () => {
         // Toggle the state between true and false
         setMenuOpen(!isMenuOpen);
     }
+
+    // Function to close the mobile menu
+    const closeMobileMenu = () => {
+        setMenuOpen(false); // Set isMenuOpen to false to close the menu
+    }
+
     return (
         <div className='Navbar-menu'>
             <div className="navbar-menu-container">
@@ -25,11 +32,11 @@ const NavbarMenu = () => {
                 </div>
                 <ul className='links-container hidden'>
                     <li>
-                        <Link to="/" className='navbar-link'>
+                        <Link to="/" className='navbar-link' onClick={closeMobileMenu}>
                             HOME
                         </Link>
                     </li>
-                    <NavbarMenuLink />
+                    <NavbarMenuLink onClick={closeMobileMenu} />
                 </ul>
                 <div className="hidden">
                     <button className="btn-1">DONATE</button>
@@ -41,11 +48,11 @@ const NavbarMenu = () => {
                     hidden-mobile
                 `}>
                     <li>
-                        <Link to="/" className='navbar-link'>
+                        <Link to="/" className='navbar-link' onClick={closeMobileMenu}>
                             Home
                         </Link>
                     </li>
-                    <NavbarMenuLink />
+                    <NavbarMenuLink onClick={closeMobileMenu} />
                     <div className="mobile-button">
                         <button className="btn-1">DONATE</button>
                     </div>
@@ -55,4 +62,4 @@ const NavbarMenu = () => {
     )
 }
 
-export default NavbarMenu
+export default NavbarMenu;

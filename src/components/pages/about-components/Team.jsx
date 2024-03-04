@@ -2,7 +2,11 @@ import React from 'react'
 
 const Team = () => {
   return (
-    <div>Team</div>
+    <>
+      <div className="team-hero">
+        <h1>Our Team</h1>
+      </div>
+    </>
   )
 }
 

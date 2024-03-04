@@ -5,6 +5,8 @@
 .heading {
     text-align: center;
     margin: 4rem 2rem;
+    max-width: 60rem;
+    margin: 3rem auto;
 }
 
 .heading h1 {
@@ -28,6 +30,8 @@
     gap: 40px;
     justify-content: center;
     flex-wrap: wrap;
+    max-width: 80rem;
+    margin: 3rem auto;
 }
 .card {
     border-radius: 8px;

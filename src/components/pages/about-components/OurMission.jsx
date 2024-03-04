@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../../footer';
 import './AboutComponent.css';
 import MissionImg from '../../../images/image1.jpg';
 
@@ -69,7 +68,6 @@ const OurMission = () => {
         </div>
       </div>
         </div>
-        <Footer />
     </>
   )
 }

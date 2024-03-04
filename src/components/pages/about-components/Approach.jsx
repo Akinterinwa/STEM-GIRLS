@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
 const Approach = () => {
   return (
-    <div>Approach</div>
+    <>
+    <div className="approach-hero">
+      <h1>Our Approach</h1>
+    </div>
+    </>
   )
 }
 

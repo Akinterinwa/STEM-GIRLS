@@ -5,6 +5,8 @@
     align-items: center;
     gap: 3rem;
     margin: 6rem 0;
+    max-width: 80rem;
+    margin: 0 auto;
 }
 
 .read {
@@ -58,6 +60,8 @@
 
 .location {
     text-align: center;
+    max-width: 60rem;
+    margin: 0 auto;
 }
 .location h1 {
     font-size: xx-large;

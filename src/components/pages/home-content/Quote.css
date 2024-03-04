@@ -1,6 +1,8 @@
 .quotes{
     display: flex;
     margin: 3rem 0;
+    max-width: 76rem;
+    margin: 0 auto;
 }
 
 .quotes-text {
