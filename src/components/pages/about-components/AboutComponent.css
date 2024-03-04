@@ -1,0 +1,108 @@
+.mission {
+    max-width: 58rem;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+.mission .heading {
+    margin: 4rem 2rem 1rem 2rem;
+}
+.mission .heading h4 {
+    font-size: 27px;
+    line-height: 31px;
+    font-weight: 300;
+}
+.mission-container {
+    min-height: 100%; 
+}
+
+.mission-hero {
+    background-color: bisque;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.mission-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.mission .next-page {
+    margin: 1rem;
+    padding: 3px 36px;
+}
+.mission .next-page:hover {
+    background-color: #e6e9e9;
+}
+.mission-content .flexed-content .under {
+    color: rgb(60, 72, 88);
+    padding-bottom: 15px;
+}
+ span {
+    font-weight: 900;
+    font-size: 25px;
+     color: #566565;
+}
+.mission-content-1 {
+    padding: 2rem 0;
+}
+.mission-content-1 p {
+    padding: 6px 0;
+}
+.mission-content-1 h3 {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 1rem;
+}
+
+.mission-content img {
+    width: 300px;
+    height: 20rem;
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* CSS rules for large devices (desktops) */
+
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    /* CSS rules for medium devices (laptops) */
+    .mission {
+        max-width: 45rem;
+    }
+
+}
+
+@media  (min-width: 500px) and (max-width: 767px) { 
+    /* CSS rules for extra small devices (phones) */
+    .mission-content {
+        gap: 10px;
+    }
+    .mission-content img {
+        width: 282px;
+        height: 16rem;
+    }
+}
+
+@media (max-width: 499px) {
+    .mission-content{
+        display: grid;
+        padding: 0 10px;    
+    }
+    .mission-content-1 p {
+        padding: 6px 10px;
+    }
+    .mission p {
+        padding: 0 10px;
+    }
+    .mission-content img {
+        width: 300px;
+        height: 17rem;
+    }
+}

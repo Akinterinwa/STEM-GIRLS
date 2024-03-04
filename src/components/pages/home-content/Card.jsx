@@ -11,19 +11,19 @@ const Card = () => {
         </div>
         <div className="card-component">
             <div className="card">
-                <img className="card-image" src={CardImg} alt='image' />
+                <img className="card-image" src={CardImg} alt='card' />
                 <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
             </div>
             <div className="card">
-                <img className="card-image" src={CardImg} alt='image' />
+                <img className="card-image" src={CardImg} alt='card' />
                 <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
             </div>
             <div className="card">
-                <img className="card-image" src={CardImg} alt='image' />
+                <img className="card-image" src={CardImg} alt='card' />
                 <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
             </div>
             <div className="card">
-                <img className="card-image" src={CardImg} alt='image' />
+                <img className="card-image" src={CardImg} alt='card' />
                 <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
             </div>
         </div>

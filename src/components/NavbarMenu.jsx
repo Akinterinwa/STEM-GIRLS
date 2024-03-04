@@ -47,7 +47,7 @@ const NavbarMenu = () => {
                     </li>
                     <NavbarMenuLink />
                     <div className="mobile-button">
-                        <button className="btn-1">Get Started</button>
+                        <button className="btn-1">DONATE</button>
                     </div>
                 </ul>
             </div>
