@@ -227,11 +227,14 @@
     }
 
     .destination .section-head h1 {
-        font-size: 21px;
+        font-size: 36px;
+        line-height: 32px;
+        font-weight: 900;
+        text-transform: uppercase;    
     }
 
     .about {
-        padding: 3rem 7px 7px 7px;
+        padding: 5rem 7px 7px 7px;
     }
 
     .about-img img {

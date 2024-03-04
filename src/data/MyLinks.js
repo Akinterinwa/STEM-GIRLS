@@ -4,35 +4,13 @@ export const links = [
         submenu: true, 
         sublinks: [
             {
-                Head: 'Topwaer',
+                Head: 'What We Do',
                 sublink: [
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
+                    { name: 'Our Mission', link: "/mission" },
+                    { name: 'Our Approach', link: "/about" },
+                    { name: 'Our Team', link: "/" },
                 ]
             },
-            {
-                Head: 'Bottomwear',
-                sublink: [
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                ]
-            },
-            {
-                Head: 'sleepwaer',
-                sublink: [
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                    { name: 'T-shirt', link: "/" },
-                ]
-            }
         ]
     },
     { name: 'WORKSHOPS',
@@ -41,33 +19,11 @@ export const links = [
         {
             Head: 'Topwaer',
             sublink: [
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
+                { name: 'Upcoming Inspire STEM Girls Events', link: "/" },
+                { name: 'Map Of Current Locations', link: "/" },
+                { name: 'Start A New Inspire STEM Girls', link: "/" },
             ]
         },
-        {
-            Head: 'Bottomwear',
-            sublink: [
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-            ]
-        },
-        {
-            Head: 'sleepwaer',
-            sublink: [
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-            ]
-        }
     ] },
     { name: 'CONNECT',
     submenu: true, 
@@ -75,32 +31,10 @@ export const links = [
         {
             Head: 'Topwaer',
             sublink: [
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
+                { name: 'Volunteer', link: "/" },
+                { name: 'Sponsors And Partners', link: "/" },
+                { name: 'Contact Us', link: "/" },
             ]
         },
-        {
-            Head: 'Bottomwear',
-            sublink: [
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-            ]
-        },
-        {
-            Head: 'sleepwaer',
-            sublink: [
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-                { name: 'T-shirt', link: "/" },
-            ]
-        }
     ] },
 ]

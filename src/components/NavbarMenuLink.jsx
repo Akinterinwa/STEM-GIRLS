@@ -5,7 +5,6 @@ import { links } from '../data/MyLinks';
 
 const NavbarMenuLink = () => {
     const [heading, setHeading] = useState("");
-    const [subHeading, setSubHeading] = useState("");
     return (
         <>
             {
@@ -13,7 +12,7 @@ const NavbarMenuLink = () => {
                     <div className='line'>
                         <div className='navbar-menu-heading'>
                             <h4 className='navbar-menu-heading-text' onClick={()=> { heading !== link.name ? 
-                             setHeading(link.name) : setHeading('');  setSubHeading("");
+                             setHeading(link.name) : setHeading('');
                              }}>
                                 {link.name}
                                 <span className='arrowdown'>
@@ -30,7 +29,7 @@ const NavbarMenuLink = () => {
                                         {
                                             link.sublinks.map((mysublinks)=>(
                                                 <div>
-                                                    <h2>{mysublinks.Head}</h2>
+                                                    <h5 className='mysublinks-head'>{mysublinks.Head}</h5>
                                                     {mysublinks.sublink.map(slink=>(
                                                         <li  className='dropdownmenu-head'>
                                                             <Link to={slink.link} className='dropdownmenu-link'>{slink.name}</Link>
@@ -54,12 +53,8 @@ const NavbarMenuLink = () => {
                                         link.sublinks.map((slinks) => (
                                             <div className="">
                                                 <div className="">
-                                                    <h3 onClick={() =>
-                                                    subHeading !== slinks.Head ? setSubHeading(slinks.Head) : setSubHeading("")
-                                                } className='mobilemenu-head'>{slinks.Head}</h3>
-                                                    <div className={`${
-                                                        subHeading === slinks.Head ? "hidden-mobile" : "hidden"
-                                                    }`}>
+                                                    <h3 className='mobilemenu-head'>{slinks.Head}</h3>
+                                                    <div>
                                                         {slinks.sublink.map(slink=>(
                                                             <li className='mobilemenu-insidelink'>
                                                                 <Link to={slink.link}>
