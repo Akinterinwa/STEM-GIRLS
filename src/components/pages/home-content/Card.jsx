@@ -31,7 +31,7 @@ const Card = () => {
             <div className="explore-content">
             <h1>EXPLORE</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis earum </p>
-            <button className="btn-1">Learn More</button>
+            <button className="btn-1 btn-color">Learn More</button>
             </div>
         </div>
         </div>

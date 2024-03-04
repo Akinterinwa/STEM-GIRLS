@@ -1,15 +1,17 @@
-/* .card-background {
-    background-image: linear-gradient(90deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
-} */
+
+.btn-color {
+    color: white !important;
+}
 .heading {
     text-align: center;
     margin: 4rem 2rem;
 }
 
 .heading h1 {
-    font-weight: 700;
-    font-size: 37px;
-    line-height: 60px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .heading p {

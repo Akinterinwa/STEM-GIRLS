@@ -18,12 +18,16 @@
 }
 
 .footer-subscription > p {
+    
 }
 
 .footer-subscription-heading {
     margin-bottom: 24px;
-    font-size: 24px;
     color: white;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 900;
+    text-transform: uppercase;
 }
 
 .footer-subscription-text {

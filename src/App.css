@@ -10,6 +10,18 @@ svg {
   margin: 2rem 0 5px 0;
 }
 
+a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+
+/* Resetting default styles for <ul> elements */
+ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
 p {
   font-size: 24px;
   font-style: normal;

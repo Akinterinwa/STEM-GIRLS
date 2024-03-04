@@ -57,7 +57,9 @@
 }
 
 .about-text h2 {
-    font-size: 1.8rem;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 900;
     text-transform: uppercase;
 }
 

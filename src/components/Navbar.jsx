@@ -79,8 +79,8 @@ const Navbar = () => {
                     SIGN UP
                 </Link>
             </li>
+        <button className='btn-1 btn-color'>DONATE</button>
         </ul>
-        <button className='btn-1'>DONATE</button>
     </nav>
     </>
   )

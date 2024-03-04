@@ -8,11 +8,13 @@ import Consulting from './components/pages/Consulting';
 import Services from './components/pages/Services';
 import Home from './components/pages/Home';
 import About from './components/pages/About';
+import NavbarMenu from './components/NavbarMenu';
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarMenu />
       <Routes>
         <Route path='/' exact Component={Home} />
         <Route path='/services' exact Component={Services} />
