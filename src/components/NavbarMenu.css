@@ -43,6 +43,7 @@
 }
 .links-container li {
     padding-bottom: 12px;
+    list-style: none !important;
 }
 
 .navbar-menu-container .navbar-link {
