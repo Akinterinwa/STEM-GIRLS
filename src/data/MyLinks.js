@@ -31,9 +31,9 @@ export const links = [
         {
             Head: 'Topwaer',
             sublink: [
-                { name: 'Volunteer', link: "/" },
-                { name: 'Sponsors And Partners', link: "/" },
-                { name: 'Contact Us', link: "/" },
+                { name: 'Volunteer', link: "/volunteer" },
+                { name: 'Sponsors And Partners', link: "/sponsors" },
+                { name: 'Contact Us', link: "/contact" },
             ]
         },
     ] },

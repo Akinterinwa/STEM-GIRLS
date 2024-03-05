@@ -1,0 +1,8 @@
+.volunteer-hero, .contact-hero, .sponsors-hero {
+    background-color: bisque;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}

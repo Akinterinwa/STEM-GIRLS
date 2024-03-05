@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import ContactUs from './components/pages/ContactUs';
 import SignUp from './components/pages/SignUp';
 import Marketing from './components/pages/Marketing';
 import Consulting from './components/pages/Consulting';
@@ -14,6 +13,9 @@ import Footer from './components/footer';
 import Events from './components/pages/workshops-components/Events';
 import Location from './components/pages/workshops-components/Location';
 import StartNew from './components/pages/workshops-components/StartNew';
+import Volunteer from './components/pages/connect-component/Volunteer';
+import Sponsors from './components/pages/connect-component/Sponsors';
+import ContactUs from './components/pages/connect-component/ContactUs';
 
 function App() {
   return (
@@ -27,6 +29,11 @@ function App() {
         <Route path='/location' exact Component={Location} />
         <Route path='/start-new' exact Component={StartNew} />
         <Route path='/team' exact Component={Team} />
+        <Route path='/contact' exact Component={ContactUs} />
+        <Route path='/sponsors' exact Component={Sponsors} />
+        <Route path='/volunteer' exact Component={Volunteer} />
+
+
         <Route path='/services' exact Component={Services} />
         <Route path='/contact-us' exact Component={ContactUs} />
         <Route path='/sign-up' exact Component={SignUp} />
