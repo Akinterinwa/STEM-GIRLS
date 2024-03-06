@@ -145,6 +145,10 @@
     .quotes-text .author p {
         font-size: 15px;
     }
+    .quotes-img{
+        justify-content: center;
+        display: flex;
+    }
     .quotes-img img {
         height: 17rem;
         width: 18rem;    
@@ -175,6 +179,11 @@
     .donate-text {
         width: 100%;
         padding: 0 15px;
+    }
+    .donate-button {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
 
