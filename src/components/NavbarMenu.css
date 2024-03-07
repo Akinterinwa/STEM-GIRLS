@@ -150,6 +150,7 @@
 }
 
 .mobile-button {
+    color: white;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
 }
@@ -161,6 +162,7 @@
     padding-right: 0;
     padding-right: 1.25rem;
     font-weight: 600;
+    color: white;
 }
 
 .hide {
@@ -172,6 +174,7 @@
     padding-bottom: 0.75rem;
     padding-left: 3.5rem;
     font-weight: 600;
+    color: white;
 }
 
 .navbar-menu-heading {

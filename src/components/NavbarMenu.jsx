@@ -39,7 +39,9 @@ const NavbarMenu = () => {
                     <NavbarMenuLink onClick={closeMobileMenu} />
                 </ul>
                 <div className="hidden">
-                    <button className="btn-1">DONATE</button>
+                    <Link to="/donate">
+                        <button className="btn-1">DONATE</button>
+                    </Link>
                 </div>
                 {/* Mobile-nav */}
                 <ul className={`
@@ -54,7 +56,9 @@ const NavbarMenu = () => {
                     </li>
                     <NavbarMenuLink onClick={closeMobileMenu} />
                     <div className="mobile-button">
-                        <button className="btn-1">DONATE</button>
+                        <Link to="/donate">
+                            <button onClick={closeMobileMenu} className="btn-1">DONATE</button>
+                        </Link>
                     </div>
                 </ul>
             </div>

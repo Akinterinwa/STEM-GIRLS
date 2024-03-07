@@ -4,11 +4,11 @@ import emailjs from '@emailjs/browser';
 
 const ContactUs = () => {
     const [values, setValues] = useState({
-      fullName: '',
+      full_name: '',
       email:'',
       role:'',
       message:'',
-      phoneNumber:''
+      phone_number:''
     });
 
     const [status, setStatus] = useState('');
@@ -19,11 +19,11 @@ const ContactUs = () => {
       .then(response => {
         console.log('SUCCESS', response);
         setValues({
-          fullName:'',
+          full_name:'',
           email:'',
           role:'',
           message:'',
-          phoneNumber:''
+          phone_number:''
         });
         setStatus('SUCCESS');
       }, error => {
@@ -63,15 +63,15 @@ const ContactUs = () => {
             <div className="input-field">
               <div className="label-1">
                 <label className='input-fullname' htmlFor="">Full Name</label>
-                <input onChange={handleChange} className='fullname-text' type="text" required label="Full Name" placeholder='John Doe' />
+                <input onChange={handleChange} className='fullname-text' type="text" required label="Full Name" name='full_name' placeholder='John Doe' />
               </div>
               <div className="label-1">
                 <label className='input-fullname' htmlFor="">Email</label>
-                <input value={values.email} onChange={handleChange} className='fullname-text' type="email" label='E-Mail' name='email' required placeholder='john@example.com'/>
+                <input value={values.email} onChange={handleChange} className='fullname-text' label='E-Mail' name='email' required placeholder='john@example.com'/>
               </div>
               <div className="label-1">
                 <label className='input-fullname' htmlFor="">Phone Number</label>
-                <input  onChange={handleChange} className='fullname-text' type="text" label='Phone Number' required placeholder=''/>
+                <input  onChange={handleChange} className='fullname-text' type="text" name='phone_number' label='Phone Number' required placeholder=''/>
               </div>
               <div className="text-area">
                 <label className='textarea-label' htmlFor="">Your message here</label>

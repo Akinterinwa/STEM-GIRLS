@@ -1,0 +1,121 @@
+.donation-hero {
+    background-color: bisque;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+.donate {
+    max-width: 58rem;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+.donate-image {
+    display: flex;
+    justify-content: center;
+    margin: 6rem 0 3rem 0;
+}
+
+.donate-image img {
+    width: 24rem;
+    height: 20rem;
+}
+
+.donation-texts p {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.donation-texts h4 {
+    margin: 2rem 0 0.7rem 0;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 30px;
+}
+
+.donation-texts ul li {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 2px;
+}
+
+.donation-texts .background-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #e7eff7;
+    margin: 3rem 0;
+    padding: 1rem;
+}
+
+.paypal-donation-button {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    cursor: pointer;
+}
+
+.paypal-donation-button form input {
+    height: 3.2rem;
+    width: 11rem;
+}
+
+.beginning-text .redirection p {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.beginning-text .redirection {
+    margin-bottom: 15px;
+}
+
+.beginning-text .sponsorship h4 {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 29px;
+    margin-bottom: 4rem;
+}
+
+.sponsorship p {
+    margin: 4rem 0;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 25px;
+    font-family: math;
+}
+
+@media (min-width: 700px) and (max-width: 950px) {
+    .donate {
+        padding: 0 1rem;
+    }
+
+    .donate-image img {
+        width: 20rem;
+        height: 17rem;
+    }
+}
+
+@media (max-width: 699px) {
+    .sponsorship .button {
+        height: 3rem;
+    }
+
+    .donate {
+        padding: 0 1rem;
+    }
+
+    .donate-image img {
+        width: 20rem;
+        height: 17rem;
+    }
+}

@@ -16,6 +16,7 @@ import StartNew from './components/pages/workshops-components/StartNew';
 import Volunteer from './components/pages/connect-component/Volunteer';
 import Sponsors from './components/pages/connect-component/Sponsors';
 import ContactUs from './components/pages/connect-component/ContactUs';
+import Donate from './components/pages/donate/Donate';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path='/contact' exact Component={ContactUs} />
         <Route path='/sponsors' exact Component={Sponsors} />
         <Route path='/volunteer' exact Component={Volunteer} />
+        <Route path='donate' exact Component={Donate} />
 
 
         <Route path='/services' exact Component={Services} />
