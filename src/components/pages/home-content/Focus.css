@@ -31,8 +31,10 @@
 }
 
 .focus-container .h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
+    line-height: 29px;
+    font-family: montserrat;
 }
 
 .focus-container p {
@@ -62,13 +64,17 @@
     text-align: center;
     max-width: 60rem;
     margin: 0 auto;
+    margin-top: 7rem;
 }
 .location h1 {
-    font-size: xx-large;
-    margin: 10px 0;
+    font-weight: 700;
+    line-height: 37px;
+    font-size: 23px;
 }
 .location span.color {
-    font-size: xx-large;
+    font-weight: 700;
+    line-height: 37px;
+    font-size: 23px;
     color: brown;
 }
 .location span.color:hover {
@@ -94,7 +100,10 @@
     /* CSS rules for extra small devices (phones) */
     .focus {
         display: grid;
-        margin: 3rem 0;
+        margin:  0;
+    }
+    .location {
+        margin-top: 4rem;
     }
     .icon svg {
         width: 50px;

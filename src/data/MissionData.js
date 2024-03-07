@@ -1,6 +1,5 @@
 import { Component } from 'react';
-import '../components/Mission.css';
-// import MissionImg from '../images/image1.jpg';
+import '../components/pages/home-content/Mission.css';
 
 class MissionData extends Component {
     render() {

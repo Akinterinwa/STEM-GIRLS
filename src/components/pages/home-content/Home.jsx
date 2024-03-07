@@ -1,6 +1,6 @@
 import React from 'react';
-import HeroSection from '../HeroSection';
-import Mission from '../Mission';
+import HeroSection from '../../HeroSection';
+import Mission from './Mission';
 
 
 const Home = () => {

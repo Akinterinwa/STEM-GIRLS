@@ -3,6 +3,7 @@
     margin: 3rem 0;
     max-width: 76rem;
     margin: 0 auto;
+    padding: 5rem 0 1rem 0;
 }
 
 .quotes-text {
@@ -12,14 +13,21 @@
 }
 
 .quotes-text .quote {
-    font-size: 34px;
+    font-size: 30px;
+    line-height: 41px;
     font-weight: 400;
+    font-family: roboto;
     color: #363431;
-    line-height: 35px;
 }
 .quotes-text .author {
     display: flex;
     margin: 2rem 0 0 0;
+}
+.quotes-text .author p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    font-family: roboto;
 }
 .author svg {
     width: 2rem;

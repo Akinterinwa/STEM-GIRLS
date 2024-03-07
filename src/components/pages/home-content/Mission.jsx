@@ -1,10 +1,10 @@
 import React from "react";
 import "./Mission.css";
-import MissionImg from "../images/image1.jpg";
-import MissionData from "../data/MissionData";
-import Quote from "./pages/home-content/Quote";
-import Focus from "./pages/home-content/Focus";
-import Card from "./pages/home-content/Card";
+import MissionImg from "../../../images/image1.jpg";
+import MissionData from "../../../data/MissionData";
+import Quote from "./Quote";
+import Focus from "./Focus";
+import Card from "./Card";
 
 const Mission = () => {
     return (

@@ -85,6 +85,7 @@
     font-size: 26px;
     line-height: 30px;
     margin: 2rem 0;
+    font-family: montserrat;
 }
 .sponsors .texts p {
     font-weight: 300;
@@ -116,11 +117,15 @@
     font-size: 23px;
     line-height: 37px;
 }
+.list-item ul {
+    list-style: none;
+}
 .list-item ul li {
-    font-weight: 100;
+    font-weight: 400;
     font-size: 19px;
     line-height: 18px;
     padding: 5px 0;
+    font-family: montserrat;
 }
 .partners{
     margin: 2rem 0;
@@ -148,6 +153,7 @@
     font-size: 14px;
     line-height: 21px;
     font-family: math;
+    margin: 3rem 0px;
 }
 
 /* CONTACT FORM */
@@ -282,6 +288,9 @@
 }
 
 @media (max-width: 699px) {
+    .sponsors img {
+        margin: 0;
+    }
     .image-button {
         display: grid;
         gap: 1rem;
@@ -363,7 +372,6 @@
     }
     .list-item ul {
         margin: 10px 10px 3rem 10px;
-        list-style: auto;
     }
     .reason-content img {
         width: 19rem;

@@ -1,6 +1,7 @@
 
 .btn-color {
     color: white !important;
+    border-color: white;
 }
 .heading {
     text-align: center;

@@ -1,10 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SignUp from './components/pages/SignUp';
-import Marketing from './components/pages/Marketing';
-import Consulting from './components/pages/Consulting';
-import Services from './components/pages/Services';
-import Home from './components/pages/Home';
+import Home from './components/pages/home-content/Home';
 import NavbarMenu from './components/NavbarMenu';
 import OurMission from './components/pages/about-components/OurMission';
 import Approach from './components/pages/about-components/Approach';
@@ -34,13 +30,6 @@ function App() {
         <Route path='/sponsors' exact Component={Sponsors} />
         <Route path='/volunteer' exact Component={Volunteer} />
         <Route path='donate' exact Component={Donate} />
-
-
-        <Route path='/services' exact Component={Services} />
-        <Route path='/contact-us' exact Component={ContactUs} />
-        <Route path='/sign-up' exact Component={SignUp} />
-        <Route path='/marketing' exact Component={Marketing} />
-        <Route path='/consulting' exact Component={Consulting} />
       </Routes>
       <Footer />
     </Router>
