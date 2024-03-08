@@ -7,6 +7,7 @@ import MissionData from "../../../data/MissionData";
 import Quote from "./Quote";
 import Focus from "./Focus";
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const Mission = () => {
     return (
@@ -15,7 +16,7 @@ const Mission = () => {
                 <div className="gradient">
                     <div className="intro">
                         <h2>
-                        Fostering a future where young women embrace STEM with confidence, we strive to equip them with the skills and knowledge needed to lead and innovate in an ever-changing technological world.
+                            Fostering a future where young women embrace STEM with confidence, we strive to equip them with the skills and knowledge needed to lead and innovate in an ever-changing technological world.
                         </h2>
                         <h5>
                             STEM stands for Science, Technology, Engineering, and Math. When
@@ -38,14 +39,15 @@ const Mission = () => {
                         </div>
 
                         <div className="about-text">
-                            <h2>Our History</h2>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde at
                                 eius molestias ut quaerat perspiciatis aliquam quia nam animi
                                 debitis quibusdam a vero quasi odio facilis, cum facere!
                                 Excepturi, dolorem!
                             </p>
-                            <button className="btn-1">Learn More</button>
+                            <Link to='/mission'>
+                                <button className="btn-1">Learn More</button>
+                            </Link>
                         </div>
                     </div>
 
@@ -69,11 +71,13 @@ const Mission = () => {
                 <Card />
                 <div className="background">
                     <div className="background-text">
-                        <h2>BECOME STEM LIKE A GIRL PARTNER</h2>
+                        <h2>BECOME INSPIRE STEM GIRLS PARTNER</h2>
                         <p>
                             Every year, major companies and philanthropic foundations sponsor our Programs. Most partners host interactive events and mentorship, offering students a truly immersive experience.
                         </p>
-                        <button className="btn-1">Learn More</button>
+                        <Link to='/sponsors'>
+                            <button className="btn-1">Learn More</button>
+                        </Link>
                     </div>
 
                     <div className="background-img">

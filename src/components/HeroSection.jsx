@@ -28,7 +28,6 @@ const HeroSection = () => {
                     We fight for a world where every girl can choose her own future.
                 </motion.p>
             </motion.div>
-            );
         </div>
     )
 }

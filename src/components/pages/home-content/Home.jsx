@@ -1,17 +1,15 @@
-import React from 'react';
-import HeroSection from '../../HeroSection';
-import Mission from './Mission';
-// import ScrollTop from '../../ScrollTop';
-
+import React from "react";
+import HeroSection from "../../HeroSection";
+import Mission from "./Mission";
 
 const Home = () => {
+
   return (
     <>
-    {/* <ScrollTop /> */}
-     <HeroSection />
-     <Mission />
-    </>
-  )
-}
+              <HeroSection />
+              <Mission />
+            </>
+  );
+};
 
-export default Home
+export default Home;

@@ -14,27 +14,57 @@ import Sponsors from './components/pages/connect-component/Sponsors';
 import ContactUs from './components/pages/connect-component/ContactUs';
 import Donate from './components/pages/donate/Donate';
 import ScrollTop from './components/ScrollTop';
+import { useState, useEffect } from "react";
+import BarLoader from "react-spinners/ClipLoader";
+
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true) // Simulate the completion of loading after 2 seconds
+    setTimeout(() => {
+      setLoading(false)
+    }, 2000);
+  }, []);
   return (
-    <Router>
-      <ScrollTop />
-      <NavbarMenu />
-      <Routes>
-        <Route path='/' exact Component={Home} />
-        <Route path='/mission' exact Component={OurMission} />
-        <Route path='/approach' exact Component={Approach} />
-        <Route path='/events' exact Component={Events} />
-        <Route path='/location' exact Component={Location} />
-        <Route path='/start-new' exact Component={StartNew} />
-        <Route path='/team' exact Component={Team} />
-        <Route path='/contact' exact Component={ContactUs} />
-        <Route path='/sponsors' exact Component={Sponsors} />
-        <Route path='/volunteer' exact Component={Volunteer} />
-        <Route path='donate' exact Component={Donate} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div>
+      {
+        loading ?
+
+        <BarLoader color="#36d7b7"
+            cssOverride={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+          }}
+            size={30}
+            // color={"#36d7b7"}
+            loading={loading}
+          />
+          :
+          <Router>
+            <ScrollTop />
+            <NavbarMenu />
+            <Routes>
+              <Route path='/' exact Component={Home} />
+              <Route path='/mission' exact Component={OurMission} />
+              <Route path='/approach' exact Component={Approach} />
+              <Route path='/events' exact Component={Events} />
+              <Route path='/location' exact Component={Location} />
+              <Route path='/start-new' exact Component={StartNew} />
+              <Route path='/team' exact Component={Team} />
+              <Route path='/contact' exact Component={ContactUs} />
+              <Route path='/sponsors' exact Component={Sponsors} />
+              <Route path='/volunteer' exact Component={Volunteer} />
+              <Route path='donate' exact Component={Donate} />
+            </Routes>
+            <Footer />
+          </Router>
+
+      }
+    </div>
   );
 }
 
