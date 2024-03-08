@@ -19,6 +19,14 @@ const Footer = () => {
                         <button className='btn-1'>Subscribe</button>
                     </form>
                 </div>
+                <p className="footer-subscription-heading">
+                    Click here to donate
+                </p>
+                <Link to='/donate'>
+                <button className="btn-1 button footer-btn">
+                    DONATE
+                </button>
+                </Link>
             </section>
             <section className="social-media">
                 <div className="social-media-wrap">

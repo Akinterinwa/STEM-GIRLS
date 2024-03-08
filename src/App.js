@@ -13,10 +13,12 @@ import Volunteer from './components/pages/connect-component/Volunteer';
 import Sponsors from './components/pages/connect-component/Sponsors';
 import ContactUs from './components/pages/connect-component/ContactUs';
 import Donate from './components/pages/donate/Donate';
+import ScrollTop from './components/ScrollTop';
 
 function App() {
   return (
     <Router>
+      <ScrollTop />
       <NavbarMenu />
       <Routes>
         <Route path='/' exact Component={Home} />

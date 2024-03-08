@@ -1,6 +1,10 @@
 import React from "react";
 import "./Card.css";
-import CardImg from '../../../images/image1.jpg';
+import CardImg1 from '../../../images/pexels-cottonbro-studio-4705606.jpg';
+import CardImg2 from '../../../images/pexels-mikhail-nilov-8923373.jpg';
+import CardImg3 from '../../../images/pexels-monstera-production-5063445.jpg';
+import CardImg4 from '../../../images/pexels-mikhail-nilov-8923577.jpg';
+
 
 const Card = () => {
     return (
@@ -11,19 +15,19 @@ const Card = () => {
         </div>
         <div className="card-component">
             <div className="card">
-                <img className="card-image" src={CardImg} alt='card' />
+                <img className="card-image" src={CardImg1} alt='card' />
                 <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
             </div>
             <div className="card">
-                <img className="card-image" src={CardImg} alt='card' />
+                <img className="card-image" src={CardImg2} alt='card' />
                 <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
             </div>
             <div className="card">
-                <img className="card-image" src={CardImg} alt='card' />
+                <img className="card-image" src={CardImg3} alt='card' />
                 <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
             </div>
             <div className="card">
-                <img className="card-image" src={CardImg} alt='card' />
+                <img className="card-image" src={CardImg4} alt='card' />
                 <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
             </div>
         </div>

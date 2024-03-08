@@ -85,7 +85,7 @@ p {
   z-index: -1;
 }
 
-/* button:hover {
-  cursor: pointer;
-  color: burlywood;
-} */
+iframe {
+  border-radius: 8px; /* Add rounded corners to the image */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

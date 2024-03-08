@@ -26,6 +26,7 @@
     line-height: 1;
     font-weight: 900;
     text-transform: uppercase;
+    margin-top: 3rem;
 }
 
 .footer-subscription-text {
@@ -139,6 +140,10 @@
 .website-rights {
     color: #fff;
     margin-bottom: 16px;
+}
+.footer-btn {
+    width: 12rem;
+    height: 3rem;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

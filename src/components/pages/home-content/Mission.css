@@ -102,6 +102,10 @@
 
 .background-img img {
     height: 22rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    object-position: center;
 }
 
 .background-text {
@@ -191,6 +195,8 @@
     /* CSS rules for large devices (desktops) */
     .about {
         display: flex;
+        flex-direction: column;
+        text-align: center;
     }
 
     .destination .first-des .image {
@@ -201,6 +207,10 @@
 @media (min-width: 767px) and (max-width: 992px) {
 
     /* CSS rules for medium devices (laptops) */
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
     .first-des {
         flex-direction: column-reverse;
     }
@@ -210,6 +220,7 @@
     .first-des .des-text,
     .first-des .image {
         width: 100%;
+        text-align: center;
     }
 
     .destination .intro h2 {
@@ -229,6 +240,12 @@
 @media (max-width: 767px) {
 
     /* CSS rules for extra small devices (phones) */
+    .background-img {
+        flex: 1 1 17rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;    
+    }
     .gradient {
         padding: 2rem 1rem 0 1rem;
     }
@@ -258,6 +275,8 @@
 
     .about {
         padding: 1rem 7px 7px 7px;
+        display: flex;
+        flex-direction: column;
     }
 
     .about-img {
@@ -285,7 +304,7 @@
 
     .first-des {
         flex-direction: column-reverse;
-        padding: 0 10px 20px 10px;
+        padding: 0 10px 60px 10px;
     }
 
     .first-des .image {
@@ -330,5 +349,9 @@
     .background-img img {
         height: 11rem;
         width: 18rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        object-fit: cover;
+        object-position: center;
     }
 }

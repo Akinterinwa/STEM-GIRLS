@@ -23,7 +23,9 @@ const NavbarMenu = () => {
         <div className='Navbar-menu'>
             <div className="navbar-menu-container">
                 <div className="logo">
+                    <Link to='/'>
                     <img src={LogoImg} alt="logo" />
+                    </Link>
                     <h5 onClick={handleToggleMenu}>
                         <span className={`hidden-mobile ${isMenuOpen ? 'close-text' : 'menu-text'}`}>
                             {isMenuOpen ? 'Close' : 'Menu'}
