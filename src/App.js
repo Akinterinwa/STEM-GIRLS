@@ -15,7 +15,7 @@ import ContactUs from "./components/pages/connect-component/ContactUs";
 import Donate from "./components/pages/donate/Donate";
 import ScrollTop from "./components/ScrollTop";
 import { useState, useEffect } from "react";
-import { FallingLines } from "react-loader-spinner";
+import { HashLoader } from "react-spinners";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -24,19 +24,19 @@ function App() {
     setLoading(true); // Simulate the completion of loading after 2 seconds
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
-    <div className="container">
+    <div>
       {loading ? (
-        <div className="loader-container">
-          <FallingLines
-            color="#008080"
-            width="100"
-            visible={true}
-            ariaLabel="falling-circles-loading"
-          />
-        </div>
+         <div className="loader-container">
+         <HashLoader
+           color="#008080"
+           width="100"
+           visible={true}
+           ariaLabel="falling-circles-loading"
+         />
+       </div>
       ) : (
         <Router>
           <ScrollTop />

@@ -37,7 +37,6 @@ const Mission = () => {
                                 <iframe className="youtube" width="560" height="315" src="https://www.youtube.com/embed/IznUUcd_kZ0?si=WsDFtqjJU-vq0UVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
-
                         <div className="about-text">
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde at
@@ -50,9 +49,7 @@ const Mission = () => {
                             </Link>
                         </div>
                     </div>
-
                     <Quote />
-
                     <div className="section-head">
                         <h1>Popular Destinations</h1>
                         <p>
@@ -79,7 +76,6 @@ const Mission = () => {
                             <button className="btn-1">Learn More</button>
                         </Link>
                     </div>
-
                     <div className="background-img">
                         <img src={PartnerImg} alt="alt" />
                     </div>

@@ -1,4 +1,3 @@
-.events-hero,
 .location-hero,
 .startnew-hero {
     background-color: bisque;
@@ -9,6 +8,24 @@
     display: flex;
 }
 
+.events-hero {
+    background: url('../../../images/pexels-max-fischer-5212330.jpg') center center/cover no-repeat ;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
+}
+.location-hero {
+    background: url('../../../images/pexels-element-digital-1051077.jpg') center center/cover no-repeat ;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
+}
 .new-site {
     max-width: 58rem;
     margin: 0 auto;

@@ -22,12 +22,35 @@
 }
 
 .mission-hero, .approach-hero, .team-hero {
-    background-color: bisque;
-    height: 40vh;
+    background: url('../../../images/pexels-tima-miroshnichenko-5428262.jpg') center center/cover no-repeat ;
+    height: 60vh;
     align-items: center;
     justify-content: center;
     text-align: center;
     display: flex;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
+}
+.approach-hero{
+    background: url('../../../images/pexels-pixabay-355948.jpg') center center/cover no-repeat ;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
+}
+.team-hero{
+    background: url('../../../images/pexels-kindel-media-7688159.jpg') center center/cover no-repeat ;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
+}
+
+.mission-hero h1, .approach-hero h1 {
+    color: white;
 }
 
 .mission-content {

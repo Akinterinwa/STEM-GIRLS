@@ -94,14 +94,9 @@ iframe {
   background-color: rgba(51, 27, 27, 0.5); /* Adjust the color and opacity as needed */
 }
 
-.container {
-  position: relative;
-  /* Add any other styles for your container */
-}
-
 .loader-container {
   position: absolute;
-  top: 22rem;
+  top:50%;
   left: 50%;
-  transform: translate(-76%, -50%);
+  transform: translate(-50%, -50%);
 }
