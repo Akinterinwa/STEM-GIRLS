@@ -1,5 +1,4 @@
-// NavbarMenu.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import LogoImg from '../images/png white.png';
 import './NavbarMenu.css';
 import { Link } from 'react-router-dom';
@@ -7,6 +6,24 @@ import NavbarMenuLink from './NavbarMenuLink';
 
 const NavbarMenu = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
+    const [isScrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            if (scrollPosition > 90) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     // Function to handle click event and toggle the state
     const handleToggleMenu = () => {
@@ -20,11 +37,11 @@ const NavbarMenu = () => {
     }
 
     return (
-        <div className='Navbar-menu'>
-            <div className="navbar-menu-container">
+        <div className="Navbar-menu">
+            <div className={`navbar-menu-container ${isScrolled ? 'scroll' : ''}`}>
                 <div className="logo">
                     <Link to='/'>
-                    <img src={LogoImg} alt="logo" />
+                        <img src={LogoImg} alt="logo" />
                     </Link>
                     <h5 onClick={handleToggleMenu}>
                         <span className={`hidden-mobile ${isMenuOpen ? 'close-text' : 'menu-text'}`}>
