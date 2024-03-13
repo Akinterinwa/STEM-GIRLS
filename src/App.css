@@ -23,6 +23,12 @@ ul {
   list-style-type: none;
 }
 
+.bold {
+  font-size: 21px;
+  font-weight: 700;
+  color: rgb(13, 156, 144);
+}
+
 p {
   /* margin-top: 3rem; */
   font-size: 20px;

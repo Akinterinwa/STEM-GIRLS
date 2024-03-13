@@ -16,26 +16,25 @@ const Card = () => {
         <div className="card-component">
             <div className="card">
                 <img className="card-image" src={CardImg1} alt='card' />
-                <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
+                <p className="card-description">STEM girls are breaking barriers: They are challenging stereotypes and proving that gender is not a barrier to success in STEM fields.</p>
             </div>
             <div className="card">
                 <img className="card-image" src={CardImg2} alt='card' />
-                <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
+                <p className="card-description">They are role models: STEM girls inspire others with their passion, dedication, and resilience in pursuing their STEM aspirations.</p>
             </div>
             <div className="card">
                 <img className="card-image" src={CardImg3} alt='card' />
-                <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
+                <p className="card-description">They are lifelong learners: STEM girls are curious and eager to learn, constantly seeking new knowledge and skills to further their understanding of the world.</p>
             </div>
             <div className="card">
                 <img className="card-image" src={CardImg4} alt='card' />
-                <p className="card-description">STUDIES SHOW THAT GIRLS ENJOY STEM ACTIVITIES BUT 4 IN 10 GIRLS SAY THEY DON'T GET ENOUGH PRACTICAL EXPERIENCES</p>
+                <p className="card-description">They are shaping the future: STEM girls are the leaders and innovators of tomorrow, shaping the future of technology, science, engineering, and mathematics with their ideas, passion, and expertise.</p>
             </div>
         </div>
         <div className="explore">
             <div className="explore-content">
-            <h1>EXPLORE</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis earum </p>
-            <button className="btn-1 btn-color">Learn More</button>
+            <h1>Discover Your Power</h1>
+            <button className="btn-1 btn-color">GIRLS, THIS IS FOR YOU </button>
             </div>
         </div>
         </div>

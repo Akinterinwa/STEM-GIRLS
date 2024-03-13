@@ -39,10 +39,7 @@ const Mission = () => {
                         </div>
                         <div className="about-text">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde at
-                                eius molestias ut quaerat perspiciatis aliquam quia nam animi
-                                debitis quibusdam a vero quasi odio facilis, cum facere!
-                                Excepturi, dolorem!
+                            At <bold className="bold"> Inspire STEM Girls,</bold> we believe in the power of women and minority voices to shape our future. Your voice matters. We need you, just as you are, to join us in creating a world where everyone's contributions are valued. Together, let's empower the next generation of STEM leaders.
                             </p>
                             <Link to='/mission'>
                                 <button className="btn-1">Learn More</button>
@@ -50,17 +47,9 @@ const Mission = () => {
                         </div>
                     </div>
                     <Quote />
-                    <div className="section-head">
-                        <h1>Popular Destinations</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Praesentium corrupti soluta
-                        </p>
-                    </div>
 
                     <MissionData
-                        heading="Lorem ipsum dolor sit amet"
-                        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus natus quibusdam corrupti voluptate. Maiores rem nihil sapiente enim asperiores nobis, ullam cumque veritatis neque repellat deleniti consequatur nemo. Cum, itaque!, Temporibus natus quibusdam corrupti voluptate. Maiores rem nihil sapiente enim asperiores nobis, ullam cumque veritatis neque repellat deleniti consequatur nemo. Cum, itaque!"
+                        text="Join us in making a difference! Become a mentor and help shape the future of STEM by empowering the next generation of leaders. By sharing your knowledge and experiences, you'll not only build confidence in young women but also grow your own network and leave a lasting legacy. Together, let's inspire, guide, and create opportunities for success. Take the first step towards making a meaningful impact - become a mentor today!"
                         img1={MissionImg1}
                         img2={MissionImg2}
                     />
@@ -70,7 +59,7 @@ const Mission = () => {
                     <div className="background-text">
                         <h2>BECOME INSPIRE STEM GIRLS PARTNER</h2>
                         <p>
-                            Every year, major companies and philanthropic foundations sponsor our Programs. Most partners host interactive events and mentorship, offering students a truly immersive experience.
+                        Empower the next generation of STEM leaders. Partner with Inspire STEM Girls and be a catalyst for change. Together, we'll break barriers and shape the future of innovation. Join us today and make a difference that lasts a lifetime.
                         </p>
                         <Link to='/sponsors'>
                             <button className="btn-1">Learn More</button>

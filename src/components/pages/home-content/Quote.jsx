@@ -30,7 +30,7 @@ const Quote = () => {
       </div>
 
       <div className="donate-line">
-        <p className='donate-text'>The gender gap in tech has been getting worse, but <bold>Inspire STEM Girls</bold> is changing that. Our alumni go on to major in Computer Science at 7X the national average.</p>
+        <p className='donate-text'>Be a part of the movement to break barriers and empower young women in STEM fields. Your support can change lives. Donate now and help us pave the way for a brighter, more inclusive future.</p>
         <div className="donate-button">
           <Link to='/donate'>
             <button className='btn-1'>DONATE NOW</button>

@@ -11,7 +11,7 @@ const Footer = () => {
                     Join our Newsletter to receive our updates
                 </p>
                 <p className="footer-subscription-text">
-                Our Weekly Newsletter is a collection of the latest and greatest from Girls Who Code – top tech stories, real talk from our CEO, and news about young women changing the world.
+                Stay informed, stay inspired. Join our newsletter for the latest in STEM news and exclusive updates. Subscribe now!
                 </p>
                 <div className="input-areas">
                     <form>
@@ -35,7 +35,7 @@ const Footer = () => {
                             <img src={LogoImg} alt="logo" />
                         </Link>
                     </div>
-                    <small className='website-rights'>@2024 STEM LIKE A GIRL  | TERMS OF USE | PRIVACY POLICY</small>
+                    <small className='website-rights'>Inspire Stem Girls is a 501(c)(3) non-profit organization  | TERMS OF USE | PRIVACY POLICY</small>
                     <div className="social-icons">
                         <Link className='social-icon-link facebook'
                             to='/'
