@@ -11,8 +11,8 @@ const NavbarMenu = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-            if (scrollPosition > 90) {
-                setScrolled(true);
+            if (scrollPosition > 200) {
+                setScrolled(true); 
             } else {
                 setScrolled(false);
             }

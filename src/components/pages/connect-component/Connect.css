@@ -1,10 +1,24 @@
-.volunteer-hero, .contact-hero, .sponsors-hero {
-    background-color: bisque;
-    height: 40vh;
+.volunteer-hero, .sponsors-hero {
+    background: url('./images/pexels-rfstudio-3810756.jpg') center center/cover no-repeat ;
+    height: 60vh;
     align-items: center;
     justify-content: center;
     text-align: center;
     display: flex;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
+}
+ .contact-hero {
+    background: url('./images/pexels-andrea-piacquadio-3762806.jpg') center center/cover no-repeat ;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
+}
+
+.volunteer-hero h1, .sponsors-hero h1, .contact-hero h1{
+    color: white;
 }
 
 .volunteer, .sponsors, .contact {
@@ -14,15 +28,17 @@
     place-items: center;
 }
 .volunteer .h1 {
-    font-weight: 700;
-    font-size: 26px;
+    font-weight: 400;
+    font-size: 25px;
     line-height: 32px;
     max-width: 90%;
     margin: 4rem 0 0 0;
+    text-align: center;
 }
 .image-button .image img {
     width: 28rem;
     height: 20rem;
+    object-fit: contain;
 }
 .image-button {
     display: flex;

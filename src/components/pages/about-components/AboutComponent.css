@@ -21,7 +21,7 @@
     min-height: 100%;
 }
 
-.mission-hero, .approach-hero, .team-hero {
+.mission-hero {
     background: url('../../../images/pexels-tima-miroshnichenko-5428262.jpg') center center/cover no-repeat ;
     height: 60vh;
     align-items: center;

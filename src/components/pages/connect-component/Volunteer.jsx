@@ -1,49 +1,32 @@
 import React from 'react';
 import '../connect-component/Connect.css';
-import VolunteerImg from '../../../images/image1.jpg';
+import VolunteerImg from './images/pexels-picha-stock-3894381.jpg';
 
 const Volunteer = () => {
   return (
     <>
       <div className="volunteer-hero">
-        <h1>Volunteer</h1>
+        <h1>Interested in joining our
+          volunteer team?</h1>
       </div>
       <div className="volunteer">
-        <h1 className='h1'>Our volunteers impact girls by supporting efforts to advance their interest and confidence in STEM activities.  Without our dedicated group of volunteers, STEM Like a Girl couldn’t provide workshops and resources for girls and their families.</h1>
+        <h1 className='h1'>Empower the next generation in STEM. Become a mentor with us and make a tangible difference in young lives. Your expertise can inspire future innovators, guiding them through challenges and nurturing their potential. Together, let's shape a brighter future. Join now and be part of something truly impactful</h1>
         <div className="image-button">
           <div className="image">
             <img src={VolunteerImg} alt="volunteer" />
           </div>
           <button className="btn-1 button">
-            General Volunteer Interest Form
+            become a mentor
           </button>
         </div>
         <div className="volunteer-content-1">
           <h1>Volunteer Opportunities</h1>
           <p>Are you someone who works in a STEM field looking to excite and inspire girls? Did you have a mentor who encouraged you to pursue your science or engineering interests? Be that person for young girls and their families by volunteering as a mentor with us! Or are you not in a STEM field but looking for an opportunity to impact girls and their families through fun hands-on science and engineering activities?
 
-            Consider volunteering at one of our workshops! Volunteers keep our workshops running smoothly by helping lead activities, welcoming girls at registration, and encouraging them during the projects. Whatever your interest or time commitment is, we have a role for you! Both male and female volunteers are welcome.
-
-            If you are not from Oregon or Washington, please check back for new volunteer opportunities as STEM Like a Girl grows and expands our program to new geographical locations. If you are interested in bringing STEM Like a Girl to your community, please check out our Start a STEM Like a Girl Site information page to learn more about what is involved.  </p>
-        </div>
-        <div className="volunteer-content-2">
-          <h1>Description of Volunteer Roles</h1>
-          <ul>
-            <li><span>Set Up: </span> Help set up tables/chairs, activity supplies, snacks, etc.</li>
-            <li><span>Activity Guide:</span>  Help guide and support the girls through the various activities during the workshop. This includes leading them through short Ice Breaker activities, providing guidance and help during Design Challenges, and encouraging them throughout the workshop.</li>
-            <li><span>Set Up: </span> Help set up tables/chairs, activity supplies, snacks, etc.</li>
-            <li><span>Activity Guide:</span>  Help guide and support the girls through the various activities during the workshop. This includes leading them through short Ice Breaker activities, providing guidance and help during Design Challenges, and encouraging them throughout the workshop.</li>
-            <li><span>Activity Guide:</span>  Help guide and support the girls through the various activities during the workshop. This includes leading them through short Ice Breaker activities, providing guidance and help during Design Challenges, and encouraging them throughout the workshop.</li>
-          </ul>
+            Consider volunteering at one of our workshops! Volunteers keep our workshops running smoothly by helping lead activities, welcoming girls at registration, and encouraging them during the projects. Whatever your interest or time commitment is, we have a role for you! Both male and female volunteers are welcome. If you are interested in bringing STEM Like a Girl to your community, please check out our Start a STEM Like a Girl Site information page to learn more about what is involved.  </p>
         </div>
 
         <div className="event-buttons">
-          <h4>We are currently recruiting volunteers for the following workshops. Please click on the button for workshop specific information and to sign up as a volunteer.</h4>
-          <div className="buttons-container">
-            <button className="button btn-1">Feb 25th in Portland</button>
-            <button className="button btn-1">April 14th in Portland</button>
-            <button className="button btn-1">April 27th in Salem</button>
-          </div>
           <p>Have questions?  Click here to contact us or email volunteers@stemlikeagirl.org</p>
         </div>
         <div className="ending-content">
