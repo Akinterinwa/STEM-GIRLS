@@ -11,7 +11,7 @@ const OurMission = () => {
         </div>
         <div className="mission">
           <div className="heading">
-            <h4>We believe all girls can become scientists and engineers when given the right tools early on to develop their own STEM identity</h4>
+            <h4>Inspire STEM Girls' mission is to cultivate an empowering environment that encourages young girls to explore and excel in the fields of science, technology, engineering, and mathematics (STEM).</h4>
           </div>
           <div className="mission-content-1">
             <h3>THE POWER OF GIRLS</h3>
@@ -20,31 +20,24 @@ const OurMission = () => {
                 <img src={MissionImg} alt="" />
               </div>
               <div className="flexed-content">
-                <p><span>We believe</span> the term “like a girl” should empower young girls, not intimidate them</p>
-                <p><span>We believe</span> the term “like a girl” should empower young girls, not intimidate them</p>
-                <p><span>We believe</span> the term “like a girl” should empower young girls, not intimidate them</p>
+                <p>By fostering a passion for these disciplines, the mission aims to bridge the gender gap and promote equality within these traditionally male-dominated fields. Here’s a breakdown of how this mission can be articulated and pursued through various initiatives:</p>
               </div>
             </div>
-            <p className='under'><span>We believe </span>exposing girls to hands-on STEM activities increases their self-confidence and problem-solving skills regardless of what career path they ultimately choose</p>
-            <p className='under'><span>We believe</span> young girls today have the ability to shape STEM fields in the future</p>
           </div>
           <div className="mission-content-1">
             <h3>THE POWER OF GIRLS</h3>
             <div className="mission-content">
 
               <div className="flexed-content">
-                <p><span>We believe</span> the term “like a girl” should empower young girls, not intimidate them</p>
-                <p><span>We believe</span> the term “like a girl” should empower young girls, not intimidate them</p>
-                <p><span>We believe</span> the term “like a girl” should empower young girls, not intimidate them</p>
+                <p>Core Objectives of Inspire STEM Girls:
+Increase Accessibility: Ensuring that girls from all backgrounds have access to STEM education and resources. This includes providing scholarships, learning materials, and access to technology for underprivileged communities.</p>
               </div>
               <div className="first-image">
                 <img src={MissionImg} alt="" />
               </div>
             </div>
-            <p className='under'><span>We believe </span>exposing girls to hands-on STEM activities increases their self-confidence and problem-solving skills regardless of what career path they ultimately choose</p>
-            <p className='under'><span>We believe</span> young girls today have the ability to shape STEM fields in the future</p>
           </div>
-          <div className="mission-content-1">
+          {/* <div className="mission-content-1">
             <h3>THE POWER OF GIRLS</h3>
             <div className="mission-content">
               <div className="first-image">
@@ -58,10 +51,10 @@ const OurMission = () => {
             </div>
             <p className='under'><span>We believe </span>exposing girls to hands-on STEM activities increases their self-confidence and problem-solving skills regardless of what career path they ultimately choose</p>
             <p className='under'><span>We believe</span> young girls today have the ability to shape STEM fields in the future</p>
-          </div>
-          <div>
+          </div> */}
+          {/* <div>
             <iframe  className="youtube" width="560" height="315" src="https://www.youtube.com/embed/IznUUcd_kZ0?si=WsDFtqjJU-vq0UVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
+          </div> */}
           <p>Click the gears to learn more about our approach in combining early exposure, parent engagement, and positive female role models</p>
           <div className="next-page">
             <div className="svg about-svg">

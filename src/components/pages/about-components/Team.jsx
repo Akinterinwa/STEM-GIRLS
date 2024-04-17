@@ -27,7 +27,7 @@ const Team = () => {
               husband and two young boys and loves being outside enjoying the beautiful Pacific Northwest.</p>
           </div>
         </div>
-        <div className="founders-container">
+        {/* <div className="founders-container">
           <div className="founders-name">
             <h4>Courtney Davis – Secretary</h4>
           </div>
@@ -41,105 +41,7 @@ const Team = () => {
               problem solvers!
             </p>
           </div>
-        </div>
-
-        <div className="founders-container">
-          <div className="founders-name">
-            <h4>Courtney Davis – Secretary</h4>
-          </div>
-          <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' />  Courtney has wanted to design bridges since she was a little girl. She was inspired by Portland’s
-              her undergraduate and masters in Civil Engineering from Washington State University. Go Cougs! During her
-              career, she has had the privilege of working on some awesome projects like the new Panama Canal and the longest
-              cable ferry in the world! Courtney also worked in New Orleans after Hurricane Katrina to protect the city from future
-              hurricanes. When she is not designing steel and concrete structures at work, she enjoys visiting classrooms, building popsicle
-              stick bridges and gummy bear domes.  Courtney is excited to be a part of the STEM Like a Girl to inspire the next generation of
-              problem solvers!
-            </p>
-          </div>
-        </div>
-
-        <div className="founders-container">
-          <div className="founders-name">
-            <h4>Courtney Davis – Secretary</h4>
-          </div>
-          <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' />  Courtney has wanted to design bridges since she was a little girl. She was inspired by Portland’s
-              her undergraduate and masters in Civil Engineering from Washington State University. Go Cougs! During her
-              career, she has had the privilege of working on some awesome projects like the new Panama Canal and the longest
-              cable ferry in the world! Courtney also worked in New Orleans after Hurricane Katrina to protect the city from future
-              hurricanes. When she is not designing steel and concrete structures at work, she enjoys visiting classrooms, building popsicle
-              stick bridges and gummy bear domes.  Courtney is excited to be a part of the STEM Like a Girl to inspire the next generation of
-              problem solvers!
-            </p>
-          </div>
-        </div>
-
-        <div className="founders-container">
-          <div className="founders-name">
-            <h4>Courtney Davis – Secretary</h4>
-          </div>
-          <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' />  Courtney has wanted to design bridges since she was a little girl. She was inspired by Portland’s
-              her undergraduate and masters in Civil Engineering from Washington State University. Go Cougs! During her
-              career, she has had the privilege of working on some awesome projects like the new Panama Canal and the longest
-              cable ferry in the world! Courtney also worked in New Orleans after Hurricane Katrina to protect the city from future
-              hurricanes. When she is not designing steel and concrete structures at work, she enjoys visiting classrooms, building popsicle
-              stick bridges and gummy bear domes.  Courtney is excited to be a part of the STEM Like a Girl to inspire the next generation of
-              problem solvers!
-            </p>
-          </div>
-        </div>
-
-        <div className="founders-container">
-          <div className="founders-name">
-            <h4>Courtney Davis – Secretary</h4>
-          </div>
-          <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' />  Courtney has wanted to design bridges since she was a little girl. She was inspired by Portland’s
-              her undergraduate and masters in Civil Engineering from Washington State University. Go Cougs! During her
-              career, she has had the privilege of working on some awesome projects like the new Panama Canal and the longest
-              cable ferry in the world! Courtney also worked in New Orleans after Hurricane Katrina to protect the city from future
-              hurricanes. When she is not designing steel and concrete structures at work, she enjoys visiting classrooms, building popsicle
-              stick bridges and gummy bear domes.  Courtney is excited to be a part of the STEM Like a Girl to inspire the next generation of
-              problem solvers!
-            </p>
-          </div>
-        </div>
-
-        <div className="founders-container">
-          <div className="founders-name">
-            <h4>Courtney Davis – Secretary</h4>
-          </div>
-          <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' />  Courtney has wanted to design bridges since she was a little girl. She was inspired by Portland’s
-              her undergraduate and masters in Civil Engineering from Washington State University. Go Cougs! During her
-              career, she has had the privilege of working on some awesome projects like the new Panama Canal and the longest
-              cable ferry in the world! Courtney also worked in New Orleans after Hurricane Katrina to protect the city from future
-              hurricanes. When she is not designing steel and concrete structures at work, she enjoys visiting classrooms, building popsicle
-              stick bridges and gummy bear domes.  Courtney is excited to be a part of the STEM Like a Girl to inspire the next generation of
-              problem solvers!
-            </p>
-          </div>
-        </div>
-
-        <h1>Inspire STEM Girls Staff</h1>
-
-        <div className="founders-container">
-          <div className="founders-name">
-            <h4>Courtney Davis – Secretary</h4>
-          </div>
-          <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' />  Courtney has wanted to design bridges since she was a little girl. She was inspired by Portland’s
-              her undergraduate and masters in Civil Engineering from Washington State University. Go Cougs! During her
-              career, she has had the privilege of working on some awesome projects like the new Panama Canal and the longest
-              cable ferry in the world! Courtney also worked in New Orleans after Hurricane Katrina to protect the city from future
-              hurricanes. When she is not designing steel and concrete structures at work, she enjoys visiting classrooms, building popsicle
-              stick bridges and gummy bear domes.  Courtney is excited to be a part of the STEM Like a Girl to inspire the next generation of
-              problem solvers!
-            </p>
-          </div>
-        </div>
+        </div> */}
       </div>
     </>
   )

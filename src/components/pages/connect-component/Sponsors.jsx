@@ -28,50 +28,6 @@ const Sponsors = () => {
             </div>
           </div>
         </div>
-        <div className="reason-content">
-          <div className="list-item">
-            <p>When you partner with STEM Like a Girl, you:</p>
-            <ul>
-              <li>
-                Have the opportunity to impact the lives of girls and their
-                families in your community.
-              </li>
-              <li>
-                Have the opportunity to impact the lives of girls and their
-                families in your community.
-              </li>
-              <li>
-                Have the opportunity to impact the lives of girls and their
-                families in your community.
-              </li>
-              <li>
-                Have the opportunity to impact the lives of girls and their
-                families in your community.
-              </li>
-              <li>
-                Have the opportunity to impact the lives of girls and their
-                families in your community.
-              </li>
-            </ul>
-          </div>
-          <div className="reason-image">
-          <img src={InvestmentImg} alt="ivestment-2" />
-          </div>
-        </div>
-        <div className="partners">
-          <div className="partner-1">
-            <h1>Platinum Level Sponsors</h1>
-            <img src={InvestmentImg} alt="first-partner" />
-          </div>
-          <div className="partner-1">
-            <h1>Gold Level Sponsors</h1>
-            <img src={InvestmentImg} alt="first-partner" />
-          </div>
-          <div className="partner-1">
-            <h1>Silver Level Sponsors</h1>
-            <img src={InvestmentImg} alt="first-partner" />
-          </div>
-        </div>
         <p>
           For questions or inquiries about becoming a sponsor, please email us
           at info@stemlikeagirl.org

@@ -19,28 +19,6 @@ const StartNew = () => {
               <div className="btn-1 button">Site Recruitment Package</div>
             </div>
           </div>
-          <div className="responsibility">
-            <h1>Site Leader Responsibilities</h1>
-            <ul>
-              <li>Inspire a group of girls in your community with the awesome potential of STEM.</li>
-              <li>Act as the main contact for STEM Like a Girl participants, volunteers, and donors in your city and STEM Like a Girl chapter planning before and throughout the program.</li>
-              <li>Act as the main contact for STEM Like a Girl participants, volunteers, and donors in your city and STEM Like a Girl chapter planning before and throughout the program.</li>
-              <li>Act as the main contact for STEM Like a Girl participants, volunteers, and donors in your city and STEM Like a Girl chapter planning before and throughout the program.</li>
-              <li>Act as the main contact for STEM Like a Girl participants, volunteers, and donors in your city and STEM Like a Girl chapter planning before and throughout the program.</li>
-              <li>Act as the main contact for STEM Like a Girl participants, volunteers, and donors in your city and STEM Like a Girl chapter planning before and throughout the program.</li>
-              <li>Act as the main contact for STEM Like a Girl participants, volunteers, and donors in your city and STEM Like a Girl chapter planning before and throughout the program.</li>
-            </ul>
-            
-            <div className="double-image">
-                <div className="image-1">
-                  <img src={SiteImg} alt="site" />
-                </div>
-                <div className="image-1">
-                  <img src={SiteImg} alt="site" />
-                </div>
-            </div>
-            <div className="btn-1 button">Apply To Start A Site</div>
-          </div>
         </div>
     </>
   )
