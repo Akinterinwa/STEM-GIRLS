@@ -4,7 +4,7 @@ export const links = [
         submenu: true, 
         sublinks: [
             {
-                Head: 'What We Do',
+                Head: 'About Us',
                 sublink: [
                     { name: 'Our Mission', link: "/mission" },
                     { name: 'Our Approach', link: "/approach" },
@@ -17,7 +17,7 @@ export const links = [
     submenu: true, 
     sublinks: [
         {
-            Head: 'Topwaer',
+            Head: 'Our Workshop',
             sublink: [
                 { name: 'Upcoming Inspire STEM Girls Events', link: "/events" },
                 { name: 'Map Of Current Locations', link: "/location" },
@@ -29,7 +29,7 @@ export const links = [
     submenu: true, 
     sublinks: [
         {
-            Head: 'Topwaer',
+            Head: 'Get In Touch',
             sublink: [
                 { name: 'Volunteer', link: "/volunteer" },
                 { name: 'Sponsors And Partners', link: "/sponsors" },

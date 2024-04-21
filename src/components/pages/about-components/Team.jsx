@@ -1,5 +1,5 @@
 import React from 'react';
-import FounderImg from '../../../images/image1.jpg';
+import FounderImg from '../../../images/founder.webp';
 
 const Team = () => {
   return (
@@ -11,20 +11,10 @@ const Team = () => {
         <h3>STEM Like a Girl Board of Directors</h3>
         <div className="founders-container">
           <div className="founders-name">
-            <h4>Sarah Foster – Founder and President</h4>
+            <h4>Oluwaseyi Adelusi – Founder and President</h4>
           </div>
           <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' /> While leading a hands-on engineering project in her son’s elementary school, Sarah noticed less girls raising their hands or
-              jumping into the activities than the boys.  She was surprised to see a gender gap at such a young age and decided she needed to
-              do something to change this!  Sarah founded STEM Like a Girl in 2017 with the goal to introduce young girls to exciting, fun, and
-              rewarding activities in science, technology, engineering, and math (STEM).  An East Coast native, Sarah has an undergraduate degree
-              in chemical engineering from Bucknell University and a masters in biomedical engineering from Boston University.  She worked as a Research
-              and Development Engineer in the biotech field before taking on her biggest experiment in 2011, becoming a mom!  She quickly learned there is
-              no scientific method or protocol for raising two energetic boys!  While not currently using her engineering expertise in a traditional sense,
-              Sarah is passionate about educating youth, specifically girls, and their families in STEM activities and hopes to inspire the next generation of
-              scientists and engineers.  She is also the author of the book STEM Like a Girl: Empowering Knowledge and Confidence to Lead, Innovate, and Create that
-              profiles 35 girls expressing their love of all things STEM as well as providing 15 experiments girls can do at home. Sarah lives in Portland, OR with her
-              husband and two young boys and loves being outside enjoying the beautiful Pacific Northwest.</p>
+            <p><img src={FounderImg} alt="founder" className='founder-img' /> Hi I'm Oluwaseyi Adelusi, a Software Engineer with 6+ years experience that cuts across various field in tech. I have a first degree in Electrical & Electronics Engineering and Masters degree in Computer Science.</p>
           </div>
         </div>
         {/* <div className="founders-container">

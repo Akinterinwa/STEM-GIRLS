@@ -49,7 +49,7 @@
     box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
 }
 
-.mission-hero h1, .approach-hero h1 {
+.mission-hero h1, .approach-hero h1, .team-hero h1{
     color: white;
 }
 
@@ -196,6 +196,7 @@ span {
     width: 18rem;
     height: 18rem;
     margin: 0 1.5rem 1rem 0;
+    object-fit: cover;
 }
 
 

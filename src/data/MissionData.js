@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import '../components/pages/home-content/Mission.css';
+import { Link } from 'react-router-dom';
 
 class MissionData extends Component {
     render() {
@@ -8,7 +9,9 @@ class MissionData extends Component {
                 <div className="des-text">
                     <p>{this.props.text}</p>
                     <div style={{ paddingTop: '2rem' }}></div>
+                    <Link to="/Volunteer">
                     <button className="btn-1 button">Become A Mentor</button>
+                    </Link>
                 </div>
 
                 <div className="image">
