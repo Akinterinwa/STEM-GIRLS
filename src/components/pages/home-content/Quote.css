@@ -191,14 +191,10 @@
         padding: 0 15px;
     }
     .numbers .big-number {
-        /* font-size: 34px; */
         width: 100%;
-        /* line-height: 34px; */
         margin: 0 0 1rem 0;
         font-size: 46px;
         line-height: 47px;
-        /* width: 70%; */
-        /* margin: 1rem 0; */
         font-family: "Roboto Mono", monospace;
         font-weight: 400;
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './AboutComponent.css';
-import MissionImg from '../../../images/image1.jpg';
+import MissionImg from '../../../images/our--mission-inspireSTEMgirlsb.png';
 
 const OurMission = () => {
   return (

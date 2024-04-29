@@ -11,10 +11,9 @@
 
 .mission .heading h4 {
     font-size: 27px;
-    line-height: 38px;
-    font-weight: 700;
-    font-style: italic;
-    font-family: montserrat;
+    line-height: 34px;
+    font-weight: 600;
+    font-family: 'Poppins';
 }
 
 .mission-container {
@@ -199,6 +198,16 @@ span {
     object-fit: cover;
 }
 
+.youtubes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.youtubes iframe {
+    height: 27rem;
+    width: 60%;
+}
+
 
 @media (min-width: 992px) and (max-width: 1200px) {
     /* CSS rules for large devices (desktops) */
@@ -254,6 +263,10 @@ span {
 }
 
 @media (max-width: 560px) {
+    
+.mission .heading {
+    margin: 3rem 1rem 1rem 1rem;
+}
     .approach {
         padding: 0 8px;
     }
@@ -302,7 +315,15 @@ span {
     }
     .youtube {
         width: auto;
-        height: auto;
+    }
+    .youtubes iframe {
+        height: 16rem;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    .youtubes {
+        width: auto;
+        height: 15rem;
     }
     .intro-image .image {
         width: 19rem;

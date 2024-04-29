@@ -16,6 +16,7 @@ import Donate from "./components/pages/donate/Donate";
 import ScrollTop from "./components/ScrollTop";
 import { useState, useEffect } from "react";
 import { HashLoader } from "react-spinners";
+import ModalComponent from "./components/pages/home-content/ModalComponent";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -39,6 +40,7 @@ function App() {
        </div>
       ) : (
         <Router>
+          <ModalComponent />
           <ScrollTop />
           <NavbarMenu />
           <Routes>

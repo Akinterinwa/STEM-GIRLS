@@ -32,7 +32,7 @@ const Mission = () => {
 
                     <div className="about_section">
                         <div className="youtube_link">
-                            <div className="youtube">
+                            <div className="youtubes">
                                 <iframe className="youtube" width="900" height="550" src="https://www.youtube.com/embed/IznUUcd_kZ0?si=WsDFtqjJU-vq0UVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>

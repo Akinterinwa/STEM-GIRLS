@@ -7,7 +7,7 @@ video {
 }
 
 .hero-container {
-    background: url('../../../images/pexels-mikhail-nilov-8923375.jpg') center center/cover no-repeat ;
+    background: url('../../../images/pexels-mikhail-nilov-8923375.jpg') center center/cover no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -25,7 +25,7 @@ video {
     bottom: 35px;
 }
 
-.hero-container .content > h1 {
+.hero-container .content>h1 {
     font-family: poppins;
     font-weight: 600;
     line-height: 53px;
@@ -33,24 +33,125 @@ video {
     color: rgb(255, 255, 255);
 }
 
-.hero-container .content > h1 {
+.hero-container .content>h1 {
     font-family: poppins;
     font-weight: 600;
-    line-height: 53px;
-    font-size: 46px;
+    line-height: 35px;
+    font-size: 36px;
+    padding: 0 10rem;
     color: rgb(255, 255, 255);
     align-items: center;
     justify-content: center;
 }
 
+/* modal space */
+/* ////////////////// */
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
 
-@media (max-width: 767px) { 
-    /* CSS rules for extra small devices (phones) */ 
-    .hero-container .content > h1 {
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    gap: 10px;
+    width: 65%;
+}
+.modal-content .text {
+    width: 50%;
+}
+.pop_image {
+    position: relative;
+    /* display: flex; */
+    justify-content: end;
+    align-items: center;
+}
+.pop_image img {
+    width: 25rem;
+}
+
+.close-button {
+    position: relative;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.modal-open {
+    overflow: hidden;
+  }
+  
+
+
+@media (max-width: 1000px) {
+    .pop_image img {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .modal-content {
+        background-color: white;
+        padding: 15px;
+        border-radius: 5px;
+        display: grid;
+        /* gap: 10px; */
+        width: 90%;
+    }
+    .modal-content .text {
+        width: 100%;
+    }
+    .pop_image {
+        justify-content: center;
+        align-items: center;
+        display: flex;    
+    }
+    .pop_image img {
+        width: 16rem;
+    }
+    .text p{
+        line-height: 25px;
+        font-size: 16px;
+    }
+    .text h2 {
+        font-size: large;
+    }
+    .cta_popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cta_popup button {
+        font-weight: 500;
+    font-size: 14px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    /* CSS rules for extra small devices (phones) */
+    .hero-container .content>h1 {
         font-size: 25px;
         line-height: normal;
+        padding: 0;
     }
-    .hero-container .content > p {
+
+    .hero-container .content>p {
         font-size: 31px;
-    } 
+    }
 }
