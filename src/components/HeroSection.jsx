@@ -20,13 +20,13 @@ const HeroSection = () => {
                 >
                     Educate, Inspire & Empower
                 </motion.h1>
-                <motion.p
+                <motion.h1
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 1 }} // Delay the animation of the <p> by 0.5 seconds
                 >
                  young girls to pursue career paths in STEM related disciplines and reach their full potentials.
-                </motion.p>
+                </motion.h1>
             </motion.div>
         </div>
     )

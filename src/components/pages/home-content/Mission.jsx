@@ -30,20 +30,16 @@ const Mission = () => {
 
                 <div className="home-content-section">
 
-                    <div className="about">
-                        <div className="about-img">
-                            {/* <img src={MissionImg} alt="alt" /> */}
-                            <div>
-                                <iframe className="youtube" width="560" height="315" src="https://www.youtube.com/embed/IznUUcd_kZ0?si=WsDFtqjJU-vq0UVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div className="about_section">
+                        <div className="youtube_link">
+                            <div className="youtube">
+                                <iframe className="youtube" width="900" height="550" src="https://www.youtube.com/embed/IznUUcd_kZ0?si=WsDFtqjJU-vq0UVG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
                         <div className="about-text">
                             <p>
                             At <bold className="bold"> Inspire STEM Girls,</bold> we believe in the power of women and minority voices to shape our future. Your voice matters. We need you, just as you are, to join us in creating a world where everyone's contributions are valued. Together, let's empower the next generation of STEM leaders.
                             </p>
-                            <Link to='/mission'>
-                                <button className="btn-1">Learn More</button>
-                            </Link>
                         </div>
                     </div>
                     <Quote />

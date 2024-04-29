@@ -1,6 +1,6 @@
 *{
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif, "Poppins";
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,7 @@ svg {
 a {
   text-decoration: none; /* Remove underline */
   color: inherit; /* Inherit text color */
-  font-family: anta;
+  font-family: poppins;
 }
 
 /* Resetting default styles for <ul> elements */
@@ -36,7 +36,7 @@ p {
   font-weight: 400;
   color:rgb(0, 48, 70) ;
   line-height: 32px;
-  font-family: montserrat;
+  font-family: poppins;
 }
 
 .center {
@@ -45,13 +45,8 @@ p {
   justify-content: start;
 }
 
-/* button {
-  padding: 5px 29px;
-  margin: 10px;
-} */
-
 .btn-1 {
-  font-family: anta;
+  font-family: poppins;
   padding: 0.5rem 1rem;
   background: transparent;
   color: black;

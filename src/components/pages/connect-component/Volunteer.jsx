@@ -1,6 +1,7 @@
 import React from 'react';
 import '../connect-component/Connect.css';
 import VolunteerImg from './images/pexels-picha-stock-3894381.jpg';
+import { Link } from 'react-router-dom';
 
 const Volunteer = () => {
   return (
@@ -15,9 +16,12 @@ const Volunteer = () => {
           <div className="image">
             <img src={VolunteerImg} alt="volunteer" />
           </div>
-          <button className="btn-1 button">
-            become a mentor
-          </button>
+
+          <Link to='https://docs.google.com/forms/d/e/1FAIpQLSdHj_wED8FxWCq8YrwAkXvF2XJhXsUTDDurAGvNjtoWomMOxg/viewform?usp=sf_link' target="_blank">
+            <button className="btn-1 button">
+              become a mentor
+            </button>
+          </Link>
         </div>
         <div className="volunteer-content-1">
           <h1>Volunteer Opportunities</h1>

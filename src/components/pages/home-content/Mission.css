@@ -37,7 +37,7 @@
 }
 
 .destination .intro h2 {
-    font-family: anta;
+    font-family: poppins;
     font-size: 40px;
     text-align: center;
     padding: 0 8rem;
@@ -49,6 +49,7 @@
     font-size: 30px;
     color: #999;
     margin: 0 0 6rem 0;
+    font-family: poppins;
 }
 
 /* mission */
@@ -61,6 +62,11 @@
     max-width: 76rem;
     margin: 0 auto;
 }
+.about_section .youtube_link .youtube{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .about-img img {
     border-radius: 0.5rem;
@@ -69,7 +75,9 @@
 }
 
 .about-text {
-    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-text h2 {
@@ -80,9 +88,10 @@
 }
 
 .about-text p {
-    font-size: 25px;
-    line-height: normal;
-    margin: 1.5rem 0;
+    margin: 1.5rem 48px;
+    font-size: 26px;
+    line-height: 33px;
+    font-family: 'Poppins';
 }
 
 /* end about */
@@ -253,8 +262,8 @@
     }
 
     .destination .intro h2 {
-        font-size: 24px;
-        line-height: 39px;
+        font-size: 21px;
+        line-height: 36px;
         font-weight: 700;
         color: rgb(60, 72, 88);
         padding: 0;
@@ -302,6 +311,7 @@
 
     .about-text p {
         font-size: 18px;
+        margin: 0.5rem 9px;
     }
 
     .first-des {

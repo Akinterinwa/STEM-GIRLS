@@ -302,6 +302,7 @@ span {
     }
     .youtube {
         width: auto;
+        height: auto;
     }
     .intro-image .image {
         width: 19rem;

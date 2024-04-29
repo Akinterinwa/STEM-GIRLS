@@ -21,29 +21,34 @@ video {
 
 .hero-container .content {
     text-align: center;
+    position: absolute;
+    bottom: 35px;
 }
 
 .hero-container .content > h1 {
-    font-family: anta;
-    font-weight: 900;
-    font-size: 44px;
+    font-family: poppins;
+    font-weight: 600;
+    line-height: 53px;
+    font-size: 46px;
     color: rgb(255, 255, 255);
 }
 
-.hero-container .content > p {
-    font-family: anta;
-    font-weight: 900;
-    font-size: 36px;
+.hero-container .content > h1 {
+    font-family: poppins;
+    font-weight: 600;
+    line-height: 53px;
+    font-size: 46px;
     color: rgb(255, 255, 255);
-    max-width: 18cm;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
 @media (max-width: 767px) { 
     /* CSS rules for extra small devices (phones) */ 
     .hero-container .content > h1 {
-        font-size: 36px;
+        font-size: 25px;
+        line-height: normal;
     }
     .hero-container .content > p {
         font-size: 31px;
