@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutComponent.css';
-import MissionImg from '../../../images/our--mission-inspireSTEMgirlsb.png';
+import MissionImg1 from '../../../images/stem-girls-img-2.jpg';
+import MissionImg2 from '../../../images/stem-girls-img-6.jpg';
 
 const OurMission = () => {
   return (
@@ -17,7 +18,7 @@ const OurMission = () => {
             <h3>THE POWER OF GIRLS</h3>
             <div className="mission-content">
               <div className="first-image">
-                <img src={MissionImg} alt="" />
+                <img src={MissionImg1} alt="" />
               </div>
               <div className="flexed-content">
                 <p>By fostering a passion for these disciplines, the mission aims to bridge the gender gap and promote equality within these traditionally male-dominated fields. Here’s a breakdown of how this mission can be articulated and pursued through various initiatives:</p>
@@ -33,7 +34,7 @@ const OurMission = () => {
                   Increase Accessibility: Ensuring that girls from all backgrounds have access to STEM education and resources. This includes providing scholarships, learning materials, and access to technology for underprivileged communities.</p>
               </div>
               <div className="first-image">
-                <img src={MissionImg} alt="" />
+                <img src={MissionImg2} alt="" />
               </div>
             </div>
           </div>

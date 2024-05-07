@@ -1,5 +1,7 @@
 import React from 'react';
-import IntroImg from '../../../images/image1.jpg';
+import IntroImg1 from '../../../images/stem-girls-img-3.jpg';
+import IntroImg2 from '../../../images/stem-girls-img.jpg';
+import IntroImg3 from '../../../images/stem-grils-img-5.jpg';
 
 const Approach = () => {
   return (
@@ -12,19 +14,17 @@ const Approach = () => {
           <h3>Our vision is a world where every girl has the opportunity, encouragement, and resources to pursue a career in STEM.</h3>
         </div>
         <div className="intro-image">
-          <img className='image' src={IntroImg} alt="intro stem" />
+          <img className='image' src={IntroImg1} alt="intro stem" />
         </div>
 
         <div className="image-within-text">
-          <p> <img className='image-size' src={IntroImg} alt="intro" style={{ float: 'right', marginLeft: '10px' }} /> Our vision is a world where every girl has the opportunity, encouragement, and resources to pursue a career in STEM. We strive to break down barriers and change societal expectations, ensuring that girls can lead and innovate in science, technology, engineering, and mathematics, contributing to a diverse, balanced, and advanced global community.</p>
+          <p> <img className='image-size' src={IntroImg2} alt="intro" style={{ float: 'right', marginLeft: '10px' }} /> Our vision is a world where every girl has the opportunity, encouragement, and resources to pursue a career in STEM. We strive to break down barriers and change societal expectations, ensuring that girls can lead and innovate in science, technology, engineering, and mathematics, contributing to a diverse, balanced, and advanced global community.</p>
         </div>
 
         <div className="image-within-text">
           <h1>Career Guidance and Awareness</h1>
-          <p> <img className='image-size' src={IntroImg} alt="intro" style={{ float: 'right', marginLeft: '10px' }} />
+          <p> <img className='image-size' src={IntroImg3} alt="intro" style={{ float: 'right', marginLeft: '10px' }} />
             Educating girls about the vast opportunities in STEM careers. This involves bringing in guest speakers, organizing field trips to tech companies and laboratories, and providing early career counseling.
-
-            {/* <img className='image-size' src={IntroImg} alt="intro" style={{ float: 'left', marginRight: '10px' }} /> */}
           </p>
         </div>
           <h1>Community Building:</h1>

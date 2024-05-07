@@ -20,9 +20,8 @@
 }
 
 .footer-subscription-heading {
-    margin-bottom: 24px;
+    margin-bottom: 10px;
     color: white;
-    /* font-size: 36px; */
     line-height: 1;
     font-weight: 900;
     text-transform: uppercase;
@@ -30,7 +29,6 @@
 }
 
 .footer-subscription-text {
-    margin-bottom: 24px;
     color: white;
     width: 60%;
     font-size: larger;
@@ -43,8 +41,7 @@
     outline: none;
     border: none;
     font-size: 18px;
-    margin-bottom: 16px;
-    /* border: 1px solid #fff; */
+    margin-bottom: 10px;
 }
 
 .footer-links {

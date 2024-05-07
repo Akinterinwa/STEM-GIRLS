@@ -7,6 +7,16 @@
     display: flex;
     box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
 }
+.sponsors-hero {
+    background: url('../../../images/pexels-edward-jenner-4031692.jpg') center center/cover no-repeat ;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    box-shadow: inset 0 0 0 1000px rgb(0 0 0 / 47%);
+}
+
  .contact-hero {
     background: url('./images/pexels-andrea-piacquadio-3762806.jpg') center center/cover no-repeat ;
     height: 60vh;
@@ -38,7 +48,8 @@
 .image-button .image img {
     width: 28rem;
     height: 20rem;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 10px;
 }
 .image-button {
     display: flex;
@@ -114,6 +125,8 @@
     width: 26rem;
     height: 23rem;
     margin-top: 3rem;
+    object-fit: cover;
+    border-radius: 10px;
 }
 .reason-content {
     display: flex;

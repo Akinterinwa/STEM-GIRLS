@@ -1,6 +1,6 @@
 import React from "react";
 import "../connect-component/Connect.css";
-import InvestmentImg from "../../../images/image1.jpg";
+import InvestmentImg from "../../../images/pexels-alena-darmel-7750712.jpg";
 import LogoImg from "../../../images/png purple.png";
 
 const Sponsors = () => {
