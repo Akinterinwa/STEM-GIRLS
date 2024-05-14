@@ -59,7 +59,7 @@ const NavbarMenu = () => {
                 </ul>
                 <div className="hidden">
                     <Link to="/donate">
-                        <button className="btn-1">DONATE</button>
+                        <button className="btn-1 donate_btn">DONATE</button>
                     </Link>
                 </div>
                 {/* Mobile-nav */}

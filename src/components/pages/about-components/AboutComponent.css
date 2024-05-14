@@ -204,16 +204,6 @@ span {
     object-fit: cover;
 }
 
-.youtubes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.youtubes iframe {
-    height: 27rem;
-    width: 60%;
-}
-
 
 @media (min-width: 992px) and (max-width: 1200px) {
     /* CSS rules for large devices (desktops) */
@@ -318,18 +308,6 @@ span {
     .about-svg {
         width: 3rem;
         margin: 0 auto;
-    }
-    .youtube {
-        width: auto;
-    }
-    .youtubes iframe {
-        height: 16rem;
-        width: 90%;
-        margin-bottom: 20px;
-    }
-    .youtubes {
-        width: auto;
-        height: 15rem;
     }
     .intro-image .image {
         width: 19rem;

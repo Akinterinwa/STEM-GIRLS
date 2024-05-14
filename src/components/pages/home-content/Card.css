@@ -25,44 +25,30 @@
     margin: 0 8rem;
 }
 
-.card-component {
-    /* background-color: white; */
-    margin: 3rem 0;
+.container {
+    background-color: rgb(255, 234, 234);
+    max-width: min-content;
+    border-radius: 2px;
+    padding: 10px 0;
+}
+.container .text {
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 200;
+}
+
+.container img {
+    width: 380px;
+}
+
+.four-container {
     display: flex;
-    gap: 40px;
+    gap: 45px;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 80rem;
     margin: 3rem auto;
-}
-.card {
-    border-radius: 8px;
-    transition: transform 0.3s ease-in-out;
-    width: 45%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-image {
-    width: 16rem;
-    height: 14rem;
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-}
-
-.card-description {
-    padding: 0;
-    margin: 0;
 }
 
 .explore {
@@ -85,55 +71,78 @@
     flex-direction: column;
 }
 .explore-content h1 {
-    font-size: 7vmin;
+    font-family: cursive;
+    font-style: italic;
+    font-size: 40px;
 }
 .explore-content p {
     color: white;
     max-width: 32rem;
     text-align: center;
 }
+.girls-button {
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    padding: 15px 35px;
+    border-radius: 29px;
+    font-family: 'Montserrat';
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    font-weight: 500;
+    margin-top: 10px;
+    display: flex;
+    gap: 4px;
+}
+.girls-button:hover {
+    cursor: pointer;
+    background:rgba(0, 0, 0, 0.585) ;
+}
 
 @media (min-width: 1110px) and (max-width: 1900px) {
     /* CSS rules for medium devices (laptops) */
-    .card {
-        gap: 10px;
-    }
+
 }
 
 @media (min-width: 551px) and (max-width: 1100px) {
     /* CSS rules for medium devices (laptops) */
-    .card {
-        display: grid;
-    }
+ 
 }
 
 @media (max-width: 550px) { 
     /* CSS rules for extra small devices (phones) */
     .heading h1 {
-    font-size: 29px;
-    line-height: 57px;
+        font-size: 25px;
+        line-height: 25px;
     }
     .heading p {
-        font-size: 19px;
-        line-height: 27px;
+        font-size: 16px;
+        line-height: 21px;
         margin: 0px 1rem;    
-    }
-    .card {
-        display: contents;
-    }
-    .card-component {
-        gap: 0;
-    }
-    .card-description {
-        padding: 0 20px 24px 20px;
-        font-size: 17px;
-        line-height: 25px;
-        text-align: center;
     }
     .explore {
         height: 50vh;
     }
     .explore-content {
         padding: 2rem 0 0 0;
+    }
+    .container img {
+        width: 280px;
+    }
+    .container .text {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .explore-content h1 {
+        font-size: 20px;
+    }    
+    .explore-content .line-brush {
+        width: 145px;
+    }
+    .girls-button {
+        padding: 11px 15px;
+        border-radius: 35px;
+        margin-top: 7px;
+        gap: 2px;
     }
 }

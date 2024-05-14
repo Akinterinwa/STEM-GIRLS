@@ -1,27 +1,24 @@
-
-
-
 .focus {
     display: flex;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 60px 60px 60px;
     gap: 3rem;
-    margin: 6rem 0;
-    max-width: 80rem;
-    margin: 0 auto;
 }
-
+.focus-mission {
+    background: #ffb5b545;
+}
+.focus-vision {
+    background: #94bbf959;
+}
+.focus-team {
+    background: #8cfb8c40;
+}
 .read {
     font-weight: 700;
     font-size: 20px;
     line-height: 28px;
-    color: rgb(13, 156, 144);
-}
-
-.read svg {
-    width: auto;
-    margin: 0;
+    color: black;
 }
 
 .focus-container {
@@ -29,10 +26,11 @@
     text-align: left;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: fit-content;
 }
 .focus-container .icon {
-    text-align: center;
-    padding-bottom: 1rem;
+    padding: 23px 0 10px 0;
+    width: fit-content;
 }
 
 .focus-container .h2 {
@@ -40,27 +38,25 @@
     font-weight: 700;
     line-height: 29px;
     font-family: montserrat;
+    width: fit-content;
+    margin: 14px 0px;
 }
 
 .focus-container p {
-    font-size: 22px;
+    font-size: 17px;
 }
-.focus-container:hover {
-    background-color: rgba(76, 70, 70, 0.362); 
+.focus-mission:hover {
+    cursor: pointer;
+     background: #ffb5b572;
+}
+
+.focus-vision:hover {
+    background: #5284cba7;
     cursor: pointer;
 }
-
-@keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-7px); }
-  }
-  
-  /* Apply the bouncing animation and color fade on hover */
-  .focus-container .icon:hover {
-    animation: bounce 0.5s ease infinite alternate;
-    transition: background-color 0.5s ease;/* Faded color */
-  }
-
+.focus-team:hover {
+    background: #8cfb8cbe;
+}
 .icon svg {
     width: 80px;
 }
@@ -105,7 +101,7 @@
     /* CSS rules for extra small devices (phones) */
     .focus {
         display: grid;
-        margin:  0;
+        margin: 40px 0;
     }
     .location {
         margin-top: 4rem;
@@ -116,14 +112,21 @@
     .focus-container {
         margin: auto;
     }
-    .focus-container p {
-        font-size: 18px;
-    }
     .location h1 {
         font-size: 17px;
     }
     .location h1 span.color {
         font-size: 16px;
         line-height: 20px;
+    }
+    .focus-container .icon {
+        padding: 14px 0 1px 0;
+    }
+    .focus-container .h2 {
+        margin: 0;
+    }
+    .focus-container p {
+        font-size: 16px;
+        line-height: 28px;
     }
 }

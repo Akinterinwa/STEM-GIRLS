@@ -6,64 +6,61 @@ import LogoImg from '../images/png white.png';
 const Footer = () => {
     return (
         <div className='footer-container'>
-            <section className="footer-subscription">
-                <p className="footer-subscription-heading">
-                    Join our Newsletter to receive our updates
-                </p>
-                <p className="footer-subscription-text">
-                Stay informed, stay inspired. Join our newsletter for the latest in STEM news and exclusive updates. Subscribe now!
-                </p>
-                <div className="input-areas">
-                    <form>
-                        <input type="email" name='email' placeholder='Your email' className="footer-input" />
-                        <button className='btn-1'>Subscribe</button>
-                    </form>
-                </div>
-                <p className="footer-subscription-heading">
-                    Click here to donate
-                </p>
-                <Link to='/donate'>
-                <button className="btn-1 button footer-btn">
-                    DONATE
-                </button>
-                </Link>
-            </section>
-            <section className="social-media">
-                <div className="social-media-wrap">
-                    <div className="footer-logo">
-                        <Link to='/' className='social-logo'>
-                            <img src={LogoImg} alt="logo" />
-                        </Link>
+            <div className="footer-content">
+                <div className="inner-content">
+                    <div className="left-side-content">
+                        <img src={LogoImg} className='logo' alt="logo" />
+                        <p className="stand-for">STEM stands for Science, Technology, Engineering, and Math. Inspire Stem Girls is a 501(c)(3) non-profit organization.</p>
                     </div>
-                    <small className='website-rights'>Inspire Stem Girls is a 501(c)(3) non-profit organization  | TERMS OF USE | PRIVACY POLICY</small>
-                    <div className="social-icons">
-                        <Link className='social-icon-link facebook'
-                            to='/'
-                            target='_blank'
-                            aria-label='Facebook'>
-                            <i className='fab fa-facebook-f'></i>
-                        </Link>
-                        <Link className='social-icon-link instagram'
-                            to='/'
-                            target='_blank'
-                            aria-label='Instagram'>
-                            <i className='fab fa-instagram'></i>
-                        </Link>
-                        <Link className='social-icon-link youtube'
-                            to='/'
-                            target='_blank'
-                            aria-label='Youtube'>
-                            <i className='fab fa-youtube'></i>
-                        </Link>
-                        <Link className='social-icon-link twitter'
-                            to='/'
-                            target='_blank'
-                            aria-label='Twitter'>
-                            <i className='fab fa-twitter'></i>
-                        </Link>
+                    <div className="right-side-content">
+                        <p className="stay-up">Stay up-to-date on our latest news</p>
+                        <p className="newsletter">Sign up for our newsletter</p>
+                        <div className="form">
+                            <div className='email'>Enter your email address</div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+            <div className="straight-line"></div>
+
+            <div className="social-links">
+                <div className="section-1">
+                    <Link className='social-icon-link facebook'
+                        to='/'
+                        target='_blank'
+                        aria-label='Facebook'>
+                        <i className='fab fa-facebook-f'></i>
+                    </Link>
+                    <Link className='social-icon-link instagram'
+                        to='/'
+                        target='_blank'
+                        aria-label='Instagram'>
+                        <i className='fab fa-instagram'></i>
+                    </Link>
+                    <Link className='social-icon-link youtube'
+                        to='/'
+                        target='_blank'
+                        aria-label='Youtube'>
+                        <i className='fab fa-youtube'></i>
+                    </Link>
+                    <Link className='social-icon-link twitter'
+                        to='/'
+                        target='_blank'
+                        aria-label='Twitter'>
+                        <i className='fab fa-twitter'></i>
+                    </Link>
+                    <p>Home</p>
+                    <p>About us</p>
+                    <p> Workshop </p>
+                    <p> Contact</p>
+                    <p>Privacy Policy</p>
+                    <p> Terms & Conditions</p>
+                    <p> Support</p>
+                </div>
+                <div className="section-2">
+                    <p>©  2024 Inspire Stem Girls , All Rights Reserved</p>
+                </div>
+            </div>
         </div>
     )
 }

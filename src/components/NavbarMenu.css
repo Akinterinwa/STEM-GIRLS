@@ -1,6 +1,6 @@
 .navbar-menu-container.scroll {
-    background: linear-gradient(90deg, rgba(144, 125, 25, 0.9220938375350141) 4%, rgba(103, 0, 128, 1) 24%, rgba(0, 128, 128, 1) 76%);
-    transition: background-color 2.3s ease; 
+    background: black ;  
+     transition: background-color 2.3s ease; 
 }
 .navbar-menu-container {
     display: flex;
@@ -13,6 +13,22 @@
     width: 100%;
     top: 0;
     z-index: 999;
+}
+
+.donate_btn {
+    color: #fff;
+  cursor: pointer;
+  border: 1px solid var(--color-gray-300);
+  background-color: var(--diamond-gradient);
+  background: radial-gradient(
+      50% 50%at 50% 50%,
+      rgba(84, 171, 177, 0),
+      rgba(84, 171, 177, 0.41) 34.38%,
+      rgba(133, 238, 179, 0.71) 51.52%,
+      rgba(84, 171, 177, 0)
+    ),
+    #53aab0;
+    padding: 11px 19px;
 }
 
 .navbar-menu-container .logo h5 span.hidden-mobile.menu-text,
@@ -62,13 +78,35 @@
 }
 
 .dropdown-container {
+    /* position: absolute;
+    top: 45%;
+    display: none; */
+
     position: absolute;
     top: 45%;
+    opacity: 0;
     display: none;
+    animation-name: dropdownFadeIn;
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards; /* Retains styles after animation */
+    animation-timing-function: ease;
+    max-height: 0; /* Initially set max-height to 0 */
+    overflow: hidden; 
+}
+
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 250px; /* Set max-height to accommodate dropdown content */
+    }
 }
 
 .navbar-menu-heading:hover .dropdown-container {
-    display: block;
+    display: block; /* Display the dropdown on hover */
 }
 
 .navbar-menu-container .logo h5 {
@@ -96,12 +134,12 @@
     position: absolute;
     left: 0.75rem;
     margin-top: 0.25rem;
-    background-image: linear-gradient(90deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
+    background: #fff;
     transform: rotate(45deg);
 }
 
 .dropdown-container-content {
-    background-image: linear-gradient(90deg, #d7f9f4, #fff9e2, #fff3e8, #e5f8ff, #d7f9f4);
+    background: #fff;
     padding: 2.25rem;
     display: grid;
     border-radius: 10px;

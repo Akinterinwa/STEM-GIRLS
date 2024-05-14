@@ -1,33 +1,47 @@
 import React from 'react';
 import './pages/home-content/Home.css';
-import { motion } from "framer-motion";
 
 
 const HeroSection = () => {
     return (
         <div className='hero-container'>
-            {/* <video src='/pexels-ivan-samkov-7252716 (1080p).mp4' autoPlay loop muted /> */}
-            <motion.div
-                className="content"
-                initial={{ opacity: 0, y: -20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1 }}
-            >
-                <motion.h1
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5 }} // Delay the animation of the <h1> by 0.5 seconds
-                >
-                    Educate, Inspire & Empower
-                </motion.h1>
-                <motion.h1
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 1 }} // Delay the animation of the <p> by 0.5 seconds
-                >
-                 young girls to pursue career paths in STEM related disciplines and reach their full potentials.
-                </motion.h1>
-            </motion.div>
+            <div className="educateInspireContainer">
+                <span className="educate">{`Educate, `}</span>
+                <span className="inspire">inspire</span>
+                <span>
+                    <span className="span">{` `}</span>
+                    <span className="empower">{`& Empower`}</span>
+                </span>
+            </div>
+
+            <img
+                className="svgBrushIcon"
+                loading="lazy"
+                alt="design"
+                src="/Svg brush.svg"
+            />
+
+            <div className="encouragingYoungGirlsContainer">
+                <span className="encouragingYoungGirlsContainer1">
+                    <p
+                        className="encouragingYoungGirls"
+                    >{`Encouraging young girls to pursue career paths in STEM related `}</p>
+                    <p className="disciplinesAndReach">
+                        disciplines and reach their full potentials.
+                    </p>
+                </span>
+            </div>
+
+            <div className="buttons">
+                <button className="btn-1 hero-donate">
+                    <div className="label">Donate</div>
+                </button>
+                <button className="btn-1 learn-btn">
+                    <img className="buttonChild" alt="" src="/Polygon 1.svg" />
+                    <div className="">Learn more</div>
+                </button>
+
+            </div>
         </div>
     )
 }

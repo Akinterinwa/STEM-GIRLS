@@ -1,214 +1,231 @@
-.quotes{
-    display: flex;
-    margin: 3rem 0;
-    max-width: 76rem;
-    margin: 0 auto;
-    padding: 5rem 0 1rem 0;
-}
-
-.quotes-text {
-    background-color: #bed3e0;
-    padding: 2rem;
-    height: 32rem;
-}
-
-.quotes-text .quote {
-    font-size: 30px;
-    line-height: 41px;
-    font-weight: 400;
-    font-family: roboto;
-    color: #363431;
-}
-.quotes-text .author {
-    display: flex;
-    margin: 2rem 0 0 0;
-}
-.quotes-text .author p {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    font-family: roboto;
-}
-.author svg {
-    width: 2rem;
-    margin: 0;
-}
-
 .quotes-img img {
-    height: 32rem;
-    width: 38rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: auto;
+    height: 420px;
 }
 
-.numbers {
+.quote-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 90px 90px;
+    gap: 90px;
 }
 
-.numbers .big-number {
-    font-size: 46px;
-    line-height: 47px;
-    width: 70%;
-    margin: 1rem 0;
-    font-family: "Roboto Mono", monospace;
+.quote-text .text-1 {
+    font-size: 32px;
+    line-height: 46px;
     font-weight: 400;
+    max-width: 90%;
+    color: #4C4C4C;
 }
 
-.donate-line {
+.quote-text .name {
+    margin-top: 24px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #537AE9;
+}
+
+.mentorship-coding {
+    background: linear-gradient(45deg, #fafafa, #effcfa 50%, #eefcf5);
+    padding: 70px 50px 30px 50px;
+}
+.coding-container {
     display: flex;
-    margin: 3rem 0;
-    gap: 2rem;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
-.donate-line button {
-    padding: 16px;
-}
-.donate-text {
-    width: 29%;
+
+.coding-content {
+    max-width: 35%;
+    padding: 10px;
+    gap: 10px;
+    display: grid;
 }
 
-@media (min-width: 1210px) and (max-width: 1600px) {
-    .numbers .big-number {
-        font-size: 61px;
-        line-height: 68px;
-        width: 42%;
-    }
-    .quotes-img img {
-        object-fit: cover;
-      }
+.coding-content h3 {
+    font-size: 26px;
+    line-height: 36px;
+    font-family: 'Poppins';
+    font-weight: normal;
+    margin-bottom: 10px;
 }
+
+.coding-content p {
+    font-size: 18px;
+}
+
+.coding-content .donate-button {
+    color: white;
+    background: black;
+    padding: 15px 35px;
+    border-radius: 29px;
+    font-family: 'Montserrat';
+    max-width: fit-content;
+    margin-top: 20px;
+}
+.donate-button:hover {
+    cursor: pointer;
+    color: rgba(70, 57, 57, 0.938);
+}
+.coding-img img {
+    width: 410px;
+}
+
+.mentorship-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 55px 20px 55px;
+    background: black;
+    color: white;
+    padding: 80px 30px 80px 30px;
+    border-radius: 12px;
+}
+.mentorship-text {
+    max-width: 50%;
+}
+.mentorship-text .mentorship-cta {
+    color: black;
+    background: white;
+    padding: 15px 35px;
+    border-radius: 29px;
+    font-family: 'Montserrat';
+    max-width: fit-content;
+    margin-top: 50px;
+    font-weight: 500;
+}
+.mentorship-cta:hover {
+    cursor: pointer;
+    color: #4d3b3b75;
+}
+.mentorship-text p {
+    font-size: 19px;
+    line-height: 29px;
+    font-family: 'Poppins';
+    font-weight: normal;
+    margin-bottom: 10px;
+    max-width: 100%;
+    color: white;
+}
+.mentorship-image img {
+    width: 370px;
+}
+
+@media (min-width: 1210px) and (max-width: 1600px) {}
 
 
 @media (min-width: 992px) and (max-width: 1200px) {
     /* CSS rules for large devices (desktops) */
-  .quotes {
-    display: contents;
-  }
-  .quotes-text {
-    background-color: transparent;
-}
-    .quotes-img {
-        display: flex;
-        justify-content: center;
-    }
-  .quotes-img img {
-    border-right-color: 8px;
-    height: 25rem;
-    object-fit: cover;
-  }
-  .quotes-text {
-    height: auto;
-  }
 
-  .numbers .big-number {
-    font-size: 70px;
-    line-height: 83px;
-  }
-  .donate-text {
-    width: 50%;
-  }
 }
-@media (min-width: 676px) and (max-width: 1040px) {
-    .quotes {
-        gap: 50px;
-    }
+
+@media (min-width: 767px) and (max-width: 1150px) {
+
+    /* CSS rules for medium devices (laptops) */
     .quotes-img img {
-        object-fit: cover;
+        width: auto;
+        height: 300px;
+    }
+
+    .quote-text .text-1 {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 100%;
+    }
+
+    .quote-container {
+        display: flex;
+        margin: 65px 30px;
+        gap: 80px;
+    }
+    .coding-img img {
+        width: 333px;
+    }
+    .coding-content {
+        max-width: 60%;
+        padding: 5px;
+        gap: 3px;
+    }
+    .mentorship-container {
+        margin: 69px 0px 20px 0px;
+        padding: 49px 0px 60px 0px;
         border-radius: 8px;
-      }
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .mentorship-text {
+        max-width: 100%;
+        padding: 20px;
+    }
+    .mentorship-text .mentorship-cta {
+        margin: auto;
+        margin-top: 26px;
+    }
+    
 }
-@media (min-width: 767px) and (max-width: 1400px) {
-    .quotes {
+
+@media (max-width: 767px) {
+
+    /* CSS rules for extra small devices (phones) */
+    .quote-container {
+        display: grid;
+        margin: 50px 19px;
+        gap: 15px;
+    }
+
+    .quotes-img img {
+        height: 250px;
+    }
+
+    .quote-text .text-1 {
+        font-size: 19px;
+        line-height: 30px;
+    }
+
+    .quote-text .name {
+        margin-top: 11px;
+        font-size: 16px;
+    }
+    .mentorship-coding {
+        padding: 55px 10px 20px 10px;
+    }
+    .coding-container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .coding-content {
+        max-width: 100%;
+        padding: 10px;
+        gap: 0px;
         display: grid;
     }
-     
-    .quotes-text {
-        background-color: transparent;
-        height: 18rem;
-    }
-}
-
-@media (min-width: 767px) and (max-width: 992px) {
-    /* CSS rules for medium devices (laptops) */
-    .quotes-img{
+    .coding-img, .mentorship-image {
         justify-content: center;
         display: flex;    
     }
-    .quotes-img img {
-        height: 20rem;
-        width: 28rem;
-        object-fit: cover;
+    .coding-img img, .mentorship-image img {
+        width: 278px;
     }
-    .donate-text {
-        width: 65%;
-    }
-    .numbers .big-number {
-        font-size: 55px;
-        line-height: 57px;
-      }
-      .quote {
-        font-size: 29px;
-        line-height: 33px;
-      }
-}
-
-@media (max-width: 767px) { 
-    /* CSS rules for extra small devices (phones) */
-    .quotes{
+    .mentorship-container {
         display: grid;
-        padding: 3rem 1rem;
-        background-color: #dbf5f2;
-    }
-    .quote .quotes-img {
-        padding: 0 3rem;
-    }
-    .quotes-text .quote {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 33px;
-    }
-    .quotes-text .author p {
-        font-size: 15px;
-    }
-    .quotes-img{
         justify-content: center;
-        display: flex;
+        margin: 31px 0px 20px 0px;
+        background: black;
+        color: white;
+        padding: 53px 10px 53px 10px;
+        border-radius: 12px;
     }
-    .quotes-img img {
-        height: 17rem;
-        width: 18rem;    
-        object-fit: cover;
-        border-radius: 8px;
+    .mentorship-text {
+        max-width: 100%;
+        margin-top: 15px;
+        text-align: center;
     }
-    .quotes-text {
-        background-color: transparent;
-        padding: 0;
-        height: auto; 
+    .mentorship-text p {
+        font-size: 16px;
+        line-height: 25px;
     }
-    .numbers {
-        padding: 0 15px;
-    }
-    .numbers .big-number {
-        width: 100%;
-        margin: 0 0 1rem 0;
-        font-size: 46px;
-        line-height: 47px;
-        font-family: "Roboto Mono", monospace;
-        font-weight: 400;
-    }
-    .donate-line {
-        display: inline;
-    }
-    .donate-text {
-        width: 100%;
-        padding: 0 15px;
-    }
-    .donate-button {
-        display: flex;
-        justify-content: center;
-        margin-top: 10px;
+    .mentorship-text .mentorship-cta {
+        margin: auto;
     }
 }
-

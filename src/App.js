@@ -16,7 +16,6 @@ import Donate from "./components/pages/donate/Donate";
 import ScrollTop from "./components/ScrollTop";
 import { useState, useEffect } from "react";
 import { HashLoader } from "react-spinners";
-import ModalComponent from "./components/pages/home-content/ModalComponent";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -25,22 +24,21 @@ function App() {
     setLoading(true); // Simulate the completion of loading after 2 seconds
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 300);
   }, []);
   return (
     <div>
       {loading ? (
-         <div className="loader-container">
-         <HashLoader
-           color="#008080"
-           width="100"
-           visible={true}
-           ariaLabel="falling-circles-loading"
-         />
-       </div>
+        <div className="loader-container">
+          <HashLoader
+            color="#008080"
+            width="100"
+            visible={true}
+            ariaLabel="falling-circles-loading"
+          />
+        </div>
       ) : (
         <Router>
-          <ModalComponent />
           <ScrollTop />
           <NavbarMenu />
           <Routes>
