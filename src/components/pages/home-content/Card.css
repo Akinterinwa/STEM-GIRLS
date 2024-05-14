@@ -19,7 +19,7 @@
 }
 
 .heading p {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 21px;
     line-height: 32px;
     margin: 0 8rem;
@@ -35,7 +35,7 @@
     padding: 0 10px;
     font-size: 20px;
     line-height: 25px;
-    font-weight: 200;
+    font-weight: 500;
 }
 
 .container img {
@@ -71,7 +71,7 @@
     flex-direction: column;
 }
 .explore-content h1 {
-    font-family: cursive;
+    font-family: 'Poppins';
     font-style: italic;
     font-size: 40px;
 }

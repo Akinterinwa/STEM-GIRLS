@@ -19,16 +19,12 @@
     color: #fff;
   cursor: pointer;
   border: 1px solid var(--color-gray-300);
-  background-color: var(--diamond-gradient);
-  background: radial-gradient(
-      50% 50%at 50% 50%,
-      rgba(84, 171, 177, 0),
-      rgba(84, 171, 177, 0.41) 34.38%,
-      rgba(133, 238, 179, 0.71) 51.52%,
-      rgba(84, 171, 177, 0)
-    ),
-    #53aab0;
+  background: rgb(83, 170, 176);
     padding: 11px 19px;
+}
+.donate_btn:hover {
+    cursor: pointer;
+    color: #000;
 }
 
 .navbar-menu-container .logo h5 span.hidden-mobile.menu-text,
@@ -194,6 +190,14 @@
     color: white;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+}
+
+.mobile-button button {
+    border: 1px solid black;
+    padding: 9px 30px;
+}
+.mobile-button button:hover {
+   color: white;
 }
 
 .mobilemenu-head {

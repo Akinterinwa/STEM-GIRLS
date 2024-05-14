@@ -43,6 +43,9 @@
     font-weight: 400;
     line-height: 0;
 }
+.section-1 a p:hover, .section-1 .social-icon-link:hover {
+    color: gray;
+}
 
 @media (min-width: 992px) and (max-width: 1200px) {
     /* CSS rules for large devices (desktops) */

@@ -9,8 +9,10 @@ const Footer = () => {
             <div className="footer-content">
                 <div className="inner-content">
                     <div className="left-side-content">
-                        <img src={LogoImg} className='logo' alt="logo" />
-                        <p className="stand-for">STEM stands for Science, Technology, Engineering, and Math. Inspire Stem Girls is a 501(c)(3) non-profit organization.</p>
+                        <Link to="/">
+                            <img src={LogoImg} className='logo' alt="logo" />
+                        </Link>
+                        <p className="stand-for">STEM stands for Science, Technology, Engineering, and Math. Inspire STEM Girls is a 501(c)(3) non-profit organization.</p>
                     </div>
                     <div className="right-side-content">
                         <p className="stay-up">Stay up-to-date on our latest news</p>
@@ -49,16 +51,30 @@ const Footer = () => {
                         aria-label='Twitter'>
                         <i className='fab fa-twitter'></i>
                     </Link>
-                    <p>Home</p>
-                    <p>About us</p>
-                    <p> Workshop </p>
-                    <p> Contact</p>
-                    <p>Privacy Policy</p>
-                    <p> Terms & Conditions</p>
-                    <p> Support</p>
+                    <Link to="/">
+                        <p>Home</p>
+                    </Link>
+                    <Link to="/mission">
+                        <p>About us</p>
+                    </Link>
+                    <Link to="/location">
+                        <p> Workshop </p>
+                    </Link>
+                    <Link to="/contact">
+                        <p> Contact</p>
+                    </Link>
+                    <Link to="/contact">
+                        <p>Privacy Policy</p>
+                    </Link>
+                    <Link to="/contact">
+                        <p> Terms & Conditions</p>
+                    </Link>
+                    <Link to="/donate">
+                        <p> Support</p>
+                    </Link>
                 </div>
                 <div className="section-2">
-                    <p>©  2024 Inspire Stem Girls , All Rights Reserved</p>
+                    <p>©  2024 Inspire STEM Girls , All Rights Reserved</p>
                 </div>
             </div>
         </div>

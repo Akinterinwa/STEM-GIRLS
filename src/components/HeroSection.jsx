@@ -1,5 +1,6 @@
 import React from 'react';
 import './pages/home-content/Home.css';
+import { Link } from 'react-router-dom';
 
 
 const HeroSection = () => {
@@ -33,13 +34,17 @@ const HeroSection = () => {
             </div>
 
             <div className="buttons">
+                    <Link to="/start-new">
                 <button className="btn-1 hero-donate">
-                    <div className="label">Donate</div>
+                        <div className="label">Start a Site</div>
                 </button>
+                    </Link>
+                    <Link to="volunteer">
                 <button className="btn-1 learn-btn">
-                    <img className="buttonChild" alt="" src="/Polygon 1.svg" />
-                    <div className="">Learn more</div>
+                        <img className="buttonChild" alt="" src="/Polygon 1.svg" />
+                        <div className="">Volunteer</div>
                 </button>
+                    </Link>
 
             </div>
         </div>

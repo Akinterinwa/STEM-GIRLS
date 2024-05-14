@@ -19,11 +19,13 @@ const Mission = () => {
                             given the right tools early on, we believe all girls have the power
                             to develop their own STEM identity!
                         </h5>
-                        <div className="learn-more btn-1">
-                            Learn more
-                            <img className="learn-arrow"
-                                src="/Vector.svg" alt="" />
-                        </div>
+                        <Link to="/approach">
+                            <div className="learn-more btn-1">
+                                Learn more
+                                <img className="learn-arrow"
+                                    src="/Vector.svg" alt="" />
+                            </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -39,9 +41,13 @@ const Mission = () => {
                         </h3>
                         <p className="belive-text">We need you, just as you are, to join us in creating a world where everyone's contributions are valued. Together, let's empower the next generation of STEM leaders.</p>
                         <div className="belive-cta">
-                            <div className="action-1">Donate</div>
-                            <div className="action-2"><img src="/Icon.svg" alt="icon" />
-                                Join our Community</div>
+                            <Link to="/sponsors">
+                                <div className="action-1">Sponsor</div>
+                            </Link>
+                            <Link to="/location">
+                                <div className="action-2"><img src="/Icon.svg" alt="icon" />
+                                    Check Our Location</div>
+                            </Link>
                         </div>
                     </div>
 
@@ -60,8 +66,8 @@ const Mission = () => {
                     <p>
                         Empower the next generation of STEM leaders. Partner with Inspire STEM Girls and be a catalyst for change. Together, we'll break barriers and shape the future of innovation. Join us today and make a difference that lasts a lifetime.
                     </p>
-                    <Link to='/sponsors'>
-                        <div className="become-partner">Become a partner</div>
+                    <Link to='/contact'>
+                        <div className="become-partner">Get In Touch</div>
                     </Link>
                 </div>
                 <div className="background-img">

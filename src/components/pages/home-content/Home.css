@@ -15,19 +15,22 @@
     text-align: center;
 }
 
-.educate, .empower {
+.educate,
+.empower {
     font-weight: 400;
     font-size: 53px;
     color: #fff;
     font-family: sans-serif;
 }
+
 .inspire {
     font-weight: 400;
     font-size: 50px;
     font-style: italic;
     color: #fff;
-    font-family: cursive;
+    font-family: 'Poppins';
 }
+
 .svgBrushIcon {
     width: 314px;
     height: 17px;
@@ -37,9 +40,11 @@
     overflow: hidden;
     flex-shrink: 0;
 }
+
 .encouragingYoungGirlsContainer {
     margin: 14px 0 20px 0;
 }
+
 .encouragingYoungGirlsContainer1 {
     width: 876px;
     position: relative;
@@ -49,6 +54,7 @@
     box-sizing: border-box;
     text-align: center;
 }
+
 .encouragingYoungGirlsContainer1 p {
     font-size: 24px;
     font-style: normal;
@@ -57,21 +63,28 @@
     font-family: poppins;
     color: white;
 }
+
 .buttons {
     margin-top: 10px;
     display: flex;
     gap: 39px;
 }
+
 .hero-donate {
     cursor: pointer;
     border: 1px solid var(--color-gray-300);
-    background: radial-gradient(50% 50% at 50% 50%, rgba(84, 171, 177, 0), rgba(84, 171, 177, 0.41) 34.38%, rgba(133, 238, 179, 0.71) 51.52%, rgba(84, 171, 177, 0)), #53aab0;
+    background: rgb(83, 170, 176);
     padding: 19px 44px;
     border-radius: 27px;
     color: white;
     font-size: medium;
     font-family: 'Poppins';
 }
+.hero-donate:hover {
+    cursor: pointer;
+    color: #000;
+}
+
 .learn-btn {
     color: white;
     border: 2px solid white;
@@ -85,14 +98,17 @@
     justify-content: center;
 }
 
+.learn-btn a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 .learn-btn:hover {
     cursor: pointer;
     background: rgba(21, 21, 21, 0.7);
 }
-
-
-
-
 
 .hero-container .content>h1 {
     font-family: poppins;
@@ -136,15 +152,18 @@
     gap: 10px;
     width: 65%;
 }
+
 .modal-content .text {
     width: 50%;
 }
+
 .pop_image {
     position: relative;
     /* display: flex; */
     justify-content: end;
     align-items: center;
 }
+
 .pop_image img {
     width: 25rem;
 }
@@ -162,8 +181,8 @@
 
 .modal-open {
     overflow: hidden;
-  }
-  
+}
+
 
 
 @media (max-width: 1000px) {
@@ -181,32 +200,39 @@
         /* gap: 10px; */
         width: 90%;
     }
+
     .modal-content .text {
         width: 100%;
     }
+
     .pop_image {
         justify-content: center;
         align-items: center;
-        display: flex;    
+        display: flex;
     }
+
     .pop_image img {
         width: 16rem;
     }
-    .text p{
+
+    .text p {
         line-height: 25px;
         font-size: 16px;
     }
+
     .text h2 {
         font-size: large;
     }
+
     .cta_popup {
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .cta_popup button {
         font-weight: 500;
-    font-size: 14px;
+        font-size: 14px;
     }
 }
 
@@ -230,24 +256,31 @@
         text-align: center;
         padding-top: 40%;
     }
+
     .buttons {
         display: grid;
         gap: 8px;
         margin: 0;
     }
-    .educate, .empower {
+
+    .educate,
+    .empower {
         font-size: 35px;
     }
+
     .svgBrushIcon {
         width: 162px;
     }
+
     .encouragingYoungGirlsContainer1 p {
         font-size: 21px;
-        line-height: 27px; 
+        line-height: 27px;
     }
+
     .hero-donate {
         padding: 14px 44px;
     }
+
     .inspire {
         font-size: 30px;
     }
