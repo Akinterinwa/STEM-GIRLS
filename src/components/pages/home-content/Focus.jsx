@@ -11,7 +11,7 @@ const Focus = () => {
                         <img src="/Container.svg" alt="mission svg" />
                     </div>
                     <div className="h2">Our Mission</div>
-                    <p>Inspire STEM Girls' mission is to cultivate an empowering environment that encourages young girls to explore and excel in the field</p>
+                    <p>Inspire STEM Girls' (ISG) mission is to cultivate an empowering environment that encourages young girls to explore and excel in the field</p>
                     <Link to="/mission">
                         <p className="read">Read More </p>
                     </Link>

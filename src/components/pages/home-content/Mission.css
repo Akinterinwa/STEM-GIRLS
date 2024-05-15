@@ -62,6 +62,7 @@
     border-radius: 39px;
     margin-right: 36px;
 }
+
 .learn-more:hover {
     cursor: pointer;
     color: #3f393988;
@@ -91,7 +92,7 @@
 }
 
 .belive-content p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 25px;
     color: black;
     font-weight: 400;
@@ -101,6 +102,8 @@
 .belive-cta {
     display: flex;
     gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .belive-cta .action-1 {
@@ -143,14 +146,16 @@
     padding: 9rem 4rem;
 }
 
-.background-text{
+.background-text {
     max-width: 60%;
 }
+
 .background-text p {
     font-size: large;
     line-height: 30px;
     font-weight: 400;
 }
+
 .background-text .become-partner {
     color: white;
     background: black;
@@ -162,6 +167,7 @@
     margin-top: 50px;
     font-weight: 500;
 }
+
 .become-partner:hover {
     cursor: pointer;
     color: #929497;
@@ -321,10 +327,12 @@
         align-items: center;
         padding: 30px 10px;
     }
+
     .belive-content {
         max-width: 100%;
         padding: 0;
     }
+
     .belive-cta {
         justify-content: center;
         align-items: center;
@@ -332,10 +340,12 @@
         display: grid;
         gap: 10px;
     }
+
     .youtube-link iframe {
         height: 309px;
         width: 100%;
     }
+
     .background-img {
         flex: 1 1 17rem;
         justify-content: center;
@@ -458,9 +468,11 @@
         align-items: center;
         justify-content: center;
     }
+
     .background-text {
         max-width: 100%;
     }
+
     .background-text h2 {
         text-transform: uppercase;
         font-weight: 600;
@@ -472,15 +484,15 @@
 
     .background-text p {
         max-width: 100%;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 28px;
         text-align: left;
         margin: 0;
     }
-    
-.background-text .become-partner {
-    margin-top: 13px;
-}
+
+    .background-text .become-partner {
+        margin-top: 13px;
+    }
 
     .background-img img {
         height: 11rem;
@@ -490,8 +502,13 @@
         object-fit: cover;
         object-position: center;
     }
+
     .belive-heading {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 27px;
+    }
+
+    .belive-cta .action-2 {
+        margin: 10px 0;
     }
 }

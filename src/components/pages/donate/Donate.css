@@ -9,6 +9,7 @@
 }
 .donation-hero h1 {
     color: white;
+    text-transform: uppercase;
 }
 
 .donate {
@@ -40,6 +41,7 @@
     font-weight: 700;
     font-size: 27px;
     line-height: 30px;
+    text-transform: uppercase;
 }
 
 .donation-texts ul li {
@@ -55,7 +57,7 @@
     align-items: center;
     text-align: center;
     background: #e7eff7;
-    margin: 3rem 0;
+    margin: 3rem auto;
     padding: 1rem;
 }
 

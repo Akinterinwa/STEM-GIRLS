@@ -14,10 +14,9 @@ const StartNew = () => {
             <img src={SiteImg} alt="site" />
           </div>
           <div className="site-content">
-            <p>Ready to excite and empower girls with knowledge and confidence in STEM? Explore this page to learn how you can bring STEM Like a Girl to your city to encourage girls to become future problem solvers and leaders.</p>
+            <p>Ready to excite and empower girls with knowledge and confidence in STEM? Click the button to learn how you can bring Inspire STEM Girls (ISG) to your city to encourage girls to become future problem solvers and leaders.</p>
             <div className="apply_container">
               <div className="btn-1 button">Apply to Start a Site</div>
-              <div className="btn-1 button">Site Recruitment Package</div>
             </div>
           </div>
         </div>

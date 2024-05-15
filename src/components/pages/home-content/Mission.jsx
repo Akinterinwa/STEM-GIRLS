@@ -37,7 +37,7 @@ const Mission = () => {
                 <div className="our-belive-youtube">
                     <div className="belive-content">
                         <h3 className="belive-heading">
-                            At Inspire STEM Girls, we believe in the power of women and minority voices to shape our future. Your voice matters.
+                            At Inspire STEM Girls (ISG), we believe in the power of women and minority voices to shape our future. Your voice matters.
                         </h3>
                         <p className="belive-text">We need you, just as you are, to join us in creating a world where everyone's contributions are valued. Together, let's empower the next generation of STEM leaders.</p>
                         <div className="belive-cta">
@@ -64,7 +64,7 @@ const Mission = () => {
                 <div className="background-text">
                     <h2>BECOME INSPIRE STEM GIRLS PARTNER</h2>
                     <p>
-                        Empower the next generation of STEM leaders. Partner with Inspire STEM Girls and be a catalyst for change. Together, we'll break barriers and shape the future of innovation. Join us today and make a difference that lasts a lifetime.
+                        Empower the next generation of STEM leaders. Partner with Inspire STEM Girls (ISG) and be a catalyst for change. Together, we'll break barriers and shape the future of innovation. Join us today and make a difference that lasts a lifetime.
                     </p>
                     <Link to='/contact'>
                         <div className="become-partner">Get In Touch</div>

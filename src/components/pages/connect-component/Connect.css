@@ -29,20 +29,26 @@
 
 .volunteer-hero h1, .sponsors-hero h1, .contact-hero h1{
     color: white;
+    text-transform: uppercase;
+}
+
+.volunteer-content-1 a {
+    text-decoration: underline;
 }
 
 .volunteer, .sponsors, .contact {
     max-width: 58rem;
     margin: 0 auto;
-    display: grid;
     place-items: center;
 }
 .volunteer .h1 {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 27px;
+    color: black;
+    font-family: poppins;
     line-height: 32px;
     max-width: 90%;
-    margin: 4rem 0 0 0;
+    margin: 3rem 2rem;
     text-align: center;
 }
 .image-button .image img {
@@ -82,6 +88,9 @@
 .event-buttons p {
     margin: 0 0 3rem 0;
 }
+.event-buttons a {
+    text-decoration: underline;
+}
 
 .event-buttons .buttons-container {
     display: flex;
@@ -97,10 +106,16 @@
 }
 
 /* INVESTMENT */
+
 .sponsors img {
-    width: 16rem;
-    height: 5rem;
+    width: 13rem;
+    height: 4rem;
     margin: 3rem 0;
+}
+.sponsors .logo-connect {
+    display: flex;
+    margin: auto;
+    justify-content: center;
 }
 .investment-container {
     display: flex;
@@ -118,7 +133,11 @@
     font-weight: 300;
     font-size: 21px;
     line-height: 27px;
-    margin-bottom: 2rem;
+}
+.sponsors .texts .text-button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .investment-container img {
@@ -170,12 +189,9 @@
 }
 .sponsors p {
     text-align: center;
-    /* margin: 3rem 0; */
     text-align: center;
-    /* margin: 3rem 0; */
     font-size: 20px;
     line-height: 32px;
-    font-weight: 800;
 }
 .sponsors .last {
     font-weight: 200;
@@ -185,69 +201,27 @@
     margin: 3rem 0px;
 }
 
+/* CONTACT FORM */
 .contact-form iframe {
     height: 62rem;
     width: 100%;
 }
-
-/* CONTACT FORM */
 .contact {
     padding: 10px;
 }
 .contact-texts {
-    margin: 7rem 0 3rem 0;
+    margin: 1.5rem 0 3rem 0;
     text-align: center;
-}
-.contact-texts h1 {
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 53px;
 }
 .contact-texts p{
     margin: 1rem 0;
     font-size: 24px;
     font-weight: 300;
 }
-.textarea-box {
-    height: 10rem;
-}
-/* .contact-form{
-    width: 60%;
-} */
-.input-field {
-    margin-bottom: 1.25rem;
-}
-.input-fullname, .textarea-label{
-    font-size: 16px;
-    line-height: 21px;
-    font-weight: 700;
-}
-.fullname-text{
-    border-bottom-width: 2px;
-    border: none;
-    color: #4a5568; /* Adjust as needed */
-    width: 100%;
-    background-color: #f7fafc; /* Adjust as needed */
-    height: 3.5rem; /* Adjust as needed */
-    padding-left: 0.5rem; /* 8px */
-    padding-right: 0.5rem; /* 8px */
-}
-.textarea-box{
-    width: 100%;
-    border-bottom-width: 2px;
-    border: none;
-    background-color: #f7fafc;
-    padding: 0.5rem; /* 8px */
-}
-.send-button{
-    justify-content: center;
-    display: flex;
-}
-.send-button button {
-    width: 14rem;
-}
-.label-1, .text-area {
-    margin-bottom: 2rem;
+.contact-texts p span {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
 }
 .ending-p p{
     font-size: 18px;
@@ -256,22 +230,12 @@
     font-family: math;
     margin: 4rem 0;
 }
-.alert {
-    padding: 0.75rem 1rem; /* 12px 16px */
-    line-height: 1.5;
-    color: #2b6cb0;
-    background-color: #ebf8ff;
-    border-radius: 0.375rem; /* 6px */
-    margin-bottom: 1.25rem;
-    text-align: center;
-}
 
 @media (min-width: 700px) and (max-width: 950px) {
  .volunteer .h1 {
     font-weight: 600;
     font-size: 22px;
     line-height: 29px;
-    max-width: 83%;
  }
  .image-button .image img {
     width: 24rem;
@@ -331,8 +295,8 @@
     }
     .volunteer .h1 {
         font-weight: 500;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 21px;
+        line-height: 28px;
         max-width: 90%;
         margin: 2rem 0 0 0;
     }
@@ -431,32 +395,26 @@
         font-size: 17px;
         line-height: 20px;
         font-weight: 600;
+        margin-bottom: 20px;
     }
 
     /* contact */
-    .contact-texts h1 {
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 36px;
-    }
     .contact-texts p {
         font-size: 20px;
         line-height: 22px;
-    }
-    .fullname-text {
-        height: 2.5rem;
-    }
-    .textarea-box {
-        height: 5rem;
-    }
-    .send-button button {
-        width: 9rem;
-        height: 3rem;
     }
     .ending-p p {
         font-size: 14px;
         line-height: 16px;
         margin: 2rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    
+    .contact-form iframe {
+        height: 73rem;
+        width: 100%;
     }
 }
 

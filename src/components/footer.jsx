@@ -2,7 +2,6 @@ import React from 'react'
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import LogoImg from '../images/png white.png';
-import Subscribe from './Subscribe';
 
 const Footer = () => {
     return (
@@ -13,13 +12,14 @@ const Footer = () => {
                         <Link to="/">
                             <img src={LogoImg} className='logo' alt="logo" />
                         </Link>
-                        <p className="stand-for">STEM stands for Science, Technology, Engineering, and Math. Inspire STEM Girls is a 501(c)(3) non-profit organization.</p>
-                    </div>
+                        <p className="stand-for">STEM stands for Science, Technology, Engineering, and Math. Inspire STEM Girls (ISG) is a 501(c)(3) non-profit organization.</p>
+                    </div> 
                     <div className="right-side-content">
                         <p className="stay-up">Stay up-to-date on our latest news</p>
-                        <p className="newsletter">Sign up for our newsletter</p>
+                        <div className="signup-button">
+                        Sign up for our newsletter
+                        </div>
                         <div className="form">
-                            <Subscribe />
                         </div>
                     </div>
                 </div>
@@ -75,7 +75,7 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className="section-2">
-                    <p>©  2024 Inspire STEM Girls , All Rights Reserved</p>
+                    <p>©  2024 Inspire STEM Girls (ISG) , All Rights Reserved</p>
                 </div>
             </div>
         </div>

@@ -20,6 +20,24 @@
     font-size: large;
     line-height: 23px;
 }
+.right-side-content .signup-button {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    padding: 10px 22px;
+    border-radius: 29px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    margin-top: 20px;
+}
+.right-side-content .signup-button:hover {
+    cursor: pointer;
+    color: gray;
+}
 
 .straight-line {
     margin: 10px 0;
@@ -80,6 +98,21 @@ button[type="submit"] {
         display: grid;
         gap: 10px;
     }
+    .right-side-content .signup-button {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-transform: uppercase;
+        color: black;
+        background: white;
+        padding: 10px 22px;
+        border-radius: 29px;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        margin-top: 20px;
+        font-size: 13px;
+    }
 }
 @media (max-width: 767px) { 
     /* CSS rules for extra small devices (phones) */
@@ -101,5 +134,21 @@ button[type="submit"] {
         max-width: 90%;
         font-size: 14px;
         line-height: 21px;
+    }
+    .right-side-content .signup-button {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-transform: uppercase;
+        color: black;
+        background: white;
+        padding: 10px 22px;
+        border-radius: 29px;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        margin-top: 20px;
+        font-size: 13px;
+        width: max-content;
     }
 }

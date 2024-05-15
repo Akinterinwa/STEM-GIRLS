@@ -17,7 +17,7 @@ const Donate = () => {
                     </div>
                     <div className="beginning-text">
                         <div className="donation-texts">
-                            <p>As a 501(c)(3) nonprofit organization (ID #82-2953212), we depend on your tax-deductible donations to deliver impactful programming to girls around the world. Your generosity enables us to offer scholarships to low-income families and expand our workshops, reaching more girls in our community. Please consider making a donation today to ensure that all girls have the opportunity to build confidence, have fun, and discover the empowering world of STEM with us.</p>
+                            <p>As a 501(c)(3) nonprofit organization, we depend on your tax-deductible donations to deliver impactful programming to girls around the world. Your generosity enables us to offer scholarships to low-income families and expand our workshops, reaching more girls in our community. Please consider making a donation today to ensure that all girls have the opportunity to build confidence, have fun, and discover the empowering world of STEM with us.</p>
                             <h4>Our Work Is Vital</h4>
                             <p>We’re well into the 21st century, but the gender gap in the tech industry remains:</p>
                             <ul style={{marginTop: "1rem"}}>
@@ -46,7 +46,7 @@ const Donate = () => {
                             <Link to='/sponsors'>
                             <button className="btn-1 button">Corporate Sponsorship</button>
                             </Link>
-                            <p>*At Inspire STEM Girls, we prioritize your privacy and safeguard your personal information. Rest assured, we never share your details with third parties. By sharing your name, email, and phone number, you consent to receiving our newsletter, event reminders, and educational resources. You can opt out at any time</p>
+                            <p>*At Inspire STEM Girls (ISG), we prioritize your privacy and safeguard your personal information. Rest assured, we never share your details with third parties. By sharing your name, email, and phone number, you consent to receiving our newsletter, event reminders, and educational resources. You can opt out at any time</p>
                         </div>
                     </div>
                 </div>

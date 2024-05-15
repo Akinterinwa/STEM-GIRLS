@@ -6,14 +6,14 @@
 }
 
 .mission .heading {
-    margin: 7rem 2rem 3rem 2rem;
+    margin: 4rem 2rem 3rem 2rem;
 }
 
 .mission .heading h4 {
-    font-size: 27px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 32px;
     font-weight: 600;
-    font-family: 'Poppins';
+    font-family: 'Montserrat';
 }
 
 .mission-container {
@@ -50,6 +50,9 @@
 
 .mission-hero h1, .approach-hero h1, .team-hero h1{
     color: white;
+    text-transform: uppercase;
+    font-family: montserrat;
+
 }
 
 .mission-content {
@@ -85,20 +88,20 @@ span {
 
 .mission-content-1 p {
     padding: 6px 0;
-    padding: 6px 0;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 32px;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0;
     font-family: montserrat;
     font-style: normal;
 }
 
 .mission-content-1 h3 {
-    font-weight: 900;
-    font-size: 36px;
-    line-height: 36px;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 23px;
     padding: 1rem;
+    font-family: 'Montserrat';
 }
 
 .mission-content img {
@@ -130,20 +133,21 @@ span {
     line-height: 30px;
 }
 .approach .heading h3 {
-    font-weight: 800;
-    font-size: 31px;
-    line-height: 34px;
-    font-style: italic;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
     font-family: montserrat;
-    color: #871a1ad9;
+    color: black;
 }
 .approach .image-within-text {
-    margin: 1.5rem 0;
+    margin: 50px 10px 20px 10px;
 }
 .image-within-text h1 {
     font-weight: 700;
     font-size: 27px;
     line-height: 35px;
+    text-align: center;
+    padding-bottom: 15px;
 }
 .image-within-text p {
     font-weight: 300;
@@ -175,11 +179,10 @@ span {
     color: #872222;
 }
 .team h3 {
-    font-weight: 700;
-    font-size: 34px;
-    line-height: 52px;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 43px;
     margin: 4rem 0;
-    font-style: italic;
     font-family: montserrat;
 }
 .founders-container {
@@ -190,6 +193,7 @@ span {
     line-height: 32px;
     font-weight: 700;
     margin-bottom: 15px;
+    font-family: montserrat;
 }
 .founders-content p {
     font-weight: 300;
@@ -268,8 +272,8 @@ span {
     }
     .approach .heading h3 {
         font-weight: 600;
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 22px;
+        line-height: 27px;
     }
     .mission-content {
         display: grid;
@@ -281,8 +285,8 @@ span {
     }
 
     .mission p {
-        padding: 8px 10px;
-        font-size: 20px !important;
+        padding: 8px 3px;
+        font-size: 18px !important;
     }
 
     .mission-content img {
@@ -297,10 +301,11 @@ span {
     }
 
     .mission .heading h4 {
-        font-size: 20px;
+        font-size: 18px;
+        line-height: 26px;
     }
     .mission-content-1 h3 {
-        font-size: 30px;
+        font-size: 22px;
     }
     .flexed-content p span {
         font-size: 20px;

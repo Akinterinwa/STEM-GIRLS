@@ -8,7 +8,7 @@ const Team = () => {
         <h1>Our Team</h1>
       </div>
       <div className="team">
-        <h3>STEM Like a Girl Board of Directors</h3>
+        <h3>Inspire STEM Girls (ISG) Board of Directors</h3>
         <div className="founders-container">
           <div className="founders-name">
             <h4>Oluwaseyi Adelusi – Founder and President</h4>
