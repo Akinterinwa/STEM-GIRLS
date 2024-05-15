@@ -185,6 +185,11 @@
     margin: 3rem 0px;
 }
 
+.contact-form iframe {
+    height: 62rem;
+    width: 100%;
+}
+
 /* CONTACT FORM */
 .contact {
     padding: 10px;
@@ -206,9 +211,9 @@
 .textarea-box {
     height: 10rem;
 }
-.contact-form{
+/* .contact-form{
     width: 60%;
-}
+} */
 .input-field {
     margin-bottom: 1.25rem;
 }

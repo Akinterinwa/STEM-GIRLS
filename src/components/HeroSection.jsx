@@ -36,13 +36,13 @@ const HeroSection = () => {
             <div className="buttons">
                     <Link to="/start-new">
                 <button className="btn-1 hero-donate">
-                        <div className="label">Start a Site</div>
+                        <div className="label">START A SITE</div>
                 </button>
                     </Link>
                     <Link to="volunteer">
                 <button className="btn-1 learn-btn">
                         <img className="buttonChild" alt="" src="/Polygon 1.svg" />
-                        <div className="">Volunteer</div>
+                        <div className="">VOLUNTEER</div>
                 </button>
                     </Link>
 

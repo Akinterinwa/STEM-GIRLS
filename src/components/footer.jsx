@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css';
 import { Link } from 'react-router-dom';
 import LogoImg from '../images/png white.png';
+import Subscribe from './Subscribe';
 
 const Footer = () => {
     return (
@@ -18,7 +19,7 @@ const Footer = () => {
                         <p className="stay-up">Stay up-to-date on our latest news</p>
                         <p className="newsletter">Sign up for our newsletter</p>
                         <div className="form">
-                            <div className='email'>Enter your email address</div>
+                            <Subscribe />
                         </div>
                     </div>
                 </div>

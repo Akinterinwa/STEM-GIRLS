@@ -11,7 +11,7 @@ function ImageContainer({ image, text, backgroundColor }) {
             <div className="text">{text}</div>
         </div>
     );
-}
+};
 
 
 
@@ -22,7 +22,7 @@ const Card = () => {
                 <h1>STEM should be for everyone!</h1>
                 <p>We want no girl to opt out of STEM because of prejudice, too little information or lack of inspiration. The association should function both as a network for those who have already found an interest in STEM and as an inspiration to those who have not discovered their interest in STEM yet</p>
             </div>
-
+            
             <div className="four-container">
                 {researchData.map(item => (
                     <ImageContainer
