@@ -203,7 +203,7 @@
 
 /* CONTACT FORM */
 .contact-form iframe {
-    height: 62rem;
+    height: 67rem;
     width: 100%;
 }
 .contact {
@@ -413,7 +413,7 @@
 @media (max-width: 600px) {
     
     .contact-form iframe {
-        height: 73rem;
+        height: 77rem;
         width: 100%;
     }
 }
