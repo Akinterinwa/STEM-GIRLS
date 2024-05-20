@@ -2,6 +2,7 @@ import React from "react";
 import "../connect-component/Connect.css";
 import InvestmentImg from "../../../images/pexels-alena-darmel-7750712.jpg";
 import LogoImg from "../../../images/png purple.png";
+import { Link } from "react-router-dom";
 
 const Sponsors = () => {
   return (
@@ -23,9 +24,11 @@ const Sponsors = () => {
               about our sponsorship opportunities by
               emailing us directly to talk about personalized opportunities.
             </p>
+            <Link to="/contact">
             <div className="text-button">
               <button className="btn-1 button">Contact Us</button>
             </div>
+            </Link>
           </div>
         </div>
         <p>

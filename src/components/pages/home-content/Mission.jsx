@@ -4,6 +4,8 @@ import Quote from "./Quote";
 import Focus from "./Focus";
 import Card from "./Card";
 import { Link } from "react-router-dom";
+import BecomeImg from "../home-content/images/become.svg";
+import LocationIcon from "./images/Icon.svg";
 
 const Mission = () => {
     return (
@@ -23,12 +25,11 @@ const Mission = () => {
                             <div className="learn-more btn-1">
                                 Learn more
                                 <img className="learn-arrow"
-                                    src="/Vector.svg" alt="" />
+                                src="/Vector.svg" alt="" />
                             </div>
                         </Link>
                     </div>
                 </div>
-
                 <Focus />
             </div>
 
@@ -44,9 +45,9 @@ const Mission = () => {
                             <Link to="/sponsors">
                                 <div className="action-1">Sponsor</div>
                             </Link>
-                            <Link to="/location">
-                                <div className="action-2"><img src="/Icon.svg" alt="icon" />
-                                    Check Our Location</div>
+                            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSdnP-YD6HvgWECuzT35xAN5_b1xBnLzcEIaXMDP487Y40GPvQ/viewform?usp=sf_link" target="_blank">
+                                <div className="action-2"><img src={LocationIcon} alt="icon" />
+                                Join Our Community</div>
                             </Link>
                         </div>
                     </div>
@@ -66,12 +67,12 @@ const Mission = () => {
                     <p>
                         Empower the next generation of STEM leaders. Partner with Inspire STEM Girls (ISG) and be a catalyst for change. Together, we'll break barriers and shape the future of innovation. Join us today and make a difference that lasts a lifetime.
                     </p>
-                    <Link to='/contact'>
-                        <div className="become-partner">Get In Touch</div>
+                    <Link to='https://docs.google.com/forms/d/e/1FAIpQLSdnP-YD6HvgWECuzT35xAN5_b1xBnLzcEIaXMDP487Y40GPvQ/viewform?usp=sf_link' target="_blank">
+                        <div className="become-partner">Join Our Community!</div>
                     </Link>
                 </div>
                 <div className="background-img">
-                    <img src="/become.svg" alt="alt" />
+                    <img src={BecomeImg} alt="alt" />
                 </div>
             </div>
         </div>

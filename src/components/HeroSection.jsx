@@ -1,6 +1,7 @@
 import React from 'react';
 import './pages/home-content/Home.css';
 import { Link } from 'react-router-dom';
+import PolygonArrow from "./pages/home-content/images/Polygon 1.svg";
 
 
 const HeroSection = () => {
@@ -41,7 +42,7 @@ const HeroSection = () => {
                     </Link>
                     <Link to="volunteer">
                 <button className="btn-1 learn-btn">
-                        <img className="buttonChild" alt="" src="/Polygon 1.svg" />
+                        <img className="buttonChild" alt="" src={PolygonArrow} />
                         <div className="">VOLUNTEER</div>
                 </button>
                     </Link>

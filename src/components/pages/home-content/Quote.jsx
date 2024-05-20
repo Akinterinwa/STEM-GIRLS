@@ -2,7 +2,8 @@ import React from 'react';
 import './Quote.css';
 import QuoteImg from "./images/Image.svg"
 import { Link } from 'react-router-dom';
-// import { Link } from 'react-router-dom';
+import CodingImg from "./images/div.framer-amyu2d.svg";
+import MentorshipImg from "./images/mentorship.svg";
 
 const Quote = () => {
   return (
@@ -31,12 +32,12 @@ const Quote = () => {
             </Link>
           </div>
           <div className="coding-img">
-            <img src="/div.framer-amyu2d.svg" alt="coding" />
+            <img src={CodingImg} alt="coding" />
           </div>
         </div>
         <div className="mentorship-container">
           <div className="mentorship-image">
-            <img src="/mentorship.svg" alt="mentorship" />
+            <img src={MentorshipImg} alt="mentorship" />
           </div>
           <div className="mentorship-text">
             <p>Join us in making a difference! Become a mentor and help shape the future of STEM by empowering the next generation of leaders. By sharing your knowledge and experiences, you'll not only build confidence in young women but also grow your own network and leave a lasting legacy. Together, let's inspire, guide, and create opportunities for success. Take the first step towards making a meaningful impact - become a mentor today!</p>

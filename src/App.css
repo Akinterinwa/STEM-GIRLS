@@ -18,8 +18,8 @@ a {
 
 /* Resetting default styles for <ul> elements */
 ul {
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
