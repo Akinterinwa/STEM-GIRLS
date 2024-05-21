@@ -13,7 +13,7 @@
     font-size: 24px;
     line-height: 32px;
     font-weight: 600;
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
 }
 
 .mission-container {
@@ -90,9 +90,9 @@ span {
     padding: 6px 0;
     font-size: 21px;
     line-height: 32px;
-    font-weight: 500;
+    font-weight: 300;
     margin: 0;
-    font-family: montserrat;
+    font-family: 'Poppins';
     font-style: normal;
 }
 
@@ -101,7 +101,7 @@ span {
     font-size: 26px;
     line-height: 23px;
     padding: 1rem;
-    font-family: 'Montserrat';
+    font-family: 'Poppins';
 }
 
 .mission-content img {

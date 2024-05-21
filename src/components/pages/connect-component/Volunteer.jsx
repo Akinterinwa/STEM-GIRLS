@@ -36,7 +36,6 @@ const Volunteer = () => {
         </div>
         <div className="ending-content">
           <p>*Inspire STEM Girls (ISG) is dedicated to providing a welcoming, inclusive, and equitable environment for all employees, volunteers and workshop participants. We treat all people with respect and dignity and are committed to providing a safe environment for every person. We welcome people who identify as non-binary or gender nonconforming who wish to be in a female-identified environment.</p>
-          <p>*Inspire STEM Girls (ISG) values your privacy and keeps your personal information safe.  We will never share your information with anyone.  By providing your name, email and phone number you also provide consent to receive our newsletter, event reminders, and other educational resources. You can unsubscribe at any time.</p>
         </div>
       </div>
     </>

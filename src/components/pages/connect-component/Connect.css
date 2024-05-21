@@ -47,7 +47,6 @@
     color: black;
     font-family: poppins;
     line-height: 32px;
-    max-width: 90%;
     margin: 3rem 2rem;
     text-align: center;
 }
@@ -297,8 +296,7 @@
         font-weight: 500;
         font-size: 21px;
         line-height: 28px;
-        max-width: 90%;
-        margin: 2rem 0 0 0;
+        margin: 2rem 10px;
     }
     .image-button .image img {
         width: 22rem;
