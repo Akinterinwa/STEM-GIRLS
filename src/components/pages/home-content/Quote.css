@@ -109,14 +109,6 @@
     width: 370px;
 }
 
-@media (min-width: 1210px) and (max-width: 1600px) {}
-
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    /* CSS rules for large devices (desktops) */
-
-}
-
 @media (min-width: 767px) and (max-width: 1150px) {
 
     /* CSS rules for medium devices (laptops) */

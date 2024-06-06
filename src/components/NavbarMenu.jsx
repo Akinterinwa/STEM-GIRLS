@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import LogoImg from '../images/png white.png';
-import './NavbarMenu.css';
-import { Link } from 'react-router-dom';
-import NavbarMenuLink from './NavbarMenuLink';
+import React, { useState, useEffect } from "react";
+import LogoImg from "../images/png white.png";
+import "./NavbarMenu.css";
+import { Link } from "react-router-dom";
+import NavbarMenuLink from "./NavbarMenuLink";
 
 const NavbarMenu = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -12,16 +12,16 @@ const NavbarMenu = () => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             if (scrollPosition > 200) {
-                setScrolled(true); 
+                setScrolled(true);
             } else {
                 setScrolled(false);
             }
         };
 
-        window.addEventListener('scroll', handleScroll);
+        window.addEventListener("scroll", handleScroll);
 
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
@@ -29,29 +29,32 @@ const NavbarMenu = () => {
     const handleToggleMenu = () => {
         // Toggle the state between true and false
         setMenuOpen(!isMenuOpen);
-    }
+    };
 
     // Function to close the mobile menu
     const closeMobileMenu = () => {
         setMenuOpen(false); // Set isMenuOpen to false to close the menu
-    }
+    };
 
     return (
         <div className="Navbar-menu">
-            <div className={`navbar-menu-container ${isScrolled ? 'scroll' : ''}`}>
+            <div className={`navbar-menu-container ${isScrolled ? "scroll" : ""}`}>
                 <div className="logo">
-                    <Link to='/'>
+                    <Link to="/">
                         <img src={LogoImg} alt="logo" />
                     </Link>
                     <h5 onClick={handleToggleMenu}>
-                        <span className={`hidden-mobile ${isMenuOpen ? 'close-text' : 'menu-text'}`}>
-                            {isMenuOpen ? 'Close' : 'Menu'}
+                        <span
+                            className={`hidden-mobile ${isMenuOpen ? "close-text" : "menu-text"
+                                }`}
+                        >
+                            {isMenuOpen ? "Close" : "Menu"}
                         </span>
                     </h5>
                 </div>
-                <ul className='links-container hidden'>
+                <ul className="links-container hidden">
                     <li>
-                        <Link to="/" className='navbar-link' onClick={closeMobileMenu}>
+                        <Link to="/" className="navbar-link" onClick={closeMobileMenu}>
                             HOME
                         </Link>
                     </li>
@@ -63,26 +66,30 @@ const NavbarMenu = () => {
                     </Link>
                 </div>
                 {/* Mobile-nav */}
-                <ul className={`
+                <ul
+                    className={`
                     mobile-menu 
-                    ${isMenuOpen ? 'mobile-show' : 'mobile-close'} 
+                    ${isMenuOpen ? "mobile-show" : "mobile-close"} 
                     hidden-mobile
-                `}>
+                `}
+                >
                     <li>
-                        <Link to="/" className='navbar-link' onClick={closeMobileMenu}>
+                        <Link to="/" className="navbar-link" onClick={closeMobileMenu}>
                             Home
                         </Link>
                     </li>
                     <NavbarMenuLink onClick={closeMobileMenu} />
                     <div className="mobile-button">
                         <Link to="/donate">
-                            <button onClick={closeMobileMenu} className="btn-1">DONATE</button>
+                            <button onClick={closeMobileMenu} className="btn-1">
+                                DONATE
+                            </button>
                         </Link>
                     </div>
                 </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default NavbarMenu;

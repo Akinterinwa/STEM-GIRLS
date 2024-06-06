@@ -86,7 +86,7 @@
 .belive-heading {
     font-size: 26px;
     line-height: 36px;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     font-weight: normal;
     margin-bottom: 10px;
 }
@@ -111,7 +111,7 @@
     background: black;
     padding: 15px 35px;
     border-radius: 29px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
 }
 
 .belive-cta .action-1:hover {
@@ -161,7 +161,7 @@
     background: black;
     padding: 15px 35px;
     border-radius: 40px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     max-width: -moz-fit-content;
     max-width: fit-content;
     margin-top: 50px;
@@ -314,7 +314,6 @@
     .about-text p {
         font-size: 21px;
     }
-
 }
 
 @media (max-width: 800px) {

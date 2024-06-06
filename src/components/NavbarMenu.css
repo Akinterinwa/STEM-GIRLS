@@ -1,14 +1,15 @@
 .navbar-menu-container.scroll {
-    background: black ;  
-     transition: background-color 2.3s ease; 
+    background: black;
+    transition: background-color 2.3s ease;
 }
+
 .navbar-menu-container {
     display: flex;
     align-items: center;
     font-size: medium;
     justify-content: space-around;
-    background: transparent; /* Initially black background */
-    transition: background-color 2.3s ease; 
+    background: transparent;
+    transition: background-color 2.3s ease;
     position: fixed;
     width: 100%;
     top: 0;
@@ -17,11 +18,12 @@
 
 .donate_btn {
     color: #fff;
-  cursor: pointer;
-  border: 1px solid var(--color-gray-300);
-  background: rgb(83, 170, 176);
+    cursor: pointer;
+    border: 1px solid var(--color-gray-300);
+    background: rgb(83, 170, 176);
     padding: 11px 19px;
 }
+
 .donate_btn:hover {
     cursor: pointer;
     color: #000;
@@ -55,6 +57,7 @@
     align-items: center;
     gap: 10px;
 }
+
 .links-container li {
     padding-bottom: 12px;
     list-style: none !important;
@@ -74,20 +77,16 @@
 }
 
 .dropdown-container {
-    /* position: absolute;
-    top: 45%;
-    display: none; */
-
     position: absolute;
     top: 45%;
     opacity: 0;
     display: none;
     animation-name: dropdownFadeIn;
     animation-duration: 0.6s;
-    animation-fill-mode: forwards; /* Retains styles after animation */
+    animation-fill-mode: forwards;
     animation-timing-function: ease;
-    max-height: 0; /* Initially set max-height to 0 */
-    overflow: hidden; 
+    max-height: 0;
+    overflow: hidden;
 }
 
 @keyframes dropdownFadeIn {
@@ -95,14 +94,15 @@
         opacity: 0;
         max-height: 0;
     }
+
     to {
         opacity: 1;
-        max-height: 250px; /* Set max-height to accommodate dropdown content */
+        max-height: 250px;
     }
 }
 
 .navbar-menu-heading:hover .dropdown-container {
-    display: block; /* Display the dropdown on hover */
+    display: block;
 }
 
 .navbar-menu-container .logo h5 {
@@ -113,6 +113,7 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .mysublinks-head {
     font-size: 16px;
     font-weight: 700;
@@ -166,10 +167,7 @@
     padding-left: 1rem;
     transition-duration: 0.6s;
     max-height: 100vh;
-    /* Ensure menu doesn't exceed viewport height */
     overflow-y: auto;
-    /* Enable vertical scrolling if content exceeds height */
-    /* Background color of the menu */
 }
 
 .mobile-show {
@@ -178,6 +176,7 @@
     padding-right: 1rem;
     padding-left: 1rem;
 }
+
 .line {
     border-top: 2px solid white;
 }
@@ -196,8 +195,9 @@
     border: 1px solid black;
     padding: 9px 30px;
 }
+
 .mobile-button button:hover {
-   color: white;
+    color: white;
 }
 
 .mobilemenu-head {
@@ -244,18 +244,18 @@
     width: 1rem;
 }
 
-
 @media (max-width: 768px) {
     .navbar-menu-container img {
         width: 8rem;
     }
+
     .links-container {
         display: flex;
     }
 
-.hidden {
+    .hidden {
         display: none;
-    } 
+    }
 
     .navbar-menu-heading:hover .dropdown-container {
         display: none;
@@ -267,19 +267,13 @@
         display: inline;
     }
 }
-/* 
-@media (min-width: 900px) {
-    .hidden-mobile {
-        display: none;
-    }
-    
-} */
 
 @media (min-width: 768px) {
     .links-container {
         display: flex;
         gap: 3rem;
     }
+
     .hidden-mobile {
         display: none;
     }
@@ -293,12 +287,13 @@
     }
 
     .arrowdown {
-       display: none;
+        display: none;
     }
 
     .navbar-menu-heading-text {
         padding-right: 0;
     }
+
     .line {
         border: none;
     }

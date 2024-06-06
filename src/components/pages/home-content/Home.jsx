@@ -3,12 +3,11 @@ import HeroSection from "../../HeroSection";
 import Mission from "./Mission";
 
 const Home = () => {
-
   return (
     <>
-              <HeroSection />
-              <Mission />
-            </>
+      <HeroSection />
+      <Mission />
+    </>
   );
 };
 

@@ -52,7 +52,6 @@
     color: white;
     text-transform: uppercase;
     font-family: montserrat;
-
 }
 
 .mission-content {
@@ -206,12 +205,6 @@ span {
     height: 18rem;
     margin: 0 1.5rem 1rem 0;
     object-fit: cover;
-}
-
-
-@media (min-width: 992px) and (max-width: 1200px) {
-    /* CSS rules for large devices (desktops) */
-
 }
 
 @media (min-width: 767px) and (max-width: 992px) {

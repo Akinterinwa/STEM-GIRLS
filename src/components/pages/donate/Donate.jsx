@@ -26,7 +26,6 @@ const Donate = () => {
                                 <li>*47% is the turnover rate for women (compared to 17% for men).</li>
                                 <li>*Women experience a 3% pay gap across the board, while LGBTQ experience an 8% pay gap, and for black women this goes up to 11%.</li>
                             </ul>
-
                             <div className="background-text">
                                 <p>Monthly gifts enable us to invest in specific areas, support our students with scholarships, and innovate within the classroom because we know we have your support</p>
                             </div>

@@ -1,26 +1,28 @@
-import React from 'react'
-import './Footer.css';
-import { Link } from 'react-router-dom';
-import LogoImg from '../images/png white.png';
+import React from "react";
+import "./Footer.css";
+import { Link } from "react-router-dom";
+import LogoImg from "../images/png white.png";
 
 const Footer = () => {
     return (
-        <div className='footer-container'>
+        <div className="footer-container">
             <div className="footer-content">
                 <div className="inner-content">
                     <div className="left-side-content">
                         <Link to="/">
-                            <img src={LogoImg} className='logo' alt="logo" />
+                            <img src={LogoImg} className="logo" alt="logo" />
                         </Link>
-                        <p className="stand-for">STEM stands for Science, Technology, Engineering, and Math. Inspire STEM Girls (ISG) is a 501(c)(3) non-profit organization.</p>
-                    </div> 
+                        <p className="stand-for">
+                            STEM stands for Science, Technology, Engineering, and Math.
+                            Inspire STEM Girls (ISG) is a 501(c)(3) non-profit organization.
+                        </p>
+                    </div>
                     <div className="right-side-content">
                         <p className="stay-up">Stay up-to-date on our latest news</p>
-                        <div className="signup-button">
-                        Sign up for our newsletter
-                        </div>
-                        <div className="form">
-                        </div>
+                        <Link to='https://docs.google.com/forms/d/e/1FAIpQLScH4hcoLfynQBUJ_PYm85a7Oqy87th9myU7_1_9OlR34UrYCw/viewform?usp=sf_link' target="_blank">
+                            <div className="signup-button">Sign up for our newsletter</div>
+                        </Link>
+                        <div className="form"></div>
                     </div>
                 </div>
             </div>
@@ -28,29 +30,37 @@ const Footer = () => {
 
             <div className="social-links">
                 <div className="section-1">
-                    <Link className='social-icon-link facebook'
-                        to='/'
-                        target='_blank'
-                        aria-label='Facebook'>
-                        <i className='fab fa-facebook-f'></i>
+                    <Link
+                        className="social-icon-link facebook"
+                        to="/"
+                        target="_blank"
+                        aria-label="Facebook"
+                    >
+                        <i className="fab fa-facebook-f"></i>
                     </Link>
-                    <Link className='social-icon-link instagram'
-                        to='/'
-                        target='_blank'
-                        aria-label='Instagram'>
-                        <i className='fab fa-instagram'></i>
+                    <Link
+                        className="social-icon-link instagram"
+                        to="/"
+                        target="_blank"
+                        aria-label="Instagram"
+                    >
+                        <i className="fab fa-instagram"></i>
                     </Link>
-                    <Link className='social-icon-link youtube'
-                        to='/'
-                        target='_blank'
-                        aria-label='Youtube'>
-                        <i className='fab fa-youtube'></i>
+                    <Link
+                        className="social-icon-link youtube"
+                        to="/"
+                        target="_blank"
+                        aria-label="Youtube"
+                    >
+                        <i className="fab fa-youtube"></i>
                     </Link>
-                    <Link className='social-icon-link twitter'
-                        to='/'
-                        target='_blank'
-                        aria-label='Twitter'>
-                        <i className='fab fa-twitter'></i>
+                    <Link
+                        className="social-icon-link twitter"
+                        to="/"
+                        target="_blank"
+                        aria-label="Twitter"
+                    >
+                        <i className="fab fa-twitter"></i>
                     </Link>
                     <Link to="/">
                         <p>Home</p>
@@ -75,11 +85,11 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className="section-2">
-                    <p>©  2024 Inspire STEM Girls (ISG) , All Rights Reserved</p>
+                    <p>© 2024 Inspire STEM Girls (ISG) , All Rights Reserved</p>
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;

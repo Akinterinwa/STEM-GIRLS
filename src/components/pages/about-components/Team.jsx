@@ -1,5 +1,5 @@
 import React from 'react';
-import FounderImg from '../../../images/founder.webp';
+import FounderImg from '../../../images/Adelusi_Oluwaseyi_928-0444-retouched.jpg';
 
 const Team = () => {
   return (
@@ -14,24 +14,14 @@ const Team = () => {
             <h4>Oluwaseyi Adelusi – Founder and President</h4>
           </div>
           <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' /> Hi I'm Oluwaseyi Adelusi, a Software Engineer with 6+ years experience that cuts across various field in tech. I have a first degree in Electrical & Electronics Engineering and Masters degree in Computer Science.</p>
-          </div>
-        </div>
-        {/* <div className="founders-container">
-          <div className="founders-name">
-            <h4>Courtney Davis – Secretary</h4>
-          </div>
-          <div className="founders-content">
-            <p><img src={FounderImg} alt="founder" className='founder-img' />  Courtney has wanted to design bridges since she was a little girl. She was inspired by Portland’s
-              her undergraduate and masters in Civil Engineering from Washington State University. Go Cougs! During her
-              career, she has had the privilege of working on some awesome projects like the new Panama Canal and the longest
-              cable ferry in the world! Courtney also worked in New Orleans after Hurricane Katrina to protect the city from future
-              hurricanes. When she is not designing steel and concrete structures at work, she enjoys visiting classrooms, building popsicle
-              stick bridges and gummy bear domes.  Courtney is excited to be a part of the STEM Like a Girl to inspire the next generation of
-              problem solvers!
+            <p><img src={FounderImg} alt="founder" className='founder-img' />
+              Oluwaseyi Adelusi , Software Engineer & STEM Advocate is a passionate software engineer dedicated to building innovative solutions and inspiring the next generation of female leaders in STEM (Science, Technology, Engineering, and Mathematics). With a deep-rooted love for technology and a fervent belief in the power of diversity, she is on a mission to break down barriers and empower young girls to pursue their dreams in the tech industry.
+              Armed with a Bachelor's degree in Electrical and Electronics Engineering, Master’s in Computer Science. She embarked on her career journey with a commitment to excellence and a drive to make a difference. Over the years, she has honed her skills in software development, specializing in automating cloud software delivery cycle and has contributed to cutting-edge projects that have transformed industries.
+              Beyond her technical prowess, Oluwaseyi is a staunch advocate for diversity and inclusion in STEM fields. She actively mentors aspiring young girls, sharing her experiences and insights to help them navigate the challenges and opportunities in the tech world. Through workshops, talks, and community outreach programs, she strives to foster a supportive environment where girls feel empowered to pursue their passions in technology.
+              Recognized for her dedication and impact, Oluwaseyi has been featured in media outlets and has received accolades for her contributions to the tech community. Whether she's coding a groundbreaking software solution or inspiring the next generation of innovators, Oluwaseyi is committed to making a lasting impact and creating a more inclusive future for all.
             </p>
           </div>
-        </div> */}
+        </div>
       </div>
     </>
   )
