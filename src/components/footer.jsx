@@ -14,7 +14,7 @@ const Footer = () => {
                         </Link>
                         <p className="stand-for">
                             STEM stands for Science, Technology, Engineering, and Math.
-                            Inspire STEM Girls (ISG) is a 501(c)(3) non-profit organization.
+                            Inspire STEM Girls (ISG) is a 501(c)(c3) non-profit organization.
                         </p>
                     </div>
                     <div className="right-side-content">
