@@ -40,7 +40,7 @@ const Focus = () => {
                 <div className="icon">
                     <img src={Container3} alt="Vision svg" />{" "}
                 </div>
-                <div className="h2">Our Team</div>
+                <div className="h2">Our Founder</div>
                 <p>
                     We believe in the combined power of girls, parents, and mentors to
                     build confidence in young girls and shape their future in STEM fields

@@ -8,7 +8,7 @@ export const links = [
                 sublink: [
                     { name: 'Our Mission', link: "/mission" },
                     { name: 'Our Approach', link: "/approach" },
-                    { name: 'Our Team', link: "/team" },
+                    { name: 'Our Founder', link: "/team" },
                 ]
             },
         ]

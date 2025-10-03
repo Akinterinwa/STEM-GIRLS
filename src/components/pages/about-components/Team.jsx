@@ -5,7 +5,7 @@ const Team = () => {
   return (
     <>
       <div className="team-hero">
-        <h1>Our Team</h1>
+        <h1>Our Founder</h1>
       </div>
       <div className="team">
         <h3>Inspire STEM Girls (ISG) Board of Directors</h3>
