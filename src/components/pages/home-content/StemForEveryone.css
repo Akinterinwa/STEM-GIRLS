@@ -1,0 +1,105 @@
+.stem-for-everyone-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: white;
+}
+
+.stem-for-everyone-container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stem-for-everyone-heading {
+  text-align: center;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+.stem-for-everyone-title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #111827;
+}
+
+@media (min-width: 768px) {
+  .stem-for-everyone-title {
+    font-size: 3rem;
+    line-height: 1;
+  }
+}
+
+.stem-for-everyone-text {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: #4b5563;
+}
+
+.stem-for-everyone-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width: 640px) {
+  .stem-for-everyone-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .stem-for-everyone-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.stem-for-everyone-card {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.stem-for-everyone-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.stem-for-everyone-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.stem-for-everyone-card:hover .stem-for-everyone-image {
+  opacity: 0.9;
+}
+
+.stem-for-everyone-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.stem-for-everyone-card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}

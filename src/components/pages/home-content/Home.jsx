@@ -1,12 +1,20 @@
 import React from "react";
 import HeroSection from "../../HeroSection";
-import Mission from "./Mission";
+import FocusSection from "./Focus";
+import HomeCarousel from "./HomeCarousel";
+import StemForEveryone from "./StemForEveryone";
+import Quote from "./Quote";
+import FaqSection from "./FaqSection";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
-      <Mission />
+      <FocusSection />
+      <HomeCarousel />
+      <StemForEveryone />
+      <Quote />
+      <FaqSection />
     </>
   );
 };

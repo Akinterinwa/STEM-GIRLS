@@ -1,5 +1,5 @@
 .navbar-menu-container.scroll {
-    background: black;
+    background: #111827;
     transition: background-color 2.3s ease;
 }
 
@@ -20,7 +20,7 @@
     color: #fff;
     cursor: pointer;
     border: 1px solid var(--color-gray-300);
-    background: rgb(83, 170, 176);
+    background: #8B4789;
     padding: 11px 19px;
 }
 

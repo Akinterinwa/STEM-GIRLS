@@ -11,29 +11,8 @@ const Mission = () => {
     return (
         <div className="destination">
             <div className="gradient">
-                <div className="intro">
-                    <h2>
-                        Fostering a future where young women embrace STEM with confidence,
-                        we strive to equip them with the skills and knowledge needed to lead
-                        and innovate in an ever-changing technological world.
-                    </h2>
-                    <div className="stand-container">
-                        <h5>
-                            STEM stands for Science, Technology, Engineering, and Math. When
-                            given the right tools early on, we believe all girls have the
-                            power to develop their own STEM identity!
-                        </h5>
-                        <Link to="/approach">
-                            <div className="learn-more btn-1">
-                                Learn more
-                                <img className="learn-arrow" src="/Vector.svg" alt="" />
-                            </div>
-                        </Link>
-                    </div>
-                </div>
                 <Focus />
             </div>
-
             <div className="home-content-section">
                 <div className="our-belive-youtube">
                     <div className="belive-content">

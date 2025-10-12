@@ -1,95 +1,104 @@
-import React from "react";
-import "./Footer.css";
-import { Link } from "react-router-dom";
-import LogoImg from "../images/png white.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Footer.css';
+import whiteLogo from '../images/png white.png';
+import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
 
-const Footer = () => {
-    return (
-        <div className="footer-container">
-            <div className="footer-content">
-                <div className="inner-content">
-                    <div className="left-side-content">
-                        <Link to="/">
-                            <img src={LogoImg} className="logo" alt="logo" />
-                        </Link>
-                        <p className="stand-for">
-                            STEM stands for Science, Technology, Engineering, and Math.
-                            Inspire STEM Girls (ISG) is a 501(c)(c3) non-profit organization.
-                        </p>
-                    </div>
-                    <div className="right-side-content">
-                        <p className="stay-up">Stay up-to-date on our latest news</p>
-                        <Link to='https://docs.google.com/forms/d/e/1FAIpQLScH4hcoLfynQBUJ_PYm85a7Oqy87th9myU7_1_9OlR34UrYCw/viewform?usp=sf_link' target="_blank">
-                            <div className="signup-button">Sign up for our newsletter</div>
-                        </Link>
-                        <div className="form"></div>
-                    </div>
-                </div>
-            </div>
-            <div className="straight-line"></div>
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        {/* Main Footer Content */}
+        <div className="footer-top-section">
+          {/* Left Side - Logo and Description */}
+          <div className="footer-logo-section">
+            <Link to="/">
+              <img src={whiteLogo} alt="Inspire STEM Girls Logo" className="footer-logo" />
+            </Link>
+            <p className="footer-description">
+              STEM stands for Science, Technology, Engineering, and Math. Inspire STEM Girls (ISG) is a 501(c)(3)
+              non-profit organization.
+            </p>
+          </div>
 
-            <div className="social-links">
-                <div className="section-1">
-                    <Link
-                        className="social-icon-link facebook"
-                        to="/"
-                        target="_blank"
-                        aria-label="Facebook"
-                    >
-                        <i className="fab fa-facebook-f"></i>
-                    </Link>
-                    <Link
-                        className="social-icon-link instagram"
-                        to="/"
-                        target="_blank"
-                        aria-label="Instagram"
-                    >
-                        <i className="fab fa-instagram"></i>
-                    </Link>
-                    <Link
-                        className="social-icon-link youtube"
-                        to="/"
-                        target="_blank"
-                        aria-label="Youtube"
-                    >
-                        <i className="fab fa-youtube"></i>
-                    </Link>
-                    <Link
-                        className="social-icon-link twitter"
-                        to="/"
-                        target="_blank"
-                        aria-label="Twitter"
-                    >
-                        <i className="fab fa-twitter"></i>
-                    </Link>
-                    <Link to="/">
-                        <p>Home</p>
-                    </Link>
-                    <Link to="/mission">
-                        <p>About us</p>
-                    </Link>
-                    <Link to="/location">
-                        <p> Workshop </p>
-                    </Link>
-                    <Link to="/contact">
-                        <p> Contact</p>
-                    </Link>
-                    <Link to="/contact">
-                        <p>Privacy Policy</p>
-                    </Link>
-                    <Link to="/contact">
-                        <p> Terms & Conditions</p>
-                    </Link>
-                    <Link to="/donate">
-                        <p> Support</p>
-                    </Link>
-                </div>
-                <div className="section-2">
-                    <p>© 2024 Inspire STEM Girls (ISG) , All Rights Reserved</p>
-                </div>
-            </div>
+          {/* Right Side - Newsletter Signup */}
+          <div className="footer-newsletter-section">
+            <p className="footer-newsletter-heading">Stay up-to-date on our latest news</p>
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLScH4hcoLfynQBUJ_PYm85a7Oqy87th9myU7_1_9OlR34UrYCw/viewform?usp=sf_link"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="newsletter-button"
+            >
+              Sign up for our newsletter
+            </a>
+          </div>
         </div>
-    );
-};
 
-export default Footer;
+        {/* Divider Line */}
+        <div className="footer-divider"></div>
+
+        {/* Social Links and Navigation */}
+        <div className="footer-bottom-section">
+          <div className="footer-social-nav-container">
+            {/* Social Icons */}
+            <div className="footer-social-icons">
+              <a
+                href="https://www.facebook.com/inspirestemgirls"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="social-icon"
+              >
+                <FaFacebook size="1.25rem" />
+              </a>
+              <a
+                href="https://www.instagram.com/inspirestemgirls"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="social-icon"
+              >
+                <FaInstagram size="1.25rem" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCZT0e6FzJZJZJZJZJZJZJZJ"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Youtube"
+                className="social-icon"
+              >
+                <FaYoutube size="1.25rem" />
+              </a>
+              <a
+                href="https://www.twitter.com/inspirestemgirls"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                className="social-icon"
+              >
+                <FaTwitter size="1.25rem" />
+              </a>
+            </div>
+
+            {/* Navigation Links */}
+            <div className="footer-nav-links">
+              <Link to="/" className="footer-nav-link">Home</Link>
+              <Link to="/mission" className="footer-nav-link">About us</Link>
+              <Link to="/location" className="footer-nav-link">Workshop</Link>
+              <Link to="/contact" className="footer-nav-link">Contact</Link>
+              <Link to="/privacy" className="footer-nav-link">Privacy Policy</Link>
+              <Link to="/terms" className="footer-nav-link">Terms & Conditions</Link>
+              <Link to="/donate" className="footer-nav-link">Support</Link>
+            </div>
+          </div>
+
+          {/* Copyright */}
+          <div className="footer-copyright-section">
+            <p className="footer-copyright-text">© 2025 Inspire STEM Girls (ISG), All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  )
+}

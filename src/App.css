@@ -7,7 +7,6 @@
 
 svg {
   width: -webkit-fill-available;
-  margin: 2rem 0 5px 0;
 }
 
 a {
@@ -32,7 +31,7 @@ p {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  color:rgb(0, 48, 70) ;
+  color: rgb(255 255 255);
   line-height: 32px;
   font-family: poppins;
 }

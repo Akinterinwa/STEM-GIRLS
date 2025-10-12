@@ -1,176 +1,143 @@
+/* Main Footer Container */
+.footer {
+  background-color: #111827; /* bg-gray-900 */
+  color: #ffffff; /* text-white */
+  padding: 4rem 1.5rem; /* py-16 px-6 */
+}
+
 .footer-container {
-    background-color: black;
-    color: white;
-    padding: 25px 70px;
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
 }
 
-.inner-content {
-    display: flex;
+/* Top Section: Logo/Description and Newsletter */
+.footer-top-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem; /* gap-12 */
+  margin-bottom: 3rem; /* mb-12 */
 }
 
-.left-side-content .logo {
-    width: 180px;
+@media (min-width: 768px) { /* md: */
+  .footer-top-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-.stand-for {
-    color: white;
-    max-width: 50%;
-    font-size: large;
-    line-height: 25px;
+.footer-logo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* space-y-6 */
 }
 
-.right-side-content .stay-up,
-.newsletter {
-    color: white;
-    font-size: large;
-    line-height: 23px;
+.footer-logo {
+  height: 3rem; /* h-12 */
+  width: auto;
 }
 
-.right-side-content .signup-button {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    text-transform: uppercase;
-    color: black;
-    background: white;
-    padding: 10px 22px;
-    border-radius: 29px;
-    font-family: "Montserrat";
-    font-weight: 600;
-    margin-top: 20px;
+.footer-description {
+  color: rgba(255, 255, 255, 0.9); /* text-white/90 */
+  line-height: 1.625; /* leading-relaxed */
+  max-width: 28rem; /* max-w-md */
 }
 
-.right-side-content .signup-button:hover {
-    cursor: pointer;
-    color: gray;
+.footer-newsletter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space-y-4 */
 }
 
-.straight-line {
-    margin: 10px 0;
-    border: 1px solid #292929;
+.footer-newsletter-heading {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
 }
 
-.social-links {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.newsletter-button {
+  display: inline-block;
+  background-color: #8B4789;
+  color: #ffffff;
+  padding: 0.75rem 2rem; /* px-8 py-3 */
+  border-radius: 9999px; /* rounded-full */
+  font-weight: 600; /* font-semibold */
+  transition: all 300ms;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
 }
 
-.social-links .section-1 {
-    display: flex;
-    gap: 20px;
-    justify-content: left;
-    align-items: center;
-    flex-wrap: wrap;
+.newsletter-button:hover {
+  background-color: #6d3569;
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05); /* hover:shadow-xl */
 }
 
-.section-1 p,
-.section-2 p {
-    color: white;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 0;
+/* Divider */
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* border-t border-white/20 */
+  margin-bottom: 3rem; /* mb-12 */
 }
 
-.section-1 a p:hover,
-.section-1 .social-icon-link:hover {
-    color: gray;
+/* Bottom Section: Socials and Nav */
+.footer-bottom-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* space-y-8 */
 }
 
-/* form */
-form,
-input,
-button {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
+.footer-social-nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem; /* gap-6 */
 }
 
-input {
-    padding: 10px;
-    border: 1px solid #ccc;
-    width: 300px;
+.footer-social-icons {
+  display: flex;
+  gap: 1.5rem; /* gap-6 */
 }
 
-button[type="submit"] {
-    background-color: #0069ca;
-    border: 1px solid #ccc;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 0;
+.social-icon {
+  color: #ffffff;
+  transition: all 300ms;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
-
-    /* CSS rules for medium devices (laptops) */
-    .social-links {
-        display: grid;
-        gap: 10px;
-    }
-
-    .right-side-content .signup-button {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        text-transform: uppercase;
-        color: black;
-        background: white;
-        padding: 10px 22px;
-        border-radius: 29px;
-        font-family: "Montserrat";
-        font-weight: 500;
-        margin-top: 20px;
-        font-size: 13px;
-    }
+.social-icon:hover {
+  color: #8B4789;
+  transform: scale(1.1);
 }
 
-@media (max-width: 767px) {
+.footer-nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem; /* gap-6 */
+  margin-left: 0;
+}
 
-    /* CSS rules for extra small devices (phones) */
-    .social-links {
-        display: grid;
-        gap: 30px;
-    }
+@media (min-width: 768px) { /* Simple breakpoint to move nav links */
+  .footer-nav-links {
+    margin-left: 1rem; /* ml-4 */
+  }
+}
 
-    .inner-content {
-        display: grid;
-        gap: 10px;
-    }
+.footer-nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 300ms;
+}
 
-    .footer-container {
-        padding: 22px 16px;
-    }
+.footer-nav-link:hover {
+  color: #8B4789;
+}
 
-    .left-side-content .logo {
-        width: 150px;
-    }
+/* Copyright Section */
+.footer-copyright-section {
+  padding-top: 2rem; /* pt-8 */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* border-t border-white/20 */
+}
 
-    .stand-for,
-    .stay-up,
-    .newsletter {
-        max-width: 90%;
-        font-size: 14px;
-        line-height: 21px;
-    }
-
-    .right-side-content .signup-button {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        text-transform: uppercase;
-        color: black;
-        background: white;
-        padding: 10px 22px;
-        border-radius: 29px;
-        font-family: "Montserrat";
-        font-weight: 600;
-        margin-top: 20px;
-        font-size: 13px;
-        width: max-content;
-    }
+.footer-copyright-text {
+  color: rgba(255, 255, 255, 0.8); /* text-white/80 */
+  font-size: 0.875rem; /* text-sm */
 }

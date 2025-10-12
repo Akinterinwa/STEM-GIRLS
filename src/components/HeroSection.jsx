@@ -1,51 +1,107 @@
-import React from "react";
-import "./pages/home-content/Home.css";
-import { Link } from "react-router-dom";
-import PolygonArrow from "./pages/home-content/images/Polygon 1.svg";
+"use client"
 
-const HeroSection = () => {
-    return (
-        <div className="hero-container">
-            <div className="educateInspireContainer">
-                <span className="educate">{`Educate, `}</span>
-                <span className="inspire">inspire</span>
-                <span>
-                    <span className="span">{` `}</span>
-                    <span className="empower">{`& Empower`}</span>
-                </span>
-            </div>
+import { Link } from "react-router-dom"
+import { useEffect, useState } from "react"
+import "./pages/home-content/Home.css"
 
-            <img
-                className="svgBrushIcon"
-                loading="lazy"
-                alt="design"
-                src="/Svg brush.svg"
-            />
+export default function HeroSection() {
+  const [isVisible, setIsVisible] = useState(false)
 
-            <div className="encouragingYoungGirlsContainer">
-                <span className="encouragingYoungGirlsContainer1">
-                    <p className="encouragingYoungGirls">{`Encouraging young girls to pursue career paths in STEM related `}</p>
-                    <p className="disciplinesAndReach">
-                        disciplines and reach their full potentials.
-                    </p>
-                </span>
-            </div>
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(true), 100) // Small delay to ensure transition triggers
+    return () => clearTimeout(timer)
+  }, [])
 
-            <div className="buttons">
-                <Link to="/start-new">
-                    <button className="btn-1 hero-donate">
-                        <div className="label">START A SITE</div>
-                    </button>
-                </Link>
-                <Link to="volunteer">
-                    <button className="btn-1 learn-btn">
-                        <img className="buttonChild" alt="" src={PolygonArrow} />
-                        <div className="">VOLUNTEER</div>
-                    </button>
-                </Link>
-            </div>
+  const scrollToContent = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: "smooth",
+    })
+  }
+
+  return (
+    <section className="hero-section">
+      <div className="hero-left-side">
+        <div
+          className={`hero-bg-image ${isVisible ? "visible" : ""}`}
+        />
+      </div>
+
+      <div className="hero-right-side">
+        <div className="hero-text-content">
+          <h1 className="hero-headline">
+            <span
+              className={`hero-headline-span ${isVisible ? "visible" : ""}`}
+              style={{ transitionDelay: "200ms" }}
+            >
+              Educate,{" "}
+            </span>
+            <span
+              className={`hero-headline-inspire ${isVisible ? "visible" : ""}`}
+              style={{ transitionDelay: "400ms" }}
+            >
+              inspire
+            </span>
+            <span
+              className={`hero-headline-span ${isVisible ? "visible" : ""}`}
+              style={{ transitionDelay: "600ms" }}
+            >
+              {" "}
+              & Empower
+            </span>
+          </h1>
+
+          <p
+            className={`hero-subheadline ${isVisible ? "visible" : ""}`}
+            style={{ transitionDelay: "800ms" }}
+          >
+            Encouraging young girls to pursue career paths in STEM related disciplines and reach their full potentials.
+          </p>
+
+          <div
+            className={`hero-buttons-container ${isVisible ? "visible" : ""}`}
+            style={{ transitionDelay: "1000ms" }}
+          >
+            <Link to="/start-new">
+              <button
+                className="hero-button start-site"
+              >
+                START A SITE
+              </button>
+            </Link>
+            <Link to="/volunteer">
+              <button
+                className="hero-button volunteer"
+              >
+                VOLUNTEER
+              </button>
+            </Link>
+          </div>
         </div>
-    );
-};
+      </div>
 
-export default HeroSection;
+      <button
+        onClick={scrollToContent}
+        className={`scroll-button ${isVisible ? "visible" : ""}`}
+        style={{ transitionDelay: "1200ms" }}
+        aria-label="Scroll to content"
+      >
+        <span className="scroll-text">Scroll</span>
+        <svg
+          className="scroll-chevron"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="m6 9 6 6 6-6" />
+        </svg>
+      </button>
+    </section>
+  )
+}

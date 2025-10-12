@@ -1,70 +1,63 @@
-import React from "react";
-import "./Quote.css";
-import QuoteImg from "./images/Image.svg";
-import { Link } from "react-router-dom";
-import CodingImg from "./images/div.framer-amyu2d.svg";
-import MentorshipImg from "./images/mentorship.svg";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Quote.css';
+import drAnneMarie from '../../../images/Adelusi_Oluwaseyi_928-0444-retouched.jpg';
+import mentorship from '../../../images/pexels-tima-miroshnichenko-5428262.jpg';
+import VideoSection from './VideoSection'; // Import the new VideoSection component
 
-const Quote = () => {
+export default function QuoteSection() {
   return (
-    <>
-      <div className="quote-container">
-        <div className="quotes-img">
-          <img src={QuoteImg} alt="container" />
-        </div>
-        <div className="quote-text">
-          <div className="text-1">
-            Dr Anne-Marie Imafidon MBE is a prodigy in every sense of the word.
-            Aged 11, she was the youngest girl ever to pass A-level computing,
-            and was just 20 years old when she received her Master’s Degree in
-            Mathematics and Computer Science from the University of Oxford.
+    <section className="quote-section">
+      <div className="quote-section-container">
+        {/* Quote Container */}
+        <div className="quote-grid">
+          <div className="quote-image-container">
+            <img
+              src={drAnneMarie}
+              alt="Dr Anne-Marie Imafidon"
+              className="quote-image"
+            />
           </div>
-          <div className="name">ANNE-MARIE IMAFIDON MBE</div>
+          <div className="quote-text-container">
+            <p className="quote-text-main">
+              Dr Anne-Marie Imafidon MBE is a prodigy in every sense of the word. Aged 11, she was the youngest girl
+              ever to pass A-level computing, and was just 20 years old when she received her Master's Degree in
+              Mathematics and Computer Science from the University of Oxford.
+            </p>
+            <p className="quote-text-author">ANNE-MARIE IMAFIDON MBE</p>
+          </div>
         </div>
       </div>
-      <div className="mentorship-coding">
-        <div className="coding-container">
-          <div className="coding-content">
-            <h3>
-              580,000 girls, women and nonbinary individuals coding worldwide
-            </h3>
-            <p>
-              We want no girl, non-binary or transgender girl to opt out of STEM
-              because of prejudice, too little information or lack of
-              inspiration . We function both as a network for those who have
-              already found their way into the heat of STEM and as an
-              inspiration for those who have not yet found their way here.{" "}
-            </p>
-            <Link to="/donate">
-              <div className="donate-button">Donate</div>
-            </Link>
-          </div>
-          <div className="coding-img">
-            <img src={CodingImg} alt="coding" />
-          </div>
-        </div>
-        <div className="mentorship-container">
-          <div className="mentorship-image">
-            <img src={MentorshipImg} alt="mentorship" />
+
+      {/* Video Section */}
+      <VideoSection />
+
+      <div className="quote-section-container">
+        {/* Mentorship Section */}
+        <div className="mentorship-grid">
+          <div className="mentorship-image-container">
+            <img
+              src={mentorship}
+              alt="Mentorship"
+              className="quote-image"
+            />
           </div>
           <div className="mentorship-text">
-            <p>
-              Join us in making a difference! Become a mentor and help shape the
-              future of STEM by empowering the next generation of leaders. By
-              sharing your knowledge and experiences, you'll not only build
-              confidence in young women but also grow your own network and leave
-              a lasting legacy. Together, let's inspire, guide, and create
-              opportunities for success. Take the first step towards making a
-              meaningful impact - become a mentor today!
+            <p className="mentorship-paragraph">
+              Join us in making a difference! Become a mentor and help shape the future of STEM by empowering the next
+              generation of leaders. By sharing your knowledge and experiences, you'll not only build confidence in
+              young women but also grow your own network and leave a lasting legacy. Together, let's inspire, guide, and
+              create opportunities for success. Take the first step towards making a meaningful impact - become a mentor
+              today!
             </p>
             <Link to="/volunteer">
-              <div className="mentorship-cta">Become a mentor</div>
+              <button className="mentor-button-quote">
+                Become a mentor
+              </button>
             </Link>
           </div>
         </div>
       </div>
-    </>
-  );
-};
-
-export default Quote;
+    </section>
+  )
+}
