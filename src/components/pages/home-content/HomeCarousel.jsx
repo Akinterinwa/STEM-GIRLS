@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HomeCarousel.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import breakingBarriers from '../../../images/stem-girls-img.jpg';
-import roleModels from '../../../images/stem-girls-img-2.jpg';
 import lifelongLearners from '../../../images/stem-girls-img-3.jpg';
 import shapingTheFuture from '../../../images/stem-girls-img-4.jpg';
 
@@ -10,12 +8,12 @@ const slides = [
   {
     title: "Breaking Barriers",
     description: "STEM girls are challenging stereotypes and proving that gender is not a barrier to success in STEM fields.",
-    image: breakingBarriers,
+    image: "/black-girl-laptop-coding.jpg",
   },
   {
     title: "Role Models",
     description: "STEM girls inspire others with their passion, dedication, and resilience in pursuing their STEM aspirations.",
-    image: roleModels,
+    image: "/black-girl-whiteboard-math.jpg",
   },
   {
     title: "Lifelong Learners",

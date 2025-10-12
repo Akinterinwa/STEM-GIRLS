@@ -5,25 +5,25 @@ import "./StemForEveryone.css";
 const researchData = [
   {
     id: 1,
-    image: "/diverse-girls-in-science-lab.jpg",
+    image: "/black-girl-presenting.jpg",
     text: "Hands-on STEM workshops",
     backgroundColor: "#8B4789",
   },
   {
     id: 2,
-    image: "/girls-coding-together.jpg",
+    image: "/black-girls-engineering.jpg",
     text: "Coding & Technology",
     backgroundColor: "#A855A7",
   },
   {
     id: 3,
-    image: "/girls-with-robotics.jpg",
+    image: "/black-girl-microscope (1).jpg",
     text: "Robotics & Engineering",
     backgroundColor: "#9333EA",
   },
   {
     id: 4,
-    image: "/girls-in-mathematics-class.jpg",
+    image: "/black-girl-vr-headset.jpg",
     text: "Mathematics & Research",
     backgroundColor: "#7C3AED",
   },

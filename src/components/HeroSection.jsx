@@ -1,107 +1,152 @@
-"use client"
+import React, { useState, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import "./HeroSection.css";
 
-import { Link } from "react-router-dom"
-import { useEffect, useState } from "react"
-import "./pages/home-content/Home.css"
+const slides = [
+  {
+    title: "Educate",
+    subtitle: "Building foundations for tomorrow's leaders",
+    description:
+      "Encouraging young girls to pursue career paths in STEM related disciplines and reach their full potentials.",
+    image: "/black-girls-coding.jpg",
+    cta1: "Start a Site",
+    cta2: "Learn More",
+  },
+  {
+    title: "Inspire",
+    subtitle: "Igniting passion through mentorship",
+    description:
+      "STEM girls inspire others with their passion, dedication, and resilience in pursuing their STEM aspirations.",
+    image: "/black-girls-math.jpg",
+    cta1: "Join Us",
+    cta2: "Our Programs",
+  },
+  {
+    title: "Empower",
+    subtitle: "Shaping the future of technology",
+    description:
+      "STEM girls are the leaders and innovators of tomorrow, shaping the future with their ideas and expertise.",
+    image: "/black-girls-mentor-session.jpg",
+    cta1: "Get Involved",
+    cta2: "Success Stories",
+  },
+];
 
-export default function HeroSection() {
-  const [isVisible, setIsVisible] = useState(false)
+export default function HeroCarousel() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(true), 100) // Small delay to ensure transition triggers
-    return () => clearTimeout(timer)
-  }, [])
+    if (isPaused) return;
 
-  const scrollToContent = () => {
-    window.scrollTo({
-      top: window.innerHeight,
-      behavior: "smooth",
-    })
-  }
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 6000);
+
+    return () => clearInterval(timer);
+  }, [currentSlide, isPaused]);
+
+  const nextSlide = () => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+    setTimeout(() => setIsAnimating(false), 1000);
+  };
+
+  const prevSlide = () => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+    setTimeout(() => setIsAnimating(false), 1000);
+  };
+
+  const goToSlide = (index) => {
+    if (isAnimating || index === currentSlide) return;
+    setIsAnimating(true);
+    setCurrentSlide(index);
+    setTimeout(() => setIsAnimating(false), 1000);
+  };
 
   return (
-    <section className="hero-section">
-      <div className="hero-left-side">
+    <div
+      className="hero-carousel"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {slides.map((slide, index) => (
         <div
-          className={`hero-bg-image ${isVisible ? "visible" : ""}`}
-        />
-      </div>
+          key={index}
+          className={`slide ${index === currentSlide ? "active" : ""}`}
+        >
+          <div className="background-image">
+            <img
+              src={slide.image || "/placeholder.svg"}
+              alt={slide.title}
+            />
+            <div className="overlay" />
+          </div>
 
-      <div className="hero-right-side">
-        <div className="hero-text-content">
-          <h1 className="hero-headline">
-            <span
-              className={`hero-headline-span ${isVisible ? "visible" : ""}`}
-              style={{ transitionDelay: "200ms" }}
-            >
-              Educate,{" "}
-            </span>
-            <span
-              className={`hero-headline-inspire ${isVisible ? "visible" : ""}`}
-              style={{ transitionDelay: "400ms" }}
-            >
-              inspire
-            </span>
-            <span
-              className={`hero-headline-span ${isVisible ? "visible" : ""}`}
-              style={{ transitionDelay: "600ms" }}
-            >
-              {" "}
-              & Empower
-            </span>
-          </h1>
-
-          <p
-            className={`hero-subheadline ${isVisible ? "visible" : ""}`}
-            style={{ transitionDelay: "800ms" }}
-          >
-            Encouraging young girls to pursue career paths in STEM related disciplines and reach their full potentials.
-          </p>
-
-          <div
-            className={`hero-buttons-container ${isVisible ? "visible" : ""}`}
-            style={{ transitionDelay: "1000ms" }}
-          >
-            <Link to="/start-new">
-              <button
-                className="hero-button start-site"
-              >
-                START A SITE
-              </button>
-            </Link>
-            <Link to="/volunteer">
-              <button
-                className="hero-button volunteer"
-              >
-                VOLUNTEER
-              </button>
-            </Link>
+          <div className="content-container">
+            <div className="content">
+              {index === currentSlide && (
+                <>
+                  <div className="animate-slide-up" style={{ animationDelay: "0.2s" }}>
+                    <p className="subtitle">{slide.subtitle}</p>
+                  </div>
+                  <div className="animate-slide-up" style={{ animationDelay: "0.4s" }}>
+                    <h1 className="title">{slide.title}</h1>
+                  </div>
+                  <div className="animate-slide-up" style={{ animationDelay: "0.6s" }}>
+                    <p className="description">{slide.description}</p>
+                  </div>
+                  <div className="cta-container animate-slide-up" style={{ animationDelay: "0.8s" }}>
+                    <button className="cta-button primary">{slide.cta1}</button>
+                    <button className="cta-button outline">{slide.cta2}</button>
+                  </div>
+                </>
+              )}
+            </div>
           </div>
         </div>
-      </div>
+      ))}
 
       <button
-        onClick={scrollToContent}
-        className={`scroll-button ${isVisible ? "visible" : ""}`}
-        style={{ transitionDelay: "1200ms" }}
-        aria-label="Scroll to content"
+        onClick={prevSlide}
+        disabled={isAnimating}
+        className="nav-button prev-button"
+        aria-label="Previous slide"
       >
-        <span className="scroll-text">Scroll</span>
-        <svg
-          className="scroll-chevron"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="m6 9 6 6 6-6" />
-        </svg>
+        <ChevronLeft />
       </button>
-    </section>
-  )
+
+      <button
+        onClick={nextSlide}
+        disabled={isAnimating}
+        className="nav-button next-button"
+        aria-label="Next slide"
+      >
+        <ChevronRight />
+      </button>
+
+      <div className="dots-container">
+        {slides.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            disabled={isAnimating}
+            className={`dot ${index === currentSlide ? "active" : ""}`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
+
+      <div className="scroll-indicator">
+        <span className="scroll-text">Scroll</span>
+        <div className="scroll-line">
+          <div className="scroll-line-pulse" />
+        </div>
+      </div>
+    </div>
+  );
 }

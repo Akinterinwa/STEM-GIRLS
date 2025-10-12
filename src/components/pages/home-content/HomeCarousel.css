@@ -1,6 +1,5 @@
 /* Programs Page Container */
 .programs-page {
-  min-height: 100vh;
   background: linear-gradient(to bottom, #F3E5F5, #FFFFFF); /* bg-gradient-to-b from-purple-50 to-white */
   padding: 4rem 1rem; /* py-16 px-4 */
 }

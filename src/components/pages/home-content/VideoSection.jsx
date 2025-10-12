@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './VideoSection.css';
 import { FaPlay } from 'react-icons/fa';
-import videoThumbnail from '../../../images/pexels-thisisengineering-3862623.jpg';
 
 export default function VideoSection() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -41,7 +40,7 @@ export default function VideoSection() {
           {/* Right Video */}
           <div className="video-player-container">
             <div className="video-player-wrapper">
-              <img src={videoThumbnail} alt="STEM girls in action" className="video-thumbnail" />
+              <img src="/watch-our-story-hero.jpg" alt="STEM girls in action" className="video-thumbnail" />
 
               {!isPlaying && (
                 <div className="play-button-overlay">

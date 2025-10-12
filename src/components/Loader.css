@@ -1,0 +1,27 @@
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34; /* Dark background color */
+  z-index: 9999;
+}
+
+.loader-logo {
+  width: 100px;
+  height: 100px;
+  animation: zoom 2s ease-in-out infinite;
+}
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}

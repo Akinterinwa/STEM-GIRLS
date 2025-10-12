@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Quote.css';
 import drAnneMarie from '../../../images/Adelusi_Oluwaseyi_928-0444-retouched.jpg';
-import mentorship from '../../../images/pexels-tima-miroshnichenko-5428262.jpg';
 import VideoSection from './VideoSection'; // Import the new VideoSection component
 
 export default function QuoteSection() {
@@ -37,7 +36,7 @@ export default function QuoteSection() {
         <div className="mentorship-grid">
           <div className="mentorship-image-container">
             <img
-              src={mentorship}
+              src="/mentor-network-event.jpg"
               alt="Mentorship"
               className="quote-image"
             />
