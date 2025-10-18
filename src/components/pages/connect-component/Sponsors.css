@@ -1,0 +1,213 @@
+
+.sponsors-page {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.sponsors-header {
+    padding-top: 100px;
+    background-image: linear-gradient(to bottom, #4c1d95, #5b21b6);
+    color: #ffffff;
+    padding: 5rem 1rem;
+}
+
+.sponsors-header-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sponsors-header h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.sponsors-header .divider {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: #ffffff;
+    margin: 0 auto 1.5rem;
+}
+
+.sponsors-header .subtitle {
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.sponsors-header .description {
+    color: #e9d5ff;
+    font-size: 1.125rem;
+    max-width: 56rem;
+    margin: 0 auto;
+}
+
+.sponsors-main-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+}
+
+.sponsorship-opportunities {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.sponsorship-opportunities-text h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.sponsorship-opportunities-text p {
+    color: #374151;
+    font-size: 1.125rem;
+    line-height: 1.625;
+    margin-bottom: 1rem;
+}
+
+.sponsorship-opportunities-image {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.sponsorship-opportunities-image img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+.sponsors-contact-section {
+    background-image: linear-gradient(to right, #f9fafb, #f3e8ff);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    margin-bottom: 5rem;
+}
+
+.sponsors-contact-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.sponsors-contact-section p {
+    color: #374151;
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
+
+.sponsors-contact-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sponsors-contact-info .icon {
+    height: 2rem;
+    width: 2rem;
+    color: #4c1d95;
+}
+
+.sponsors-contact-info a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #4c1d95;
+    transition: color 0.15s ease-in-out;
+}
+
+.sponsors-contact-info a:hover {
+    color: #5b21b6;
+}
+
+.impact-section {
+    display: grid;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.impact-image {
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.impact-image img {
+    width: 100%;
+    height: 24rem;
+    object-fit: cover;
+}
+
+.impact-text h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.impact-text p {
+    color: #374151;
+    font-size: 1.125rem;
+    line-height: 1.625;
+}
+
+.mission-alignment {
+    background-color: #f9fafb;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    border-left: 4px solid #4c1d95;
+}
+
+.mission-alignment h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.mission-alignment p {
+    color: #374151;
+    font-size: 1.125rem;
+    line-height: 1.625;
+}
+
+@media (min-width: 768px) {
+    .sponsors-header {
+        padding-top: 150px;
+    }
+    .sponsors-header h1 {
+        font-size: 90px;
+    }
+
+    .sponsors-header .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .sponsorship-opportunities, .impact-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .impact-image {
+        order: 1;
+    }
+
+    .impact-text {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .sponsors-header, .sponsors-main-content, .sponsors-contact-section, .mission-alignment {
+        text-align: center;
+    }
+
+    .sponsors-contact-info {
+        justify-content: center;
+    }
+}

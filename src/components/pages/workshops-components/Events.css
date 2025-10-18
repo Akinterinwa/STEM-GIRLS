@@ -1,0 +1,233 @@
+
+.events-page {
+    min-height: 100vh;
+    background-image: linear-gradient(to bottom, #ffffff, #f3e8ff);
+}
+
+.events-header {
+    padding-top: 150px;
+    background-image: linear-gradient(to right, #4c1d95, #5b21b6);
+    color: #ffffff;
+    padding: 5rem 1rem;
+}
+
+.events-header-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.events-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.events-header p {
+    font-size: 1.25rem;
+    color: #e9d5ff;
+}
+
+.coming-soon-section {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 5rem 1rem;
+    text-align: center;
+}
+
+.calendar-icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.calendar-icon-wrapper {
+    position: relative;
+}
+
+.calendar-icon-blur {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #e9d5ff;
+    border-radius: 9999px;
+    filter: blur(24px);
+    opacity: 0.5;
+}
+
+.calendar-icon {
+    width: 6rem;
+    height: 6rem;
+    color: #4c1d95;
+    position: relative;
+}
+
+.coming-soon-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.coming-soon-section .subtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+    line-height: 1.625;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.event-types-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.event-type-card {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    border: 1px solid #f3e8ff;
+    transition: border-color 0.15s ease-in-out;
+}
+
+.event-type-card:hover {
+    border-color: #d8b4fe;
+}
+
+.event-type-card .icon-container {
+    color: #4c1d95;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: center;
+}
+
+.event-type-card .icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.event-type-card h3 {
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.event-type-card p {
+    color: #4b5563;
+    font-size: 0.875rem;
+}
+
+.cta-section {
+    background-color: #f3e8ff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 3rem 0;
+    border: 1px solid #e9d5ff;
+}
+
+.cta-section h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    color: #4b5563;
+    margin-bottom: 1.5rem;
+}
+
+.cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.email-input-wrapper {
+    position: relative;
+    flex: 1 1 0%;
+}
+
+.email-input-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #9ca3af;
+}
+
+.email-input {
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e9d5ff;
+    width: 100%;
+}
+
+.email-input:focus {
+    outline: none;
+    border-color: #a855f7;
+    box-shadow: 0 0 0 2px #e9d5ff;
+}
+
+.subscribe-button {
+    background-color: #4c1d95;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.15s ease-in-out;
+    white-space: nowrap;
+    border:none;
+    cursor: pointer;
+}
+
+.subscribe-button:hover {
+    background-color: #5b21b6;
+}
+
+.footer-message {
+    color: #6b7281;
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .events-header {
+        padding-top: 150px;
+    }
+    .events-header h1 {
+        font-size: 3.75rem;
+    }
+
+    .coming-soon-section h2 {
+        font-size: 3rem;
+    }
+
+    .event-types-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .cta-actions {
+        flex-direction: row;
+    }
+
+    .subscribe-form {
+        width: auto;
+    }
+}
