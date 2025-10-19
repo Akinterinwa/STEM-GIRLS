@@ -52,7 +52,7 @@ function FounderQuoteSection() {
               ))}
             </div>
             <p className="founder-name">— Oluwaseyi Adelusi, Founder & President of Inspire STEM Girls</p>
-            <Link to="/about" className="learn-more-button">
+            <Link to="/team" className="learn-more-button">
               Learn More About Oluwaseyi
             </Link>
           </div>

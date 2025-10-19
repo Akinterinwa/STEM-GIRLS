@@ -30,10 +30,9 @@ export default function FocusSection() {
             <div className="focus-card-icon-container">
               <FaEye className="focus-card-icon" />
             </div>
-            <h2 className="focus-card-title">Our Vision</h2>
+            <h2 className="focus-card-title">Our Approach</h2>
             <p className="focus-card-text">
-              Our vision is a world where every girl has the opportunity, encouragement, and resources to pursue a
-              career in STEM. We strive to break down barriers
+            Educating girls about the vast opportunities in STEM careers. This involves bringing in guest speakers, organizing field trips to tech companies and laboratories...
             </p>
             <Link
               to="/approach"

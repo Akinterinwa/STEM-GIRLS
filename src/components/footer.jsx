@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import whiteLogo from '../images/png white.png';
+import whiteLogo from '../images/white logo.png';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
 
 export default function Footer() {
@@ -93,11 +93,11 @@ export default function Footer() {
             <div className="footer-nav-links">
               <Link to="/" className="footer-nav-link">Home</Link>
               <Link to="/mission" className="footer-nav-link">About us</Link>
-              <Link to="/location" className="footer-nav-link">Workshop</Link>
+              <Link to="/events" className="footer-nav-link">Workshop</Link>
               <Link to="/contact" className="footer-nav-link">Contact</Link>
-              <Link to="/privacy" className="footer-nav-link">Privacy Policy</Link>
-              <Link to="/terms" className="footer-nav-link">Terms & Conditions</Link>
-              <Link to="/donate" className="footer-nav-link">Support</Link>
+              <Link to="/volunteer" className="footer-nav-link">Volunteer</Link>
+              <Link to="/sponsors" className="footer-nav-link">Sponsors And Partners</Link>
+              <Link to="/volunteer" className="footer-nav-link">Support</Link>
             </div>
           </div>
 

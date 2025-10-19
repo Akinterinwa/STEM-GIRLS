@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaPlus, FaMinus } from 'react-icons/fa';
 import './FaqSection.css';
+import { Link } from 'react-router-dom';
 
 const faqs = [
   {
@@ -84,9 +85,11 @@ export default function FaqSection() {
         {/* CTA */}
         <div className="faq-cta">
           <p className="faq-cta-text">Still have questions?</p>
-          <button className="contact-button">
-            Contact Us
-          </button>
+          <Link to="/contact">
+            <button className="contact-button">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </div>
     </section>

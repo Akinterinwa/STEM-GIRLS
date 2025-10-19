@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import "./HeroSection.css";
 
 const slides = [
@@ -9,8 +10,10 @@ const slides = [
     description:
       "Encouraging young girls to pursue career paths in STEM related disciplines and reach their full potentials.",
     image: "/black-girls-coding.jpg",
-    cta1: "Start a Site",
+    cta1: "Join Us",
     cta2: "Learn More",
+    link1: "/volunteer",
+    link2: "/mission",
   },
   {
     title: "Inspire",
@@ -20,6 +23,8 @@ const slides = [
     image: "/black-girls-math.jpg",
     cta1: "Join Us",
     cta2: "Our Programs",
+    link1: "/volunteer",
+    link2: "/events",
   },
   {
     title: "Empower",
@@ -28,7 +33,9 @@ const slides = [
       "STEM girls are the leaders and innovators of tomorrow, shaping the future with their ideas and expertise.",
     image: "/black-girls-mentor-session.jpg",
     cta1: "Get Involved",
-    cta2: "Success Stories",
+    cta2: "Contact Us",
+    link1: "/volunteer",
+    link2: "/contact",
   },
 ];
 
@@ -101,8 +108,12 @@ export default function HeroCarousel() {
                     <p className="description">{slide.description}</p>
                   </div>
                   <div className="cta-container animate-slide-up" style={{ animationDelay: "0.8s" }}>
-                    <button className="cta-button primary">{slide.cta1}</button>
-                    <button className="cta-button outline">{slide.cta2}</button>
+                    <Link to={slide.link1}>
+                      <button className="cta-button primary">{slide.cta1}</button>
+                    </Link>
+                    <Link to={slide.link2}>
+                      <button className="cta-button outline">{slide.cta2}</button>
+                    </Link>
                   </div>
                 </>
               )}

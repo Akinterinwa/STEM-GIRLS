@@ -1,5 +1,6 @@
 import { Sparkles, Users, Lightbulb } from "lucide-react";
 import "./Vision.css";
+import { Link } from "react-router-dom";
 
 export default function VisionPage() {
   return (
@@ -10,7 +11,7 @@ export default function VisionPage() {
         <div className="vision-hero-overlay" />
 
         <div className="vision-hero-content">
-          <h1 className="vision-hero-title">Our Vision</h1>
+          <h1 className="vision-hero-title">Our Approach</h1>
           <p className="vision-hero-subtitle">
             A world where every girl has the opportunity, encouragement, and resources to pursue a career in STEM.
           </p>
@@ -157,12 +158,16 @@ export default function VisionPage() {
             Together, we can create a world where every girl has the opportunity to excel in STEM and lead innovation.
           </p>
           <div className="cta-buttons">
-            <button className="cta-button primary">
-              Get Involved
-            </button>
-            <button className="cta-button secondary">
-              Learn More
-            </button>
+            <Link to="/volunteer">
+              <button className="cta-button primary">
+                Get Involved
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button className="cta-button secondary">
+                Contact Us
+              </button>
+            </Link>
           </div>
         </div>
       </section>
