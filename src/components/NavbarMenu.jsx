@@ -61,9 +61,9 @@ const NavbarMenu = () => {
                     <NavbarMenuLink onClick={closeMobileMenu} />
                 </ul>
                 <div className="hidden">
-                    <Link to="/donate">
+                    <a href="https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-4200" target="_blank" rel="noopener noreferrer">
                         <button className="btn-1 donate_btn">DONATE</button>
-                    </Link>
+                    </a>
                 </div>
                 {/* Mobile-nav */}
                 <ul
@@ -80,11 +80,11 @@ const NavbarMenu = () => {
                     </li>
                     <NavbarMenuLink onClick={closeMobileMenu} />
                     <div className="mobile-button">
-                        <Link to="/donate">
+                        <a href="https://www.zeffy.com/en-US/donation-form/donate-to-change-lives-4200" target="_blank" rel="noopener noreferrer">
                             <button onClick={closeMobileMenu} className="btn-1">
                                 DONATE
                             </button>
-                        </Link>
+                        </a>
                     </div>
                 </ul>
             </div>

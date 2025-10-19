@@ -206,8 +206,14 @@
     color: #6b7281;
     font-size: 0.875rem;
 }
+.MuiBox-root .css-dmemax {
+    text-align: center;
+}
 
 @media (min-width: 768px) {
+    .MuiBox-root .css-dmemax {
+        text-align: center;
+    }
     .events-header {
         padding-top: 150px;
     }

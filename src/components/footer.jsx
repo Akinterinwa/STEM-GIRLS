@@ -23,15 +23,23 @@ export default function Footer() {
 
           {/* Right Side - Newsletter Signup */}
           <div className="footer-newsletter-section">
-            <p className="footer-newsletter-heading">Stay up-to-date on our latest news</p>
-            <a
-              href="https://docs.google.com/forms/d/e/1FAIpQLScH4hcoLfynQBUJ_PYm85a7Oqy87th9myU7_1_9OlR34UrYCw/viewform?usp=sf_link"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="newsletter-button"
-            >
-              Sign up for our newsletter
-            </a>
+            <div style={{ position: 'relative', height: '280px', width: '100%' }}>
+              <iframe
+                title='Signup form powered by Zeffy'
+                style={{
+                  position: 'absolute',
+                  border: '0',
+                  top: '0',
+                  left: '0',
+                  bottom: '0',
+                  right: '0',
+                  width: '100%',
+                  height: '100%'
+                }}
+                src='https://www.zeffy.com/en-US/embed/newsletter-form/sign-up-for-our-newsletter-1563'
+                allowTransparency="true"
+              ></iframe>
+            </div>
           </div>
         </div>
 

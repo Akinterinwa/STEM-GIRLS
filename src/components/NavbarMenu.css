@@ -179,6 +179,7 @@
 
 .line {
     border-top: 2px solid white;
+    padding: 14px 0;
 }
 
 .mobile-close {
@@ -242,6 +243,7 @@
 
 .arrowdown svg {
     width: 1rem;
+    fill: white; /* Add this line */
 }
 
 @media (max-width: 768px) {

@@ -1,20 +1,8 @@
-import React, { useState } from "react";
-import { Calendar, Bell, Mail } from "lucide-react";
+import React from "react";
+import { Calendar, Bell } from "lucide-react";
 import "./Events.css";
 
 export default function EventsPage() {
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-
-  const handleSubscribe = (e) => {
-    e.preventDefault();
-    if (email) {
-      setSubscribed(true);
-      setEmail("");
-      setTimeout(() => setSubscribed(false), 3000);
-    }
-  };
-
   return (
     <div className="events-page">
       {/* Header */}
@@ -37,7 +25,7 @@ export default function EventsPage() {
         <h2>Exciting Events Coming Soon</h2>
 
         <p className="subtitle">
-          We're planning amazing workshops, mentorship sessions, and networking events to empower young girls in STEM.
+          We\'re planning amazing workshops, mentorship sessions, and networking events to empower young girls in STEM.
           While we finalize the dates and details, we encourage you to stay connected with us.
         </p>
 
@@ -68,30 +56,25 @@ export default function EventsPage() {
         </div>
 
         <div className="cta-section">
-          <h3>Stay Updated</h3>
           <p>
-            Be the first to know when we announce our upcoming events. Get in touch with us to express your interest.
+            Be the first to know when we announce our upcoming events. Sign up for our events newsletter below.
           </p>
-          <div className="cta-actions">
-            <button className="subscribe-button">
-              Contact Us
-            </button>
-            <form onSubmit={handleSubscribe} className="subscribe-form">
-              <div className="email-input-wrapper">
-                <Mail className="email-input-icon" />
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="email-input"
-                  required
-                />
-              </div>
-              <button type="submit" className="subscribe-button">
-                {subscribed ? "Subscribed!" : "Subscribe"}
-              </button>
-            </form>
+          <div className="cta-actions" style={{ position: 'relative', height: '400px', width: '100%', marginTop: '20px' }}>
+            <iframe
+              title='Signup form powered by Zeffy'
+              style={{
+                position: 'absolute',
+                border: '0',
+                top: '0',
+                left: '0',
+                bottom: '0',
+                right: '0',
+                width: '100%',
+                height: '100%'
+              }}
+              src='https://www.zeffy.com/en-US/embed/newsletter-form/events-newsletter'
+              allowTransparency="true"
+            ></iframe>
           </div>
         </div>
 

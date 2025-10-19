@@ -12,7 +12,6 @@ import StartNew from "./components/pages/workshops-components/StartNew";
 import Volunteer from "./components/pages/connect-component/Volunteer";
 import Sponsors from "./components/pages/connect-component/Sponsors";
 import Contact from "./components/pages/connect-component/Contact";
-import Donate from "./components/pages/donate/Donate";
 import ScrollTop from "./components/ScrollTop";
 import { useState, useEffect } from "react";
 import Loader from "./components/Loader";
@@ -45,7 +44,6 @@ function App() {
             <Route path="/contact" exact Component={Contact} />
             <Route path="/sponsors" exact Component={Sponsors} />
             <Route path="/volunteer" exact Component={Volunteer} />
-            <Route path="donate" exact Component={Donate} />
           </Routes>
           <Footer />
         </Router>
