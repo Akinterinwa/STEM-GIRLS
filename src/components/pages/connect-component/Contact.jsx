@@ -1,27 +1,28 @@
-import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import React, { useEffect, useState, useRef } from "react";
+import { useForm, ValidationError } from "@formspree/react";
+import { Mail, Phone, MapPin, Send, Check } from "lucide-react";
 import "./Contact.css";
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("xkgppqev");
+  const [showSuccess, setShowSuccess] = useState(false);
+  const formRef = useRef(null);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  useEffect(() => {
+    if (state.succeeded) {
+      setShowSuccess(true);
+      // Reset form fields manually
+      if (formRef.current) {
+        formRef.current.reset();
+      }
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 3000);
-    setFormData({ name: "", email: "", subject: "", message: "" });
-  };
+      const timer = setTimeout(() => {
+        setShowSuccess(false);
+      }, 2000); // Display success for 2 seconds
+
+      return () => clearTimeout(timer);
+    }
+  }, [state.succeeded]);
 
   return (
     <div className="contact-page">
@@ -30,7 +31,8 @@ export default function ContactPage() {
         <div className="contact-header-content">
           <h1>Get In Touch</h1>
           <p>
-            Have questions or want to learn more about Inspire STEM Girls? We'd love to hear from you.
+            Have questions or want to learn more about Inspire STEM Girls? We'd
+            love to hear from you.
           </p>
         </div>
       </div>
@@ -42,43 +44,49 @@ export default function ContactPage() {
           <div className="contact-form-container">
             <h2>Send us a Message</h2>
 
-            <form onSubmit={handleSubmit} className="contact-form">
+            <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
               <div className="form-group">
                 <label htmlFor="name">Full Name</label>
                 <input
-                  type="text"
                   id="name"
+                  type="text"
                   name="name"
-                  value={formData.name}
-                  onChange={handleChange}
                   required
                   placeholder="Your name"
                 />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
+                />
               </div>
-
+              <div className="form-group">
+                <label htmlFor="phone">Phone Number</label>
+                <input
+                  id="phone"
+                  type="tel"
+                  name="phone"
+                  placeholder="Your phone number"
+                />
+                <ValidationError
+                  prefix="Phone"
+                  field="phone"
+                  errors={state.errors}
+                />
+              </div>
               <div className="form-group">
                 <label htmlFor="email">Email Address</label>
                 <input
-                  type="email"
                   id="email"
+                  type="email"
                   name="email"
-                  value={formData.email}
-                  onChange={handleChange}
                   required
                   placeholder="your@email.com"
                 />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="subject">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
-                  required
-                  placeholder="How can we help?"
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
                 />
               </div>
 
@@ -87,24 +95,36 @@ export default function ContactPage() {
                 <textarea
                   id="message"
                   name="message"
-                  value={formData.message}
-                  onChange={handleChange}
                   required
                   rows={5}
                   placeholder="Your message here..."
                 />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
 
-              <button type="submit" className="submit-button">
-                <Send className="icon" />
-                Send Message
+              <button
+                type="submit"
+                className="submit-button"
+                disabled={state.submitting || showSuccess}
+              >
+                {state.submitting ? (
+                  "Sending..."
+                ) : showSuccess ? (
+                  <>
+                    <Check className="icon" />
+                    Sent!
+                  </>
+                ) : (
+                  <>
+                    <Send className="icon" />
+                    Send Message
+                  </>
+                )}
               </button>
-
-              {submitted && (
-                <div className="submitted-message">
-                  Thank you! Your message has been sent successfully.
-                </div>
-              )}
             </form>
           </div>
 
@@ -142,8 +162,7 @@ export default function ContactPage() {
               <div className="contact-info-content">
                 <h3>Address</h3>
                 <p>
-                  123 Innovation Street
-                  Tech City, TC 12345
+                  123 Innovation Street Tech City, TC 12345
                   <br />
                   United States
                 </p>

@@ -23,15 +23,15 @@ export default function VolunteerPage() {
           <p>
             Empower the next generation in STEM. Become a mentor with us and make a tangible difference in young lives.
             Your expertise can inspire future innovators, guiding them through challenges and nurturing their potential.
-            Together, let's shape a brighter future. Join now and be part of something truly impactful.
+            Together, let\'s shape a brighter future. Join now and be part of something truly impactful.
           </p>
           <div className="button-group">
-            <Link to="#opportunities" className="btn">
-              Explore Opportunities
-            </Link>
-            <a href="mailto:inspirestemgirl@gmail.com" className="btn btn-secondary">
-              Contact Us
+            <a href="#zeffy-form" className="btn">
+              Join our volunteer team
             </a>
+            <Link to="/contact" className="btn btn-secondary">
+              Contact Us
+            </Link>
           </div>
         </div>
       </div>
@@ -123,15 +123,15 @@ export default function VolunteerPage() {
       </div>
 
       {/* CTA Section */}
-      <div className="cta-section">
+      <div id="zeffy-form" className="cta-section">
         <div className="cta-content">
           <h2>Ready to Make a Difference?</h2>
           <p>
             Join our volunteer team and help shape the future of STEM for young women.
           </p>
-          <a href="mailto:inspirestemgirl@gmail.com" className="btn">
-            Get Started Today
-          </a>
+          <div className="zeffy-form-container">
+            <iframe title='Signup form powered by Zeffy' className="zeffy-iframe" src='https://www.zeffy.com/en-US/embed/newsletter-form/volunteer-4' allowTransparency="true"></iframe>
+          </div>
         </div>
       </div>
     </div>
