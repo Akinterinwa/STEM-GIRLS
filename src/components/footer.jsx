@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import whiteLogo from '../images/white logo.png';
-import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -52,16 +52,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="footer-social-icons">
               <a
-                href="https://www.facebook.com/inspirestemgirls"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook"
-                className="social-icon"
-              >
-                <FaFacebook size="1.25rem" />
-              </a>
-              <a
-                href="https://www.instagram.com/inspirestemgirls"
+                href="https://www.instagram.com/inspirestem_girls/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -69,23 +60,14 @@ export default function Footer() {
               >
                 <FaInstagram size="1.25rem" />
               </a>
-              <a
-                href="https://www.youtube.com/channel/UCZT0e6FzJZJZJZJZJZJZJZJ"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Youtube"
-                className="social-icon"
-              >
-                <FaYoutube size="1.25rem" />
-              </a>
-              <a
-                href="https://www.twitter.com/inspirestemgirls"
+               <a
+                href="https://www.linkedin.com/company/inspirestemgirls/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Twitter"
                 className="social-icon"
               >
-                <FaTwitter size="1.25rem" />
+                <FaLinkedinIn size="1.25rem" />
               </a>
             </div>
 

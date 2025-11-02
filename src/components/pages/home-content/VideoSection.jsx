@@ -40,7 +40,7 @@ export default function VideoSection() {
           {/* Right Video */}
           <div className="video-player-container">
             <div className="video-player-wrapper">
-              <img src="/watch-our-story-hero.jpg" alt="STEM girls in action" className="video-thumbnail" />
+              <img src="/public/black-girls-confidence.jpg" alt="STEM girls in action" className="video-thumbnail" />
 
               {!isPlaying && (
                 <div className="play-button-overlay">

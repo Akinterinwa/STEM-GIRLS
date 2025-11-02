@@ -99,19 +99,24 @@ function VideoSection() {
           </div>
 
           <div className="video-content-right">
-            <div className="video-player-wrapper">
-              <img src="/diverse-group-of-young-women-working-on-stem-proje.jpg" alt="STEM girls in action" className="video-thumbnail" />
-              {!isPlaying && (
-                <div className="play-button-overlay">
-                  <button onClick={() => setIsPlaying(true)} className="play-button">
-                    <Play className="play-icon" fill="currentColor" />
-                  </button>
-                </div>
-              )}
-            </div>
-            <div className="decorative-blur-1"></div>
-            <div className="decorative-blur-2"></div>
+          <div className="video-player-wrapper">
+            <img 
+              src="/black-girls-confidence.jpg" 
+              alt="STEM girls in action" 
+              className="video-thumbnail" 
+            />
+            {!isPlaying && (
+              <div className="play-button-overlay">
+                <button onClick={() => setIsPlaying(true)} className="play-button">
+                  <Play className="play-icon" fill="currentColor" />
+                </button>
+              </div>
+            )}
           </div>
+          <div className="decorative-blur-1"></div>
+          <div className="decorative-blur-2"></div>
+        </div>
+
         </div>
       </div>
     </section>
