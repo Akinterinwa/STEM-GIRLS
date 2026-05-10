@@ -8,7 +8,7 @@ const slides = [
     title: "Educate",
     subtitle: "Building foundations for tomorrow's leaders",
     description:
-      "Encouraging young girls to pursue career paths in STEM related disciplines and reach their full potentials.",
+      "Encouraging young girls to pursue career paths in STEM related disciplines and reach their full potentials...",
     image: "/black-girls-coding.jpg",
     cta1: "Join Us",
     cta2: "Learn More",
