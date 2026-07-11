@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const faqs = [
   {
-    question: "What age groups do your STEM programs serve?",
+    question: "What age groups do your STEM programs serve ?",
     answer:
       "Our programs are designed for girls aged 12-18, from middle school through high school. We offer age-appropriate curricula that grow with participants, ensuring engaging and challenging content at every level.",
   },

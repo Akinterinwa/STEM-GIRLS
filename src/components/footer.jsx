@@ -13,7 +13,7 @@ export default function Footer() {
           {/* Left Side - Logo and Description */}
           <div className="footer-logo-section">
             <Link to="/">
-              <img src={whiteLogo} alt="Inspire STEM Girls Logo" className="footer-logo" />
+              <img src={whiteLogo} alt="Inspire STEM Girls Logo" className="footer-logo" loading="lazy" />
             </Link>
             <p className="footer-description">
               STEM stands for Science, Technology, Engineering, and Math. Inspire STEM Girls (ISG) is a 501(c)(3)

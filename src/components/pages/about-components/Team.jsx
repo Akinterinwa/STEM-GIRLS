@@ -23,7 +23,7 @@ export default function Team() {
           {/* Left side - Image */}
           <div className="founder-image-section">
             <div className="founder-image-container">
-              <img src="/Adelusi.jpg" alt="Oluwaseyi Adelusi" className="founder-image" />
+              <img src="/Adelusi.jpg" alt="Oluwaseyi Adelusi" className="founder-image" loading="lazy" />
             </div>
             <div className="founder-info">
               <h2 className="founder-name">Oluwaseyi Adelusi</h2>

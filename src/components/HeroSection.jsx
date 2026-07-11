@@ -90,6 +90,7 @@ export default function HeroCarousel() {
             <img
               src={slide.image || "/placeholder.svg"}
               alt={slide.title}
+              loading="lazy"
             />
             <div className="overlay" />
           </div>

@@ -38,6 +38,7 @@ export default function SponsorsPage() {
             <img
               src="/black-girl-presenting.jpg"
               alt="Partnership and collaboration"
+              loading="lazy"
             />
           </div>
         </div>
@@ -62,6 +63,7 @@ export default function SponsorsPage() {
             <img
               src="/black-girl-presenting.jpg"
               alt="Girls celebrating success"
+              loading="lazy"
             />
           </div>
           <div className="impact-text">

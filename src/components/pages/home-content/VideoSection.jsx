@@ -32,7 +32,7 @@ export default function VideoSection() {
               <div className="stat-divider"></div>
               <div className="stat-item">
                 <div className="stat-number">50+</div>
-                <div className="stat-label">Partner Schools</div>
+                <div className="stat-label">Partner Schools....</div>
               </div>
             </div>
           </div>
@@ -40,9 +40,18 @@ export default function VideoSection() {
           {/* Right Video */}
           <div className="video-player-container">
             <div className="video-player-wrapper">
-              <img src="/public/black-girls-confidence.jpg" alt="STEM girls in action" className="video-thumbnail" />
+              <video
+                className="video-thumbnail"
+                controls={isPlaying}
+                autoPlay={isPlaying}
+                poster="/black-girls-confidence.jpg"
+              >
+                <source src="/public/inspire-stem-girls-vid2.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              {/* <img src="/public/black-girls-confidence.jpg" alt="STEM girls in action" className="video-thumbnail" /> */}
 
-              {!isPlaying && (
+              {!isPlaying && ( 
                 <div className="play-button-overlay">
                   <button
                     onClick={() => setIsPlaying(true)}

@@ -55,6 +55,7 @@ export default function StemForEveryone() {
                 src={item.image || "/placeholder.svg"}
                 alt={item.text}
                 className="stem-for-everyone-image"
+                loading="lazy"
               />
               <div className="stem-for-everyone-overlay" />
               <div className="stem-for-everyone-card-text">

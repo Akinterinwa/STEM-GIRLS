@@ -29,7 +29,7 @@ function FounderQuoteSection() {
         <div className="founder-quote-grid">
           <div className="founder-image-wrapper">
             <div className="founder-image-container">
-              <img src={founderImage} alt="Founder Oluwaseyi Adelusi" className="founder-image" />
+              <img src={founderImage} alt="Founder Oluwaseyi Adelusi" className="founder-image" loading="lazy" />
             </div>
           </div>
           <div className="animated-quote-container">

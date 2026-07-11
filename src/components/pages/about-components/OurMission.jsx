@@ -51,6 +51,7 @@ export default function MissionSection() {
               src="/black-girls-power-stem.jpg"
               alt="Young Black girls collaborating on STEM project"
               className="power-of-girls-image"
+              loading="lazy"
             />
           </div>
           <div className="power-of-girls-text">
@@ -99,6 +100,7 @@ export default function MissionSection() {
                           src={objective.image || "/placeholder.svg"}
                           alt={objective.title}
                           className="objective-image"
+                          loading="lazy"
                         />
                       </div>
                       <p className="objective-description">{objective.description}</p>

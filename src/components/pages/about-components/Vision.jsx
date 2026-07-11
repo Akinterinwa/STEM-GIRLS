@@ -40,6 +40,7 @@ export default function VisionPage() {
                   src="/black-girls-career-guidance.jpg"
                   alt="Career guidance and awareness"
                   className="vision-image"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -104,7 +105,7 @@ export default function VisionPage() {
             </div>
             <div className="vision-grid-item-image">
               <div className="vision-image-container">
-                <img src="/black-girls-community.jpg" alt="Community building" className="vision-image" />
+                <img src="/black-girls-community.jpg" alt="Community building" className="vision-image" loading="lazy" />
               </div>
             </div>
           </div>
@@ -117,7 +118,7 @@ export default function VisionPage() {
           <div className="vision-grid">
             <div className="vision-grid-item-image">
               <div className="vision-image-container">
-                <img src="/black-girls-hands-on.jpg" alt="Hands-on learning" className="vision-image" />
+                <img src="/black-girls-hands-on.jpg" alt="Hands-on learning" className="vision-image" loading="lazy" />
               </div>
             </div>
             <div className="vision-grid-item-text">

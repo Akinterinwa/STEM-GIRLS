@@ -44,6 +44,7 @@ export default function VolunteerPage() {
             <img
               src="/black-girls-hands-on.jpg"
               alt="Black women mentoring in STEM"
+              loading="lazy"
             />
             <div className="volunteer-card-content">
               <div className="volunteer-card-header">
@@ -63,6 +64,7 @@ export default function VolunteerPage() {
             <img
               src="/black-girls-hands-on.jpg"
               alt="Black girls in hands-on STEM workshop"
+              loading="lazy"
             />
             <div className="volunteer-card-content">
               <div className="volunteer-card-header">
