@@ -9,7 +9,7 @@ const slides = [
     subtitle: "Building foundations for tomorrow's leaders",
     description:
       "Encouraging young girls to pursue career paths in STEM related disciplines and reach their full potentials...",
-    image: "/black-girls-coding.jpg",
+    image: "/Every future starts somewhere. 💜Behind every scientist, engineer, doctor, or innovator is a stu.jpg",
     cta1: "Join Us",
     cta2: "Learn More",
     link1: "/volunteer",
@@ -20,7 +20,7 @@ const slides = [
     subtitle: "Igniting passion through mentorship",
     description:
       "STEM girls inspire others with their passion, dedication, and resilience in pursuing their STEM aspirations.",
-    image: "/black-girls-math.jpg",
+    image: "/inspire-stem-girls-img4.jpeg",
     cta1: "Join Us",
     cta2: "Our Programs",
     link1: "/volunteer",
@@ -31,7 +31,7 @@ const slides = [
     subtitle: "Shaping the future of technology",
     description:
       "STEM girls are the leaders and innovators of tomorrow, shaping the future with their ideas and expertise.",
-    image: "/black-girls-mentor-session.jpg",
+    image: "/inspire-stem-girls-img1.jpeg",
     cta1: "Get Involved",
     cta2: "Contact Us",
     link1: "/volunteer",
